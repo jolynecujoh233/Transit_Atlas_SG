@@ -1,0 +1,182 @@
+{
+  "datasetId": "d_e9b1f437263fceebc0c1f0e60cd7b0f0",
+  "createdAt": "2024-10-22T13:24:25+08:00",
+  "name": "Resident Population Aged 15 Years and Over by Planning Area of Residence, Labour Force Status and Sex (Census of Population 2020)",
+  "collectionIds": [],
+  "description": "Source: SINGAPORE DEPARTMENT OF STATISTICS\r\n\r\nSurvey period: Census of Population 2020\r\n\r\nFootnotes: Note: Planning areas refer to areas demarcated in the Urban Redevelopment Authority’s Master Plan 2019.\r\n\r\nAdapted from: https://tablebuilder.singstat.gov.sg/table/CT/17565",
+  "format": "CSV",
+  "lastUpdatedAt": "2021-06-18T00:00:00+08:00",
+  "managedBy": "Singapore Department of Statistics",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 4512,
+  "columnMetadata": {
+    "order": [
+      "c_e1po16fixzdw40hr5ajvoh2vq",
+      "c_3g05b9752xxwb8x0g3nmr0nth",
+      "c_bnh8camt3g7wx9sp4co17767f",
+      "c_8rcr9ifslkbxvefi0k2qhfsdi",
+      "c_d4apvkgpj8wb23h4e38zzbod9",
+      "c_5uiwsdk60mt4obeq3iom992xf",
+      "c_9lxms3rk73eqixfa8vrf81f4r",
+      "c_5vcmtdl1bwdddidudr1z4u0rf",
+      "c_2r810epxrv1e2t7rz7pmx37ej",
+      "c_f1xhs044i2h1ye2q26s8plq5e",
+      "c_f51xl6j0uefzhochqerlv1ukm",
+      "c_ecl73z0ssi540cje9czycqxbo",
+      "c_8ypaszzxd0y01re2qbzr9dl7c",
+      "c_8vcq60u8b3rpotlur7wxox2p4",
+      "c_7fo4adij88z9s6fjqyp8wwysz",
+      "c_dmcyjf8iyum214rjqjz5fqifb"
+    ],
+    "map": {
+      "c_e1po16fixzdw40hr5ajvoh2vq": "Number",
+      "c_3g05b9752xxwb8x0g3nmr0nth": "Total_Total",
+      "c_bnh8camt3g7wx9sp4co17767f": "Total_Males",
+      "c_8rcr9ifslkbxvefi0k2qhfsdi": "Total_Females",
+      "c_d4apvkgpj8wb23h4e38zzbod9": "LabourForce_Total_Total",
+      "c_5uiwsdk60mt4obeq3iom992xf": "LabourForce_Total_Males",
+      "c_9lxms3rk73eqixfa8vrf81f4r": "LabourForce_Total_Females",
+      "c_5vcmtdl1bwdddidudr1z4u0rf": "LabourForce_Employed_Total",
+      "c_2r810epxrv1e2t7rz7pmx37ej": "LabourForce_Employed_Males",
+      "c_f1xhs044i2h1ye2q26s8plq5e": "LabourForce_Employed_Females",
+      "c_f51xl6j0uefzhochqerlv1ukm": "LabourForce_Unemployed_Total",
+      "c_ecl73z0ssi540cje9czycqxbo": "LabourForce_Unemployed_Males",
+      "c_8ypaszzxd0y01re2qbzr9dl7c": "LabourForce_Unemployed_Females",
+      "c_8vcq60u8b3rpotlur7wxox2p4": "OutsidetheLabourForce_Total",
+      "c_7fo4adij88z9s6fjqyp8wwysz": "OutsidetheLabourForce_Males",
+      "c_dmcyjf8iyum214rjqjz5fqifb": "OutsidetheLabourForce_Females"
+    },
+    "metaMapping": {
+      "c_e1po16fixzdw40hr5ajvoh2vq": {
+        "name": "Number",
+        "columnTitle": "Number",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "0",
+        "isCategorical": false
+      },
+      "c_3g05b9752xxwb8x0g3nmr0nth": {
+        "name": "Total_Total",
+        "columnTitle": "(Total) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "1",
+        "isCategorical": false
+      },
+      "c_bnh8camt3g7wx9sp4co17767f": {
+        "name": "Total_Males",
+        "columnTitle": "(Total) Males",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "2",
+        "isCategorical": false
+      },
+      "c_8rcr9ifslkbxvefi0k2qhfsdi": {
+        "name": "Total_Females",
+        "columnTitle": "(Total) Females",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "3",
+        "isCategorical": false
+      },
+      "c_d4apvkgpj8wb23h4e38zzbod9": {
+        "name": "LabourForce_Total_Total",
+        "columnTitle": "(Labour Force - Total) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "4",
+        "isCategorical": false
+      },
+      "c_5uiwsdk60mt4obeq3iom992xf": {
+        "name": "LabourForce_Total_Males",
+        "columnTitle": "(Labour Force - Total) Males",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "5",
+        "isCategorical": false
+      },
+      "c_9lxms3rk73eqixfa8vrf81f4r": {
+        "name": "LabourForce_Total_Females",
+        "columnTitle": "(Labour Force - Total) Females",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "6",
+        "isCategorical": false
+      },
+      "c_5vcmtdl1bwdddidudr1z4u0rf": {
+        "name": "LabourForce_Employed_Total",
+        "columnTitle": "(Labour Force - Employed) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "7",
+        "isCategorical": false
+      },
+      "c_2r810epxrv1e2t7rz7pmx37ej": {
+        "name": "LabourForce_Employed_Males",
+        "columnTitle": "(Labour Force - Employed) Males",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "8",
+        "isCategorical": false
+      },
+      "c_f1xhs044i2h1ye2q26s8plq5e": {
+        "name": "LabourForce_Employed_Females",
+        "columnTitle": "(Labour Force - Employed) Females",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "9",
+        "isCategorical": false
+      },
+      "c_f51xl6j0uefzhochqerlv1ukm": {
+        "name": "LabourForce_Unemployed_Total",
+        "columnTitle": "(Labour Force - Unemployed) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "10",
+        "isCategorical": false
+      },
+      "c_ecl73z0ssi540cje9czycqxbo": {
+        "name": "LabourForce_Unemployed_Males",
+        "columnTitle": "(Labour Force - Unemployed) Males",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "11",
+        "isCategorical": false
+      },
+      "c_8ypaszzxd0y01re2qbzr9dl7c": {
+        "name": "LabourForce_Unemployed_Females",
+        "columnTitle": "(Labour Force - Unemployed) Females",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "12",
+        "isCategorical": false
+      },
+      "c_8vcq60u8b3rpotlur7wxox2p4": {
+        "name": "OutsidetheLabourForce_Total",
+        "columnTitle": "(Outside the Labour Force) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "13",
+        "isCategorical": false
+      },
+      "c_7fo4adij88z9s6fjqyp8wwysz": {
+        "name": "OutsidetheLabourForce_Males",
+        "columnTitle": "(Outside the Labour Force) Males",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "14",
+        "isCategorical": false
+      },
+      "c_dmcyjf8iyum214rjqjz5fqifb": {
+        "name": "OutsidetheLabourForce_Females",
+        "columnTitle": "(Outside the Labour Force) Females",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "15",
+        "isCategorical": false
+      }
+    }
+  }
+}

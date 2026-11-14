@@ -1,0 +1,32 @@
+{
+  "datasetId": "d_548c33ea2d99e29ec63a7cc9edcccedc",
+  "createdAt": "2023-07-31T16:08:13+08:00",
+  "name": "CHAS Clinics",
+  "collectionIds": [
+    "2036"
+  ],
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2024-06-06T14:36:42+08:00",
+  "managedBy": "Ministry of Health",
+  "datasetSize": 1644760,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "Name",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "Description",
+        "description": ""
+      }
+    ]
+  }
+}

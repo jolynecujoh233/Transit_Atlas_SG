@@ -1,0 +1,66 @@
+{
+  "datasetId": "d_e8e3249d4433845bdd8034ae44329d9e",
+  "createdAt": "2023-07-03T14:52:32+08:00",
+  "name": "Master Plan 2019 Building layer",
+  "collectionIds": [
+    "1645"
+  ],
+  "description": "Indicative building footprints layer. This layer is extracted from the Master Plan 2019 that was approved on 18 Nov 2019. For the latest Master Plan, please visit URA web site at https://www.ura.gov.sg/",
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2025-11-13T11:25:58+08:00",
+  "managedBy": "Urban Redevelopment Authority",
+  "coverageStart": "2019-12-09T00:00:00+08:00",
+  "datasetSize": 52661057,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "OBJECTID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "BLDG_TYPE",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "INC_CRC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "FMEL_UPD_D",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SHAPE.AREA",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SHAPE.LEN",
+        "description": ""
+      }
+    ]
+  }
+}

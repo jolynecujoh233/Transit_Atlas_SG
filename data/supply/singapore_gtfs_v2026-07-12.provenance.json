@@ -1,0 +1,13 @@
+{
+  "filename": "singapore_gtfs_v2026-07-12.zip",
+  "downloaded_on_local_date": "2026-11-08",
+  "release_tag": "v2026-07-12",
+  "release_page": "https://github.com/Vorld/singapore-gtfs/releases/tag/v2026-07-12",
+  "download_url": "https://github.com/Vorld/singapore-gtfs/releases/download/v2026-07-12/singapore-gtfs.zip",
+  "sha256": "d92173127e9a5cbf8ecb5b4d50ab03f68deb7f8ddff73648b8ffb33c70ab4801",
+  "bytes": 348712,
+  "publisher": "Vorld/singapore-gtfs",
+  "description": "Third-party GTFS built from LTA DataMall data; not a direct official API snapshot.",
+  "feed_version": "2026-07-12",
+  "use_in_project": "Provisional weekday bus route-choice indicator only"
+}

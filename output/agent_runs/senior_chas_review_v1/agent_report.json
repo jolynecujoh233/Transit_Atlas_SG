@@ -1,0 +1,22 @@
+{
+  "run_id": "senior_chas_review_v1",
+  "question": "更重视老年居民就医出行时，新加坡公共交通供需缺口的候选网格如何变化？",
+  "backend": "offline",
+  "model": "offline_plan_file",
+  "decision": "run",
+  "plan_path": "output/agent_runs/senior_chas_review_v1/plan.json",
+  "status": "completed",
+  "scenario_config": "output/agent_runs/senior_chas_review_v1/scenario.json",
+  "review_hashes": {
+    "plan.json": "73de6132b7e5dfcfdde934533d1f33be6234d978b8d3571d786739994c093e38",
+    "scenario.json": "c880fe764c0b26bbfa3b4d543302284198b01a1e3a097800840ee03aa8852ed8",
+    "evidence.md": "fbce9e2d772e4c4e486021e3782f71e4ef8f5180c9657b93b19868d1cf65c8ea"
+  },
+  "approved_at": "2026-11-09T20:48:26.018701+00:00",
+  "scenario_dir": "output/scenarios/senior_chas_review_v1",
+  "candidate_count": 158,
+  "baseline_candidate_count": 148,
+  "entered": 12,
+  "exited": 2,
+  "retained": 146
+}

@@ -1,0 +1,43 @@
+﻿Transit Atlas 新加坡公共交通研究工作台｜本地运行与提问指南
+
+只看地图和已有结果：https://sg-transit-atlas-demo.inayya1227.chatgpt.site/
+要用自己的 Codex 提新问题：在自己的电脑上解压并运行本包，打开本机网页。模型使用当前用户的登录状态与可用额度。程序仅监听本机，没有网页密钥输入框。
+
+一、第一次使用：安装好两样东西
+1. 安装 64 位 Python 3.12（含 pip、venv）。Windows 安装时启用 Python Launcher；在终端输入 py -3.12 --version，应看到 Python 3.12.x。macOS 可在终端输入 python3.12 --version。
+   Python 下载：https://www.python.org/downloads/
+2. 安装 Codex CLI，按 OpenAI 官方说明为你的系统选择安装方式：https://developers.openai.com/codex/cli/
+   已有 Node.js 和 npm 时，可在终端运行 npm install -g @openai/codex。Windows 可在“命令提示符（cmd）”运行，避开 PowerShell 的脚本策略。安装后重新打开终端。
+3. 在同一操作系统、同一用户下，依次执行：
+       codex --version
+       codex login
+       codex login status
+   登录时在浏览器选择自己的 ChatGPT 账号，该账号需有 Codex 使用权限。若 status 已显示使用正确账号登录，跳过登录。以上命令均在本人的终端执行。本应用当前使用 Codex CLI 后端，无需另填 OpenAI API key。
+   同一台 Windows 上，若用 Windows 启动本包，请在 Windows 终端登录；WSL 中的登录属于另一套环境。
+
+二、启动工作台
+1. 完整解压 ZIP 到个人可写目录，例如 C:\TransitAtlas。进入含 start.py 和 requirements.txt 的文件夹。
+2. Windows：双击 Start-Workbench.cmd。也可以在该目录打开 cmd 后运行 py -3.12 start.py。
+   macOS：在该目录打开终端，运行 python3.12 start.py。
+3. 首次启动会在该目录创建 .venv 并联网安装科学计算依赖，可能需要几分钟。看到本地地址后，浏览器会打开 http://127.0.0.1:8764/。请保留启动窗口。
+   工作台默认使用标准 Python 与随包声明的 GIS 库，日常提问、数据准备、评分和网页地图均无需另装 QGIS 桌面软件。
+
+三、发出第一个新问题
+1. 在本地网页点击“研究总览”→“进入研究对话”。这个入口会开始新的研究。直接在已有提案底部输入会被当作修改上一版。
+2. 可以复制这句测试：
+   如果优先考虑老年人前往基层诊所的公共交通可达性，哪些需求和供给指标值得调整？请列出文献、可复用的数据和权重理由，先只生成提案。
+3. 点击“发送研究问题”。模型检索文献并组织提案需要一些时间。完成后查看“研究思路”“建议清单”和“文献与总结”，也可以提交修改要求。
+4. 需要补数时，先核对来源、字段和处理方法，再勾选可执行的数据项。已满足条件的方案可以进入权重审核；只有点击“确认权重并运行情景”后才启动情景评分。
+5. 生成的提案、数据准备记录、逐格结果分别保存在解压目录的 output/agent_runs、output/data_preparation、output/scenarios。关闭时在终端按 Ctrl+C。下次从原目录再次启动即可。
+
+四、常见问题
+• “找不到 Python / Codex”：先分别运行版本检查；安装后重新打开终端。如果 Codex 安装在自定义位置，可在 Windows cmd 设置 set "CODEX_CLI_PATH=C:\实际路径\codex.exe" 后在同一窗口启动。
+• 端口已占用或打开了旧版本：在项目目录运行 py -3.12 start.py --port 8765（macOS 把 py -3.12 换成 python3.12），使用终端打印的地址。
+• 只检查环境：py -3.12 start.py --check。它检查依赖、登录状态、指标目录和内置示例，不提交模型问题。
+• 安装依赖失败：核对是否使用 64 位 Python 3.12，以及网络能否访问 Python 软件包源。修复后再次启动即可重试。
+• 登录成功但无法生成提案：检查账号的 Codex 权限、可用额度及联网检索条件。用 Windows 启动时优先用 Windows 终端排查，网络或机构策略也可能影响检索。
+• 地图能看，但无法输入新问题：核对地址栏是否为 127.0.0.1。公开分享链接只提供已有案例演示。
+
+包内内容
+工作台前后端、研究规划与计算代码、基线指标和网格、公开数据快照与来源、既有老年人就医示例。未包含分发者的 Codex 登录、API 密钥、个人对话历史和 Python 虚拟环境。首次联网安装、登录、网页检索和公开数据下载由收件人自己的电脑完成。
+

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101215"><title data-i18n="Transit Atlas · 新加坡公共交通研究工作台">Transit Atlas · 新加坡公共交通研究工作台</title><link rel="stylesheet" href="/style.css"><script src="/atlas.js" defer></script><script src="/i18n.js" defer></script><script src="/data-ui.js" defer></script><script src="/app.js" defer></script></head>
+<body><header><a class="brand" href="#overview" aria-label="研究总览" data-i18n-aria-label="研究总览"><span class="brandmark"><i></i><i></i><i></i></span><strong>Transit Atlas</strong></a><span class="branddesc"><span data-i18n="公共交通研究工作台">公共交通研究工作台</span></span><nav><button data-view="overview" class="active"><span data-i18n="研究总览">研究总览</span></button><button data-view="research"><span data-i18n="研究对话">研究对话</span></button><button data-view="processing"><span data-i18n="数据处理">数据处理</span></button><button data-view="results"><span data-i18n="情景结果">情景结果</span></button></nav><div class="language-switch" role="group" aria-label="Language / 语言"><button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button><button type="button" data-lang="zh" lang="zh-Hans" aria-label="中文" aria-pressed="true">中文</button></div><button type="button" class="help-btn" id="openHelp" aria-label="使用指南" data-i18n-aria-label="使用指南"><i>?</i> <span data-i18n="使用指南">使用指南</span></button><span class="local"><i></i> LOCAL SESSION</span></header>
+<main><div class="location"><span>WORKSPACE</span> <b>/</b> <span>SINGAPORE</span> <b>/</b> <strong id="crumb">OVERVIEW</strong></div>
+<div class="heading"><div><h1 id="title"><span data-i18n="新加坡公共交通供需图谱">新加坡公共交通供需图谱</span><span>.</span></h1><p id="subtitle"><span data-i18n="在 400 米网格上，对照出行需求与公共交通供给。">在 400 米网格上，对照出行需求与公共交通供给。</span></p></div><span class="coordinate">SGP &nbsp; / &nbsp; 01°21′ N &nbsp; 103°49′ E</span></div>
+<div class="workspace">
+<section class="mapbox"><div class="maphead"><span><i class="cross">⌖</i> <span data-i18n="空间图谱">空间图谱</span> <em>/ SPATIAL ATLAS</em></span><b id="mapMode" data-i18n="基线视图">基线视图</b></div>
+<div class="mapbody"><canvas id="atlas" aria-label="新加坡规划区、巴士线路、巴士站点及研究网格地图" data-i18n-aria-label="新加坡规划区、巴士线路、巴士站点及研究网格地图"></canvas><div class="mapmeta"><b>SINGAPORE</b><small>SVY21 &nbsp; / &nbsp; EPSG:3414</small></div><div class="north">↑<small>N</small></div>
+<div class="mapzoom"><button id="zoomin" aria-label="放大地图" data-i18n-aria-label="放大地图">＋</button><button id="zoomout" aria-label="缩小地图" data-i18n-aria-label="缩小地图">−</button><button id="reset" aria-label="重置地图" data-i18n-aria-label="重置地图">⌖</button></div><output id="picked" hidden></output>
+<div class="maplegend" id="legend"></div></div>
+<div class="layertray"><span class="mono">LAYERS</span><button data-layer="areas" aria-pressed="true"><span data-i18n="规划区">规划区</span></button><button data-layer="routes" aria-pressed="true"><span data-i18n="巴士线路走向">巴士线路走向</span></button><button data-layer="network" aria-pressed="true"><span data-i18n="巴士站点">巴士站点</span></button><button data-layer="grids" aria-pressed="true"><span data-i18n="研究网格">研究网格</span></button><a href="https://data.busrouter.sg/v1/" target="_blank" rel="noopener noreferrer" class="sm"><span data-i18n="线路来源 · BusRouter SG ↗">线路来源 · BusRouter SG ↗</span></a></div></section>
+<section class="side" id="side" aria-live="polite"></section>
+</div><div id="lower"></div></main>
+
+<dialog id="helpModal" class="help-dialog">
+<div class="help-content">
+<div class="help-header">
+<h2><span data-i18n="使用指南 · Transit Atlas Guide">使用指南 · Transit Atlas Guide</span></h2>
+<button type="button" class="close-btn" id="closeHelp" aria-label="关闭" data-i18n-aria-label="关闭">×</button>
+</div>
+<div class="help-body">
+<div class="help-section">
+<h3><span data-i18n="系统定位与人机协同流程">系统定位与人机协同流程</span></h3>
+<p><span data-i18n="Transit Atlas 是一个辅助城市交通规划师的人机协同（Human-in-the-Loop）研究工作台。它不替代规划师决策，而是通过 7 步闭环支撑敏捷的情景研究：">Transit Atlas 是一个辅助城市交通规划师的人机协同（Human-in-the-Loop）研究工作台。它不替代规划师决策，而是通过 7 步闭环支撑敏捷的情景研究：</span></p>
+<ul class="help-step-list">
+<li><span class="step-num">01</span> <span><strong data-i18n="提出问题">提出问题</strong>: <span data-i18n="在研究对话框输入交通公平性或特定群体出行关切。">在研究对话框输入交通公平性或特定群体出行关切。</span></span></li>
+<li><span class="step-num">02</span> <span><strong data-i18n="Agent 提案">Agent 提案</strong>: <span data-i18n="检索文献与指标目录，提出研究思路、所需数据与计算口径。">检索文献与指标目录，提出研究思路、所需数据与计算口径。</span></span></li>
+<li><span class="step-num">03</span> <span><strong data-i18n="规划师审数">规划师审数</strong>: <span data-i18n="核验数据来源与局限，确认本轮处理方法。若缺关键数据则停止计算。">核验数据来源与局限，确认本轮处理方法。若缺关键数据则停止计算。</span></span></li>
+<li><span class="step-num">04</span> <span><strong data-i18n="本地 GIS 处理">本地 GIS 处理</strong>: <span data-i18n="下载并清洗公开数据，标准化到 1,597 个 400 米网格。">下载并清洗公开数据，标准化到 1,597 个 400 米网格。</span></span></li>
+<li><span class="step-num">05</span> <span><strong data-i18n="Agent 建议权重">Agent 建议权重</strong>: <span data-i18n="依据问题侧重点和文献证据，提出有依据的指标权重。">依据问题侧重点和文献证据，提出有依据的指标权重。</span></span></li>
+<li><span class="step-num">06</span> <span><strong data-i18n="规划师调权">规划师调权</strong>: <span data-i18n="审核或修改建议权重，最终确认启动运算。">审核或修改建议权重，最终确认启动运算。</span></span></li>
+<li><span class="step-num">07</span> <span><strong data-i18n="重算与空间对比">重算与空间对比</strong>: <span data-i18n="本地 GIS 重算需求与供给等级，输出 148 基线对比地图与逐格 CSV。">本地 GIS 重算需求与供给等级，输出 148 基线对比地图与逐格 CSV。</span></span></li>
+</ul>
+</div>
+<div class="help-section">
+<h3><span data-i18n="空间图谱操作">空间图谱操作</span></h3>
+<p><span data-i18n="左侧地图渲染新加坡 EPSG:3414 坐标系下的矢量路网与 400 米网格：">左侧地图渲染新加坡 EPSG:3414 坐标系下的矢量路网与 400 米网格：</span></p>
+<p>• <strong><span data-i18n="图层开关">图层开关</span></strong>: <span data-i18n="可在底部自由切换「规划区」「巴士线路走向」「巴士站点」「研究网格」图层。">可在底部自由切换「规划区」「巴士线路走向」「巴士站点」「研究网格」图层。</span></p>
+<p>• <strong><span data-i18n="交互点选">交互点选</span></strong>: <span data-i18n="鼠标点击地图上任意方格，左下角会高亮显示该网格所属规划区、Grid ID 以及入选状态（基线候选 / 保留 / 新增 / 退出）。">鼠标点击地图上任意方格，左下角会高亮显示该网格所属规划区、Grid ID 以及入选状态（基线候选 / 保留 / 新增 / 退出）。</span></p>
+<p>• <strong><span data-i18n="情景对照视图">情景对照视图</span></strong>: <span data-i18n="进入「情景结果」后，地图切换为保留（青色）、新增（品红）与退出（黄色）对比模式。">进入「情景结果」后，地图切换为保留（青色）、新增（品红）与退出（黄色）对比模式。</span></p>
+</div>
+<div class="help-section">
+<h3><span data-i18n="本地工作台特性">本地工作台特性</span></h3>
+<p>• <strong><span data-i18n="真实模型与本地算力">真实模型与本地算力</span></strong>: <span data-i18n="当前本地工作台直接调用您本机的 OpenAI Codex CLI，模型使用您的登录凭证与配额，数据与计算全程留存在本机，保障数据私密性与可追溯性。">当前本地工作台直接调用您本机的 OpenAI Codex CLI，模型使用您的登录凭证与配额，数据与计算全程留存在本机，保障数据私密性与可追溯性。</span></p>
+<p>• <strong><span data-i18n="数据处理工作流">数据处理工作流</span></strong>: <span data-i18n="在「数据处理」页面，您可以直接粘贴 data.gov.sg 数据集链接，本地程序会自动抓取、检查几何并按 400 米网格标准化，供研究对话选用。">在「数据处理」页面，您可以直接粘贴 data.gov.sg 数据集链接，本地程序会自动抓取、检查几何并按 400 米网格标准化，供研究对话选用。</span></p>
+</div>
+</div>
+</div>
+</dialog>
+
+<footer><span><i class="dot"></i> SINGAPORE TRANSIT ATLAS &nbsp;·&nbsp; AR5958A Group 2</span><span>SVY21 &nbsp; / &nbsp; 400 M GRID</span></footer>
+</body></html>

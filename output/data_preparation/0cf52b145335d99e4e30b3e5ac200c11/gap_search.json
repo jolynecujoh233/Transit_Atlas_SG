@@ -1,0 +1,36 @@
+{
+  "0": {
+    "key": "0",
+    "status": "method",
+    "finding": "缺口＝学生到校需求（人/时）－可载客供给（人/时）；必须对齐同一学校日、开课窗和实际路径。",
+    "alternative": "可先用学校地址与类型筛查学校目的地附近，不推断学生客流或拥挤。",
+    "sources": [
+      {
+        "title": "LTA家庭出行调查",
+        "url": "https://www.lta.gov.sg/content/ltagov/en/who_we_are/our_work/lta_surveys.html"
+      },
+      {
+        "title": "LTA动态数据目录",
+        "url": "https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html"
+      }
+    ],
+    "file": null
+  },
+  "4": {
+    "key": "4",
+    "status": "limited",
+    "finding": "MOE学校总览可公开下载，可初步识别学校地址和类型。它没有坐标、统一school_id、首课时间或逐校上课日，不能界定通学窗。",
+    "alternative": "可先研究2026年学校地址与类型的空间分布，不推断学生通学或拥挤。",
+    "sources": [
+      {
+        "title": "MOE学校总览（d_688b934f82c1059ed0a6993d2a829089）",
+        "url": "https://data.gov.sg/datasets/d_688b934f82c1059ed0a6993d2a829089/view"
+      },
+      {
+        "title": "MOE学校日历示例",
+        "url": "https://www.saintandrewsjunior.moe.edu.sg/general-information/school-hours-terms-holidays/"
+      }
+    ],
+    "file": null
+  }
+}

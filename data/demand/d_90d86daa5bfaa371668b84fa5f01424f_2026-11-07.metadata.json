@@ -1,0 +1,98 @@
+{
+  "datasetId": "d_90d86daa5bfaa371668b84fa5f01424f",
+  "createdAt": "2023-07-03T14:55:00+08:00",
+  "name": "Master Plan 2019 Land Use layer",
+  "collectionIds": [
+    "1646"
+  ],
+  "description": "Indicative land use polygon layer. This layer is extracted from the Master Plan 2019 that was approved on 18 Nov 2019. For the latest Master Plan, please visit URA web site at https://www.ura.gov.sg/",
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2026-10-18T10:08:18+08:00",
+  "managedBy": "Urban Redevelopment Authority",
+  "coverageStart": "2019-12-09T00:00:00+08:00",
+  "datasetSize": 174276876,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "OBJECTID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "LU_DESC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "LU_TEXT",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "GPR",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "WHI_Q_MX",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "GPR_B_MN",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "INC_CRC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "FMEL_UPD_D",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SHAPE.AREA",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SHAPE.LEN",
+        "description": ""
+      }
+    ]
+  }
+}

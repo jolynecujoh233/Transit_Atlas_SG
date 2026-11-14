@@ -1,0 +1,17 @@
+# Python virtual environments & bytecode
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sha256
+
+# Temporary run artifacts & caches
+tmp/
+*.log
+.DS_Store
+Thumbs.db
+
+# Large GIS datasets compressed for GitHub (<100MB limit)
+# Note: The compressed .geojson.zip files are tracked in git; the uncompressed 166MB .geojson is ignored
+data/demand/d_90d86daa5bfaa371668b84fa5f01424f_2026-11-07.geojson

@@ -1,0 +1,67 @@
+{
+  "datasetId": "d_3f172c6feb3f4f92a2f47d93eed2908a",
+  "createdAt": "2025-11-03T20:55:30+08:00",
+  "name": "LTA Bus Stop",
+  "collectionIds": [],
+  "description": "A symbolic point representation of a pole to indicate the position where buses should stop to pickup or drop off passengers",
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2026-10-06T10:06:44+08:00",
+  "managedBy": "Land Transport Authority",
+  "coverageStart": "2025-10-05T00:00:00+08:00",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 1886647,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "OBJECTID_1",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "BUS_STOP_NUM",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "BUS_ROOF_NUM",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "UNIQUE_ID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "INC_CRC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "FMEL_UPD_D",
+        "description": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "baseline_v1",
+  "description": "Singapore transit demand and supply baseline for 1,597 grids with positive estimated resident population",
+  "inputs": {
+    "demand_counts": "output/sg_grid/grid_demand_count_score_2020_95pct_estimated.csv",
+    "supply_indicators": "output/supply/grid_supply_eleven_estimated_95pct.csv",
+    "supply_dictionary": "output/supply/supply_indicator_dictionary.json"
+  },
+  "universe": {"name": "primary_1597", "filter": "positive_estimated_population"},
+  "demand": {
+    "method": "weighted_population_z_score_of_estimated_counts",
+    "higher_score_means": "higher_demand",
+    "quartiles": "linear_25_50_75_percentiles_with_ties_kept_together",
+    "weights": {
+      "n_low_income_households_lt3000": 1,
+      "n_non_car_commuters": 1,
+      "n_unemployed_residents": 1,
+      "n_low_education_residents_15plus": 1,
+      "n_youth_residents_10_19": 1,
+      "n_older_residents_65plus": 1,
+      "n_one_person_households": 1,
+      "n_mobility_difficulty_residents_5plus": 1,
+      "n_public_transit_users_work_school_sum": 1
+    }
+  },
+  "supply": {
+    "method": "weighted_low_supply_indicator_flags",
+    "low_supply_share": 0.25,
+    "tie_rule": "whole_value_group_nearest_target",
+    "classes": "zero_then_three_positive_groups_minimum_size_imbalance",
+    "weights": {
+      "s_bus_400m_coverage": 1,
+      "s_bus_stop_density": 1,
+      "s_low_income_work_access_60m": 1,
+      "s_chas_clinics_access_60m": 1,
+      "s_weekday_arrivals_0600_1000": 1,
+      "s_weekend_arrivals_0900_1600": 1,
+      "s_weekday_arrivals_0000_0500": 1,
+      "s_route_choice": 1,
+      "s_low_income_work_access_30m": 1,
+      "s_chas_clinics_access_30m": 1,
+      "s_supermarkets_access_30m": 1
+    }
+  },
+  "candidate_rule": {
+    "minimum_demand_level": 3,
+    "minimum_supply_deficit_level": 3
+  }
+}

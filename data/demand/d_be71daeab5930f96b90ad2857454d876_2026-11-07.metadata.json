@@ -1,0 +1,98 @@
+{
+  "datasetId": "d_be71daeab5930f96b90ad2857454d876",
+  "createdAt": "2023-07-03T15:03:49+08:00",
+  "name": "URA No of Dwelling Units",
+  "collectionIds": [
+    "1665"
+  ],
+  "description": "This layer shows the number of Dwelling Units for private residential properties for both occupied and vacant properties as at Q4 2022.",
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2026-02-26T10:07:07+08:00",
+  "managedBy": "Urban Redevelopment Authority",
+  "coverageStart": "2025-03-11T00:00:00+08:00",
+  "datasetSize": 38686242,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "OBJECTID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "POSTALCODE",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "BLK_NO",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "PROJ_NAME",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "PROP_TYPE",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "X_ADDR",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "Y_ADDR",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "DU",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "INC_CRC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "FMEL_UPD_D",
+        "description": ""
+      }
+    ]
+  }
+}

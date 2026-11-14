@@ -1,0 +1,632 @@
+{
+  "datasetId": "d_d95ae740c0f8961a0b10435836660ce0",
+  "createdAt": "2024-10-22T13:24:30+08:00",
+  "name": "Resident Population by Planning Area/Subzone of Residence, Age Group and Sex (Census of Population 2020)",
+  "collectionIds": [],
+  "description": "Source: SINGAPORE DEPARTMENT OF STATISTICS\r\n\r\nSurvey period: Census of Population 2020\r\n\r\nFootnotes: Note: Planning areas refer to areas demarcated in the Urban Redevelopment Authority’s Master Plan 2019.\r\n\r\nAdapted from: https://tablebuilder.singstat.gov.sg/table/CT/17560",
+  "format": "CSV",
+  "lastUpdatedAt": "2021-06-18T00:00:00+08:00",
+  "managedBy": "Singapore Department of Statistics",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 133400,
+  "columnMetadata": {
+    "order": [
+      "c_1r5s9b1dcbql4vfe5jqb080kq",
+      "c_cuh3516ydmi17512q3z7cs95x",
+      "c_i6ct4pqyc2vzr1ztyz3lz6tq",
+      "c_1qc1hyhhck0nsclfbym3o3c52",
+      "c_4dgcqovfvkm2i1j3d2l9jcg42",
+      "c_ax6f8mv49l3g2j9exfhdqmy3u",
+      "c_99tjjjjmyk8xdzwyasibjbyki",
+      "c_7wk4pir89mhc3rz3fibh7dztj",
+      "c_sfrvm5dh8ylwp6dthxe52pe9",
+      "c_awxc3pvjbgx0ej3e30xepa3jy",
+      "c_2wrb45lor46ze3pcke51bs65e",
+      "c_7ml0p3mcmw8qjogol5xah00s8",
+      "c_o8hlpa3eg8107u66c240bfgg",
+      "c_bkgogbm7is4898ccsgcg4x8ji",
+      "c_gegwwu9qaf3qr6vmyr9dmpbj",
+      "c_amr3uat7c45k1dsauf84l8c4t",
+      "c_432vytnr6va7tbyisy5o04v52",
+      "c_43k3drj4e0wpulrkqynqhr9gn",
+      "c_ep6hz0tp0mhvga0s1lufco8qv",
+      "c_czpvg1jmd07balptb35r51edv",
+      "c_6okm244szkv8tyy5u8v667kv8",
+      "c_97ddry2frr5g12dixzd6okrz",
+      "c_9eqbs39kui50he8sin5eak8if",
+      "c_agcwyq6aaamr9mkemub80jyv9",
+      "c_e0m88vzosf55dxxzsdgsnso56",
+      "c_3w0go227cr6ui65ua8z2zz4ol",
+      "c_301trhhu789kwpavl7zn87pes",
+      "c_395qh9ckn9kiqvbgka183gpjr",
+      "c_6wlaq6nhyb0k6nzwqbfexgc8m",
+      "c_5p25f6r0nypbar2k3aa5fx0n1",
+      "c_eboh6g3czccw6v1emvje0zxtv",
+      "c_79139uitv1uboy53p28nzo79d",
+      "c_2hagoiuh7stc6irkrgyhvyrpt",
+      "c_45zpqp16xif03k1t6c0smx8wu",
+      "c_3iw8fyhle46qgfknldi43mlu5",
+      "c_2wx1pg6sgtstsu7q0vmfrvyae",
+      "c_1vff4ahuxx5vz9ugstrahk15f",
+      "c_508026fzebqf2zir3h4rtx1ig",
+      "c_czv6hfq2y3qldwn4f5421jdtf",
+      "c_94b54kx2tt3rk4whysy715s80",
+      "c_7w6r2y96dptzixoqhqz5wka7j",
+      "c_8xch51w36tojdyme2gcxpud58",
+      "c_4auyimpeiiyzfapp6r8259pmo",
+      "c_42eynx54wix17orpi7912kjrj",
+      "c_6iuxj52qa9tiope7tu11zw3cb",
+      "c_14fme6a62pn0o1wludr31vl9l",
+      "c_299nuzfircnnte5agoj366pom",
+      "c_59bl3pe93nkienn93jutrisba",
+      "c_abp3y8k9wj9l752ialp38ccf0",
+      "c_9rlcsrr9kss1g2jwmivixmc28",
+      "c_1im7wkc91akgpb293yyde552p",
+      "c_9rg963sezfuxixxij7olkcdsa",
+      "c_diy5y2977vcjlijr7fy1me5us",
+      "c_2mtichftiz2txc6rbdp8imvph",
+      "c_yjsq9fd2uzmz5u33c39flqsx",
+      "c_ce29dnp1wwe9co7b768bk674m",
+      "c_d89l6z3gzs9ysald6ncs5oeyb",
+      "c_d80ktb0goq2uwxhz3z2ls3eo5",
+      "c_eaqj6j69qy718xmga2q5uagg8",
+      "c_ej6dyvit7i58r92ucrtjrho51",
+      "c_8qydv1ba0cyml0setec7q8aa2"
+    ],
+    "map": {
+      "c_1r5s9b1dcbql4vfe5jqb080kq": "Number",
+      "c_cuh3516ydmi17512q3z7cs95x": "Total_Total",
+      "c_i6ct4pqyc2vzr1ztyz3lz6tq": "Total_0_4",
+      "c_1qc1hyhhck0nsclfbym3o3c52": "Total_5_9",
+      "c_4dgcqovfvkm2i1j3d2l9jcg42": "Total_10_14",
+      "c_ax6f8mv49l3g2j9exfhdqmy3u": "Total_15_19",
+      "c_99tjjjjmyk8xdzwyasibjbyki": "Total_20_24",
+      "c_7wk4pir89mhc3rz3fibh7dztj": "Total_25_29",
+      "c_sfrvm5dh8ylwp6dthxe52pe9": "Total_30_34",
+      "c_awxc3pvjbgx0ej3e30xepa3jy": "Total_35_39",
+      "c_2wrb45lor46ze3pcke51bs65e": "Total_40_44",
+      "c_7ml0p3mcmw8qjogol5xah00s8": "Total_45_49",
+      "c_o8hlpa3eg8107u66c240bfgg": "Total_50_54",
+      "c_bkgogbm7is4898ccsgcg4x8ji": "Total_55_59",
+      "c_gegwwu9qaf3qr6vmyr9dmpbj": "Total_60_64",
+      "c_amr3uat7c45k1dsauf84l8c4t": "Total_65_69",
+      "c_432vytnr6va7tbyisy5o04v52": "Total_70_74",
+      "c_43k3drj4e0wpulrkqynqhr9gn": "Total_75_79",
+      "c_ep6hz0tp0mhvga0s1lufco8qv": "Total_80_84",
+      "c_czpvg1jmd07balptb35r51edv": "Total_85_89",
+      "c_6okm244szkv8tyy5u8v667kv8": "Total_90andOver",
+      "c_97ddry2frr5g12dixzd6okrz": "Males_Total",
+      "c_9eqbs39kui50he8sin5eak8if": "Males_0_4",
+      "c_agcwyq6aaamr9mkemub80jyv9": "Males_5_9",
+      "c_e0m88vzosf55dxxzsdgsnso56": "Males_10_14",
+      "c_3w0go227cr6ui65ua8z2zz4ol": "Males_15_19",
+      "c_301trhhu789kwpavl7zn87pes": "Males_20_24",
+      "c_395qh9ckn9kiqvbgka183gpjr": "Males_25_29",
+      "c_6wlaq6nhyb0k6nzwqbfexgc8m": "Males_30_34",
+      "c_5p25f6r0nypbar2k3aa5fx0n1": "Males_35_39",
+      "c_eboh6g3czccw6v1emvje0zxtv": "Males_40_44",
+      "c_79139uitv1uboy53p28nzo79d": "Males_45_49",
+      "c_2hagoiuh7stc6irkrgyhvyrpt": "Males_50_54",
+      "c_45zpqp16xif03k1t6c0smx8wu": "Males_55_59",
+      "c_3iw8fyhle46qgfknldi43mlu5": "Males_60_64",
+      "c_2wx1pg6sgtstsu7q0vmfrvyae": "Males_65_69",
+      "c_1vff4ahuxx5vz9ugstrahk15f": "Males_70_74",
+      "c_508026fzebqf2zir3h4rtx1ig": "Males_75_79",
+      "c_czv6hfq2y3qldwn4f5421jdtf": "Males_80_84",
+      "c_94b54kx2tt3rk4whysy715s80": "Males_85_89",
+      "c_7w6r2y96dptzixoqhqz5wka7j": "Males_90andOver",
+      "c_8xch51w36tojdyme2gcxpud58": "Females_Total",
+      "c_4auyimpeiiyzfapp6r8259pmo": "Females_0_4",
+      "c_42eynx54wix17orpi7912kjrj": "Females_5_9",
+      "c_6iuxj52qa9tiope7tu11zw3cb": "Females_10_14",
+      "c_14fme6a62pn0o1wludr31vl9l": "Females_15_19",
+      "c_299nuzfircnnte5agoj366pom": "Females_20_24",
+      "c_59bl3pe93nkienn93jutrisba": "Females_25_29",
+      "c_abp3y8k9wj9l752ialp38ccf0": "Females_30_34",
+      "c_9rlcsrr9kss1g2jwmivixmc28": "Females_35_39",
+      "c_1im7wkc91akgpb293yyde552p": "Females_40_44",
+      "c_9rg963sezfuxixxij7olkcdsa": "Females_45_49",
+      "c_diy5y2977vcjlijr7fy1me5us": "Females_50_54",
+      "c_2mtichftiz2txc6rbdp8imvph": "Females_55_59",
+      "c_yjsq9fd2uzmz5u33c39flqsx": "Females_60_64",
+      "c_ce29dnp1wwe9co7b768bk674m": "Females_65_69",
+      "c_d89l6z3gzs9ysald6ncs5oeyb": "Females_70_74",
+      "c_d80ktb0goq2uwxhz3z2ls3eo5": "Females_75_79",
+      "c_eaqj6j69qy718xmga2q5uagg8": "Females_80_84",
+      "c_ej6dyvit7i58r92ucrtjrho51": "Females_85_89",
+      "c_8qydv1ba0cyml0setec7q8aa2": "Females_90andOver"
+    },
+    "metaMapping": {
+      "c_1r5s9b1dcbql4vfe5jqb080kq": {
+        "name": "Number",
+        "columnTitle": "Number",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "0",
+        "isCategorical": false
+      },
+      "c_cuh3516ydmi17512q3z7cs95x": {
+        "name": "Total_Total",
+        "columnTitle": "(Total) Total",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "1",
+        "isCategorical": false
+      },
+      "c_i6ct4pqyc2vzr1ztyz3lz6tq": {
+        "name": "Total_0_4",
+        "columnTitle": "(Total) 0 - 4",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "2",
+        "isCategorical": false
+      },
+      "c_1qc1hyhhck0nsclfbym3o3c52": {
+        "name": "Total_5_9",
+        "columnTitle": "(Total) 5 - 9",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "3",
+        "isCategorical": false
+      },
+      "c_4dgcqovfvkm2i1j3d2l9jcg42": {
+        "name": "Total_10_14",
+        "columnTitle": "(Total) 10 - 14",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "4",
+        "isCategorical": false
+      },
+      "c_ax6f8mv49l3g2j9exfhdqmy3u": {
+        "name": "Total_15_19",
+        "columnTitle": "(Total) 15 - 19",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "5",
+        "isCategorical": false
+      },
+      "c_99tjjjjmyk8xdzwyasibjbyki": {
+        "name": "Total_20_24",
+        "columnTitle": "(Total) 20 - 24",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "6",
+        "isCategorical": false
+      },
+      "c_7wk4pir89mhc3rz3fibh7dztj": {
+        "name": "Total_25_29",
+        "columnTitle": "(Total) 25 - 29",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "7",
+        "isCategorical": false
+      },
+      "c_sfrvm5dh8ylwp6dthxe52pe9": {
+        "name": "Total_30_34",
+        "columnTitle": "(Total) 30 - 34",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "8",
+        "isCategorical": false
+      },
+      "c_awxc3pvjbgx0ej3e30xepa3jy": {
+        "name": "Total_35_39",
+        "columnTitle": "(Total) 35 - 39",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "9",
+        "isCategorical": false
+      },
+      "c_2wrb45lor46ze3pcke51bs65e": {
+        "name": "Total_40_44",
+        "columnTitle": "(Total) 40 - 44",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "10",
+        "isCategorical": false
+      },
+      "c_7ml0p3mcmw8qjogol5xah00s8": {
+        "name": "Total_45_49",
+        "columnTitle": "(Total) 45 - 49",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "11",
+        "isCategorical": false
+      },
+      "c_o8hlpa3eg8107u66c240bfgg": {
+        "name": "Total_50_54",
+        "columnTitle": "(Total) 50 - 54",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "12",
+        "isCategorical": false
+      },
+      "c_bkgogbm7is4898ccsgcg4x8ji": {
+        "name": "Total_55_59",
+        "columnTitle": "(Total) 55 - 59",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "13",
+        "isCategorical": false
+      },
+      "c_gegwwu9qaf3qr6vmyr9dmpbj": {
+        "name": "Total_60_64",
+        "columnTitle": "(Total) 60 - 64",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "14",
+        "isCategorical": false
+      },
+      "c_amr3uat7c45k1dsauf84l8c4t": {
+        "name": "Total_65_69",
+        "columnTitle": "(Total) 65 - 69",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "15",
+        "isCategorical": false
+      },
+      "c_432vytnr6va7tbyisy5o04v52": {
+        "name": "Total_70_74",
+        "columnTitle": "(Total) 70 - 74",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "16",
+        "isCategorical": false
+      },
+      "c_43k3drj4e0wpulrkqynqhr9gn": {
+        "name": "Total_75_79",
+        "columnTitle": "(Total) 75 - 79",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "17",
+        "isCategorical": false
+      },
+      "c_ep6hz0tp0mhvga0s1lufco8qv": {
+        "name": "Total_80_84",
+        "columnTitle": "(Total) 80 - 84",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "18",
+        "isCategorical": false
+      },
+      "c_czpvg1jmd07balptb35r51edv": {
+        "name": "Total_85_89",
+        "columnTitle": "(Total) 85 - 89",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "19",
+        "isCategorical": true
+      },
+      "c_6okm244szkv8tyy5u8v667kv8": {
+        "name": "Total_90andOver",
+        "columnTitle": "(Total) 90 & Over",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "20",
+        "isCategorical": true
+      },
+      "c_97ddry2frr5g12dixzd6okrz": {
+        "name": "Males_Total",
+        "columnTitle": "(Males) Total",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "21",
+        "isCategorical": false
+      },
+      "c_9eqbs39kui50he8sin5eak8if": {
+        "name": "Males_0_4",
+        "columnTitle": "(Males) 0 - 4",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "22",
+        "isCategorical": false
+      },
+      "c_agcwyq6aaamr9mkemub80jyv9": {
+        "name": "Males_5_9",
+        "columnTitle": "(Males) 5 - 9",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "23",
+        "isCategorical": false
+      },
+      "c_e0m88vzosf55dxxzsdgsnso56": {
+        "name": "Males_10_14",
+        "columnTitle": "(Males) 10 - 14",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "24",
+        "isCategorical": false
+      },
+      "c_3w0go227cr6ui65ua8z2zz4ol": {
+        "name": "Males_15_19",
+        "columnTitle": "(Males) 15 - 19",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "25",
+        "isCategorical": false
+      },
+      "c_301trhhu789kwpavl7zn87pes": {
+        "name": "Males_20_24",
+        "columnTitle": "(Males) 20 - 24",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "26",
+        "isCategorical": false
+      },
+      "c_395qh9ckn9kiqvbgka183gpjr": {
+        "name": "Males_25_29",
+        "columnTitle": "(Males) 25 - 29",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "27",
+        "isCategorical": false
+      },
+      "c_6wlaq6nhyb0k6nzwqbfexgc8m": {
+        "name": "Males_30_34",
+        "columnTitle": "(Males) 30 - 34",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "28",
+        "isCategorical": false
+      },
+      "c_5p25f6r0nypbar2k3aa5fx0n1": {
+        "name": "Males_35_39",
+        "columnTitle": "(Males) 35 - 39",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "29",
+        "isCategorical": false
+      },
+      "c_eboh6g3czccw6v1emvje0zxtv": {
+        "name": "Males_40_44",
+        "columnTitle": "(Males) 40 - 44",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "30",
+        "isCategorical": false
+      },
+      "c_79139uitv1uboy53p28nzo79d": {
+        "name": "Males_45_49",
+        "columnTitle": "(Males) 45 - 49",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "31",
+        "isCategorical": false
+      },
+      "c_2hagoiuh7stc6irkrgyhvyrpt": {
+        "name": "Males_50_54",
+        "columnTitle": "(Males) 50 - 54",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "32",
+        "isCategorical": false
+      },
+      "c_45zpqp16xif03k1t6c0smx8wu": {
+        "name": "Males_55_59",
+        "columnTitle": "(Males) 55 - 59",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "33",
+        "isCategorical": false
+      },
+      "c_3iw8fyhle46qgfknldi43mlu5": {
+        "name": "Males_60_64",
+        "columnTitle": "(Males) 60 - 64",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "34",
+        "isCategorical": false
+      },
+      "c_2wx1pg6sgtstsu7q0vmfrvyae": {
+        "name": "Males_65_69",
+        "columnTitle": "(Males) 65 - 69",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "35",
+        "isCategorical": false
+      },
+      "c_1vff4ahuxx5vz9ugstrahk15f": {
+        "name": "Males_70_74",
+        "columnTitle": "(Males) 70 - 74",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "36",
+        "isCategorical": false
+      },
+      "c_508026fzebqf2zir3h4rtx1ig": {
+        "name": "Males_75_79",
+        "columnTitle": "(Males) 75 - 79",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "37",
+        "isCategorical": false
+      },
+      "c_czv6hfq2y3qldwn4f5421jdtf": {
+        "name": "Males_80_84",
+        "columnTitle": "(Males) 80 - 84",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "38",
+        "isCategorical": true
+      },
+      "c_94b54kx2tt3rk4whysy715s80": {
+        "name": "Males_85_89",
+        "columnTitle": "(Males) 85 - 89",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "39",
+        "isCategorical": true
+      },
+      "c_7w6r2y96dptzixoqhqz5wka7j": {
+        "name": "Males_90andOver",
+        "columnTitle": "(Males) 90 & Over",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "40",
+        "isCategorical": true
+      },
+      "c_8xch51w36tojdyme2gcxpud58": {
+        "name": "Females_Total",
+        "columnTitle": "(Females) Total",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "41",
+        "isCategorical": false
+      },
+      "c_4auyimpeiiyzfapp6r8259pmo": {
+        "name": "Females_0_4",
+        "columnTitle": "(Females) 0 - 4",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "42",
+        "isCategorical": false
+      },
+      "c_42eynx54wix17orpi7912kjrj": {
+        "name": "Females_5_9",
+        "columnTitle": "(Females) 5 - 9",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "43",
+        "isCategorical": false
+      },
+      "c_6iuxj52qa9tiope7tu11zw3cb": {
+        "name": "Females_10_14",
+        "columnTitle": "(Females) 10 - 14",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "44",
+        "isCategorical": false
+      },
+      "c_14fme6a62pn0o1wludr31vl9l": {
+        "name": "Females_15_19",
+        "columnTitle": "(Females) 15 - 19",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "45",
+        "isCategorical": false
+      },
+      "c_299nuzfircnnte5agoj366pom": {
+        "name": "Females_20_24",
+        "columnTitle": "(Females) 20 - 24",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "46",
+        "isCategorical": false
+      },
+      "c_59bl3pe93nkienn93jutrisba": {
+        "name": "Females_25_29",
+        "columnTitle": "(Females) 25 - 29",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "47",
+        "isCategorical": false
+      },
+      "c_abp3y8k9wj9l752ialp38ccf0": {
+        "name": "Females_30_34",
+        "columnTitle": "(Females) 30 - 34",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "48",
+        "isCategorical": false
+      },
+      "c_9rlcsrr9kss1g2jwmivixmc28": {
+        "name": "Females_35_39",
+        "columnTitle": "(Females) 35 - 39",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "49",
+        "isCategorical": false
+      },
+      "c_1im7wkc91akgpb293yyde552p": {
+        "name": "Females_40_44",
+        "columnTitle": "(Females) 40 - 44",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "50",
+        "isCategorical": false
+      },
+      "c_9rg963sezfuxixxij7olkcdsa": {
+        "name": "Females_45_49",
+        "columnTitle": "(Females) 45 - 49",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "51",
+        "isCategorical": false
+      },
+      "c_diy5y2977vcjlijr7fy1me5us": {
+        "name": "Females_50_54",
+        "columnTitle": "(Females) 50 - 54",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "52",
+        "isCategorical": false
+      },
+      "c_2mtichftiz2txc6rbdp8imvph": {
+        "name": "Females_55_59",
+        "columnTitle": "(Females) 55 - 59",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "53",
+        "isCategorical": false
+      },
+      "c_yjsq9fd2uzmz5u33c39flqsx": {
+        "name": "Females_60_64",
+        "columnTitle": "(Females) 60 - 64",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "54",
+        "isCategorical": false
+      },
+      "c_ce29dnp1wwe9co7b768bk674m": {
+        "name": "Females_65_69",
+        "columnTitle": "(Females) 65 - 69",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "55",
+        "isCategorical": false
+      },
+      "c_d89l6z3gzs9ysald6ncs5oeyb": {
+        "name": "Females_70_74",
+        "columnTitle": "(Females) 70 - 74",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "56",
+        "isCategorical": false
+      },
+      "c_d80ktb0goq2uwxhz3z2ls3eo5": {
+        "name": "Females_75_79",
+        "columnTitle": "(Females) 75 - 79",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "57",
+        "isCategorical": false
+      },
+      "c_eaqj6j69qy718xmga2q5uagg8": {
+        "name": "Females_80_84",
+        "columnTitle": "(Females) 80 - 84",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "58",
+        "isCategorical": false
+      },
+      "c_ej6dyvit7i58r92ucrtjrho51": {
+        "name": "Females_85_89",
+        "columnTitle": "(Females) 85 - 89",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "59",
+        "isCategorical": true
+      },
+      "c_8qydv1ba0cyml0setec7q8aa2": {
+        "name": "Females_90andOver",
+        "columnTitle": "(Females) 90 & Over",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "60",
+        "isCategorical": true
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "datasetId": "d_e4495201ba4f77fa2ef9855bad6d2cd1",
+  "createdAt": "2023-07-31T17:10:46+08:00",
+  "name": "SLA Dwelling Information",
+  "collectionIds": [
+    "1578"
+  ],
+  "description": "This layer captures all the State properties that are for private residential use. These State properties are managed by SLA and its appointed agents.",
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2026-09-29T10:06:45+08:00",
+  "managedBy": "Singapore Land Authority",
+  "coverageStart": "2025-09-28T00:00:00+08:00",
+  "contactEmails": [
+    "SLA_CDO_Office@sla.gov.sg"
+  ],
+  "datasetSize": 610849,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "OBJECTID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "POSTAL_CODE",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "HOUSE_BLK_NO",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "STREET_NAME",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "D_TYPE",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "NO_OF_UNITS",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "INC_CRC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "FMEL_UPD_D",
+        "description": ""
+      }
+    ]
+  }
+}

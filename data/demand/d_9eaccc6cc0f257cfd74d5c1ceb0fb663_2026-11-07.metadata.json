@@ -1,0 +1,152 @@
+{
+  "datasetId": "d_9eaccc6cc0f257cfd74d5c1ceb0fb663",
+  "createdAt": "2024-10-22T13:31:02+08:00",
+  "name": "Resident Students Aged 5 Years and Over by Planning Area of Residence and Usual Mode of Transport to School (Census of Population 2020)",
+  "collectionIds": [],
+  "description": "Source: SINGAPORE DEPARTMENT OF STATISTICS\r\n\r\nSurvey period: Census of Population 2020\r\n\r\nFootnotes: Notes: Planning areas refer to areas demarcated in the Urban Redevelopment Authority’s Master Plan 2019.Data exclude students who were overseas for more than 6 months.\r\n\r\nAdapted from: https://tablebuilder.singstat.gov.sg/table/CT/17589",
+  "format": "CSV",
+  "lastUpdatedAt": "2026-06-30T00:00:00+08:00",
+  "managedBy": "Singapore Department of Statistics",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 3094,
+  "columnMetadata": {
+    "order": [
+      "c_c91maw0mhp0d79hulb4m03sfv",
+      "c_3df8vm227czohkhfgz9vlo9fb",
+      "c_8r2tt78iuqjwpyblae3fbt5to",
+      "c_1vm01jg2t4mvmt7k23hbs2931",
+      "c_2vbbof75i953o8jcp3v4l81ab",
+      "c_7ffjph95xwfc84ya1te2k8vhi",
+      "c_bc8cgy2qohi5mlzqkd9q7c3wk",
+      "c_cd9ac0rcedg6j6ijegy1bsg8j",
+      "c_eitomb76a5v6vujkc63j8b95",
+      "c_20nuyf5iqqwzf288vpx4eoy1u",
+      "c_w7bjuau2rulyvmtci7oa0wgg",
+      "c_7iuv9kdw0d15xda0hmgoc07rb",
+      "c_9903h6y1jyewcs01qfb66zl3p"
+    ],
+    "map": {
+      "c_c91maw0mhp0d79hulb4m03sfv": "Number",
+      "c_3df8vm227czohkhfgz9vlo9fb": "Total",
+      "c_8r2tt78iuqjwpyblae3fbt5to": "PublicBusOnly",
+      "c_1vm01jg2t4mvmt7k23hbs2931": "Rail_MRT_LRT_Only",
+      "c_2vbbof75i953o8jcp3v4l81ab": "Rail_MRT_LRT_andPublicBusOnly",
+      "c_7ffjph95xwfc84ya1te2k8vhi": "CombinationofRail_MRT_LRT_and_orPublicBus_withOtherModes",
+      "c_bc8cgy2qohi5mlzqkd9q7c3wk": "Taxi_PrivateHireCarOnly",
+      "c_cd9ac0rcedg6j6ijegy1bsg8j": "CarOnly",
+      "c_eitomb76a5v6vujkc63j8b95": "PrivateCharteredBus_VanOnly",
+      "c_20nuyf5iqqwzf288vpx4eoy1u": "Lorry_PickupOnly",
+      "c_w7bjuau2rulyvmtci7oa0wgg": "Motorcycle_ScooterOnly",
+      "c_7iuv9kdw0d15xda0hmgoc07rb": "Others",
+      "c_9903h6y1jyewcs01qfb66zl3p": "NoTransportRequired"
+    },
+    "metaMapping": {
+      "c_c91maw0mhp0d79hulb4m03sfv": {
+        "name": "Number",
+        "columnTitle": "Number",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "0",
+        "isCategorical": false
+      },
+      "c_3df8vm227czohkhfgz9vlo9fb": {
+        "name": "Total",
+        "columnTitle": "Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "1",
+        "isCategorical": false
+      },
+      "c_8r2tt78iuqjwpyblae3fbt5to": {
+        "name": "PublicBusOnly",
+        "columnTitle": "Public Bus Only",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "2",
+        "isCategorical": false
+      },
+      "c_1vm01jg2t4mvmt7k23hbs2931": {
+        "name": "Rail_MRT_LRT_Only",
+        "columnTitle": "Rail (MRT/LRT) Only",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "3",
+        "isCategorical": false
+      },
+      "c_2vbbof75i953o8jcp3v4l81ab": {
+        "name": "Rail_MRT_LRT_andPublicBusOnly",
+        "columnTitle": "Rail (MRT/LRT) & Public Bus Only",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "4",
+        "isCategorical": false
+      },
+      "c_7ffjph95xwfc84ya1te2k8vhi": {
+        "name": "CombinationofRail_MRT_LRT_and_orPublicBus_withOtherModes",
+        "columnTitle": "Combination of Rail (MRT/LRT) and/or Public Bus, with Other Modes",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "5",
+        "isCategorical": false
+      },
+      "c_bc8cgy2qohi5mlzqkd9q7c3wk": {
+        "name": "Taxi_PrivateHireCarOnly",
+        "columnTitle": "Taxi/Private Hire Car Only",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "6",
+        "isCategorical": false
+      },
+      "c_cd9ac0rcedg6j6ijegy1bsg8j": {
+        "name": "CarOnly",
+        "columnTitle": "Car Only",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "7",
+        "isCategorical": false
+      },
+      "c_eitomb76a5v6vujkc63j8b95": {
+        "name": "PrivateCharteredBus_VanOnly",
+        "columnTitle": "Private Chartered Bus/Van Only",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "8",
+        "isCategorical": false
+      },
+      "c_20nuyf5iqqwzf288vpx4eoy1u": {
+        "name": "Lorry_PickupOnly",
+        "columnTitle": "Lorry/Pickup Only",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "9",
+        "isCategorical": false
+      },
+      "c_w7bjuau2rulyvmtci7oa0wgg": {
+        "name": "Motorcycle_ScooterOnly",
+        "columnTitle": "Motorcycle/Scooter Only",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "10",
+        "isCategorical": false
+      },
+      "c_7iuv9kdw0d15xda0hmgoc07rb": {
+        "name": "Others",
+        "columnTitle": "Others",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "11",
+        "isCategorical": false
+      },
+      "c_9903h6y1jyewcs01qfb66zl3p": {
+        "name": "NoTransportRequired",
+        "columnTitle": "No Transport Required",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "12",
+        "isCategorical": false
+      }
+    }
+  }
+}

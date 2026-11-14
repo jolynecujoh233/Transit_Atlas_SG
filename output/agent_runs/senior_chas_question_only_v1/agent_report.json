@@ -1,0 +1,16 @@
+{
+  "run_id": "senior_chas_question_only_v1",
+  "question": "新加坡公共交通供需评价如何体现老年居民前往基层诊所就医的优先性？请用中文提出容易解释、尽量少改指标的情景，说明文献依据和权重理由。",
+  "backend": "codex",
+  "evidence_origin": "codex_live_web_search",
+  "model": "codex_cli_default",
+  "decision": "run",
+  "plan_path": "output/agent_runs/senior_chas_question_only_v1/plan.json",
+  "status": "awaiting_review",
+  "scenario_config": "output/agent_runs/senior_chas_question_only_v1/scenario.json",
+  "review_hashes": {
+    "plan.json": "c332db06526335c9a95e42868f542f32e99b4df5bec87c9c210aaf568a99eb2e",
+    "scenario.json": "8102eb865058fe057995ecca9cb74ecd93f6905f4a8447b3ba50b73e63739183",
+    "evidence.md": "0a6028f57aca7e3e79bb5d8bc343fe0ed47af07c15ca24ea0ce02ab51d45fb7d"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "datasetId": "d_11edd0117280c5776651d7891114c88c",
+  "createdAt": "2016-06-27T21:28:02+08:00",
+  "name": "List of Supermarket Licences",
+  "collectionIds": [
+    "1388"
+  ],
+  "description": "List of supermarket licences with license details and locations",
+  "format": "CSV",
+  "lastUpdatedAt": "2024-06-06T14:23:57+08:00",
+  "managedBy": "National Environment Agency",
+  "coverageStart": "2016-06-26T08:00:00+08:00",
+  "coverageEnd": "2016-06-26T08:00:00+08:00",
+  "datasetSize": 42172,
+  "columnMetadata": {
+    "order": [
+      "c_8p67ndf4fdvove9j7uraf85k6",
+      "c_7u3m6r86sorid141m0wot3hfy",
+      "c_59bsxe7lijyltejao739y1fqn",
+      "c_dxwmz4wre7lt9kjou8n1yrk7l",
+      "c_5dcyirincsrk02nzyh7cc6hus",
+      "c_39s75fk6fyah7s8colyv6pp4y",
+      "c_c5h6lsbkb0r1wtu6019pd66q9",
+      "c_eu4s8llqfox49wqou5w09bq94"
+    ],
+    "map": {
+      "c_8p67ndf4fdvove9j7uraf85k6": "licence_num",
+      "c_7u3m6r86sorid141m0wot3hfy": "licensee_name",
+      "c_59bsxe7lijyltejao739y1fqn": "building_name",
+      "c_dxwmz4wre7lt9kjou8n1yrk7l": "block_house_num",
+      "c_5dcyirincsrk02nzyh7cc6hus": "level_num",
+      "c_39s75fk6fyah7s8colyv6pp4y": "unit_num",
+      "c_c5h6lsbkb0r1wtu6019pd66q9": "street_name",
+      "c_eu4s8llqfox49wqou5w09bq94": "postal_code"
+    },
+    "metaMapping": {
+      "c_8p67ndf4fdvove9j7uraf85k6": {
+        "name": "licence_num",
+        "columnTitle": "Licence Number",
+        "dataType": "Text",
+        "index": "0",
+        "isCategorical": false
+      },
+      "c_7u3m6r86sorid141m0wot3hfy": {
+        "name": "licensee_name",
+        "columnTitle": "Licensee Name",
+        "dataType": "Text",
+        "index": "1",
+        "isCategorical": false
+      },
+      "c_59bsxe7lijyltejao739y1fqn": {
+        "name": "building_name",
+        "columnTitle": "Building Name",
+        "dataType": "Text",
+        "index": "2",
+        "isCategorical": false
+      },
+      "c_dxwmz4wre7lt9kjou8n1yrk7l": {
+        "name": "block_house_num",
+        "columnTitle": "Block House Number",
+        "dataType": "Text",
+        "index": "3",
+        "isCategorical": false
+      },
+      "c_5dcyirincsrk02nzyh7cc6hus": {
+        "name": "level_num",
+        "columnTitle": "Level Number",
+        "dataType": "Text",
+        "index": "4",
+        "isCategorical": false
+      },
+      "c_39s75fk6fyah7s8colyv6pp4y": {
+        "name": "unit_num",
+        "columnTitle": "Unit Number",
+        "dataType": "Text",
+        "index": "5",
+        "isCategorical": false
+      },
+      "c_c5h6lsbkb0r1wtu6019pd66q9": {
+        "name": "street_name",
+        "columnTitle": "Street Name",
+        "dataType": "Text",
+        "index": "6",
+        "isCategorical": false
+      },
+      "c_eu4s8llqfox49wqou5w09bq94": {
+        "name": "postal_code",
+        "columnTitle": "Postal Code",
+        "dataType": "Singapore Postal Code",
+        "index": "7",
+        "isCategorical": false
+      }
+    }
+  }
+}

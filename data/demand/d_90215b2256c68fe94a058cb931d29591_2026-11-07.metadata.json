@@ -1,0 +1,122 @@
+{
+  "datasetId": "d_90215b2256c68fe94a058cb931d29591",
+  "createdAt": "2024-10-22T13:24:32+08:00",
+  "name": "Resident Population Aged 15 Years and Over by Planning Area of Residence and Highest Qualification Attained (Census of Population 2020)",
+  "collectionIds": [],
+  "description": "Source: SINGAPORE DEPARTMENT OF STATISTICS\r\n\r\nSurvey period: Census of Population 2020\r\n\r\nFootnotes: Notes:\nPlanning areas refer to areas demarcated in the Urban Redevelopment Authority’s Master Plan 2019.\nData pertain to residents who were not attending educational institutions as full-time students and include those who were upgrading their qualifications through part-time courses.\r\n\r\nAdapted from: https://tablebuilder.singstat.gov.sg/table/CT/17568",
+  "format": "CSV",
+  "lastUpdatedAt": "2021-06-18T00:00:00+08:00",
+  "managedBy": "Singapore Department of Statistics",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 2726,
+  "columnMetadata": {
+    "order": [
+      "c_e8k7i31f0kq0gtjgtkt5ljso8",
+      "c_6lxr9ewqsw5a16rvrjw1e7p4s",
+      "c_7mxbukop3sm617ho1toux0exr",
+      "c_50p47xyf06werj56146eshuto",
+      "c_aa7clbhekk8xdsktlx2hxykef",
+      "c_9s8l7jk82vij7m8ve9unkj0s",
+      "c_5gfbkrxnr5tv79awp6ye5scv6",
+      "c_chfioubcxwplijrohbyarykk0",
+      "c_1pdvs9koml9k8rxreteebxl26",
+      "c_eu8u4g476arwksqebps53g041"
+    ],
+    "map": {
+      "c_e8k7i31f0kq0gtjgtkt5ljso8": "Number",
+      "c_6lxr9ewqsw5a16rvrjw1e7p4s": "Total",
+      "c_7mxbukop3sm617ho1toux0exr": "NoQualification",
+      "c_50p47xyf06werj56146eshuto": "Primary",
+      "c_aa7clbhekk8xdsktlx2hxykef": "LowerSecondary",
+      "c_9s8l7jk82vij7m8ve9unkj0s": "Secondary",
+      "c_5gfbkrxnr5tv79awp6ye5scv6": "Post_Secondary_Non_Tertiary",
+      "c_chfioubcxwplijrohbyarykk0": "PolytechnicDiploma",
+      "c_1pdvs9koml9k8rxreteebxl26": "ProfessionalQualificationandOtherDiploma",
+      "c_eu8u4g476arwksqebps53g041": "University"
+    },
+    "metaMapping": {
+      "c_e8k7i31f0kq0gtjgtkt5ljso8": {
+        "name": "Number",
+        "columnTitle": "Number",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "0",
+        "isCategorical": false
+      },
+      "c_6lxr9ewqsw5a16rvrjw1e7p4s": {
+        "name": "Total",
+        "columnTitle": "Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "1",
+        "isCategorical": false
+      },
+      "c_7mxbukop3sm617ho1toux0exr": {
+        "name": "NoQualification",
+        "columnTitle": "No Qualification",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "2",
+        "isCategorical": false
+      },
+      "c_50p47xyf06werj56146eshuto": {
+        "name": "Primary",
+        "columnTitle": "Primary",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "3",
+        "isCategorical": false
+      },
+      "c_aa7clbhekk8xdsktlx2hxykef": {
+        "name": "LowerSecondary",
+        "columnTitle": "Lower Secondary",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "4",
+        "isCategorical": false
+      },
+      "c_9s8l7jk82vij7m8ve9unkj0s": {
+        "name": "Secondary",
+        "columnTitle": "Secondary",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "5",
+        "isCategorical": false
+      },
+      "c_5gfbkrxnr5tv79awp6ye5scv6": {
+        "name": "Post_Secondary_Non_Tertiary",
+        "columnTitle": "Post-Secondary (Non-Tertiary)",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "6",
+        "isCategorical": false
+      },
+      "c_chfioubcxwplijrohbyarykk0": {
+        "name": "PolytechnicDiploma",
+        "columnTitle": "Polytechnic Diploma",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "7",
+        "isCategorical": false
+      },
+      "c_1pdvs9koml9k8rxreteebxl26": {
+        "name": "ProfessionalQualificationandOtherDiploma",
+        "columnTitle": "Professional Qualification and Other Diploma",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "8",
+        "isCategorical": false
+      },
+      "c_eu8u4g476arwksqebps53g041": {
+        "name": "University",
+        "columnTitle": "University",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "9",
+        "isCategorical": false
+      }
+    }
+  }
+}

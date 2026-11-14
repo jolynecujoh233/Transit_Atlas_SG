@@ -1,0 +1,93 @@
+{
+  "datasetId": "d_16b157c52ed637edd6ba1232e026258d",
+  "createdAt": "2023-07-31T16:00:56+08:00",
+  "name": "HDB Existing Building",
+  "collectionIds": [
+    "2033"
+  ],
+  "description": "HDB Existing Buildings.",
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2026-06-21T10:07:14+08:00",
+  "managedBy": "Housing & Development Board",
+  "coverageStart": "2025-11-04T00:00:00+08:00",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 57012074,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "OBJECTID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "BLK_NO",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "ST_COD",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "ENTITYID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "POSTAL_COD",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "INC_CRC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "FMEL_UPD_D",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SHAPE.AREA",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SHAPE.LEN",
+        "description": ""
+      }
+    ]
+  }
+}

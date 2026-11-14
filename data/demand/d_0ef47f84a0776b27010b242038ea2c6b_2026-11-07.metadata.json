@@ -1,0 +1,122 @@
+{
+  "datasetId": "d_0ef47f84a0776b27010b242038ea2c6b",
+  "createdAt": "2024-10-22T14:20:16+08:00",
+  "name": "Resident Households by Planning Area of Residence and Household Size (Census Of Population 2020)",
+  "collectionIds": [],
+  "description": "Source: SINGAPORE DEPARTMENT OF STATISTICS\r\n\r\nSurvey period: Census Of Population 2020\r\n\r\nFootnotes: Note: Planning areas refer to areas demarcated in the Urban Redevelopment Authority’s Master Plan 2019.\r\n\r\nAdapted from: https://tablebuilder.singstat.gov.sg/table/CT/17778",
+  "format": "CSV",
+  "lastUpdatedAt": "2022-07-28T00:00:00+08:00",
+  "managedBy": "Singapore Department of Statistics",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 2532,
+  "columnMetadata": {
+    "order": [
+      "c_e6jcn1fhkrf4kk752vyfakb7j",
+      "c_8flb1ju2gnrxieod61blqngc4",
+      "c_3sw87o3y84hy9ngfi5cb1f25w",
+      "c_5l4g2liom310mg8kfs9kdm0ey",
+      "c_mgrxekjwuanddv4w72jrhl7g",
+      "c_e6h6w8c6bnqxa8yl2lj6klxtf",
+      "c_5h1rukpg4vatvp1tcxylfp8eh",
+      "c_bfdjj5f6h11mnj7alsqjfcx1w",
+      "c_931x08s450qo67x5x5ym97w84",
+      "c_6xsu6nhflw9aqkqu2ydwdef4v"
+    ],
+    "map": {
+      "c_e6jcn1fhkrf4kk752vyfakb7j": "Number",
+      "c_8flb1ju2gnrxieod61blqngc4": "Total",
+      "c_3sw87o3y84hy9ngfi5cb1f25w": "1Person",
+      "c_5l4g2liom310mg8kfs9kdm0ey": "2Persons",
+      "c_mgrxekjwuanddv4w72jrhl7g": "3Persons",
+      "c_e6h6w8c6bnqxa8yl2lj6klxtf": "4Persons",
+      "c_5h1rukpg4vatvp1tcxylfp8eh": "5Persons",
+      "c_bfdjj5f6h11mnj7alsqjfcx1w": "6Persons",
+      "c_931x08s450qo67x5x5ym97w84": "7Persons",
+      "c_6xsu6nhflw9aqkqu2ydwdef4v": "8orMorePersons"
+    },
+    "metaMapping": {
+      "c_e6jcn1fhkrf4kk752vyfakb7j": {
+        "name": "Number",
+        "columnTitle": "Number",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "0",
+        "isCategorical": false
+      },
+      "c_8flb1ju2gnrxieod61blqngc4": {
+        "name": "Total",
+        "columnTitle": "Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "1",
+        "isCategorical": false
+      },
+      "c_3sw87o3y84hy9ngfi5cb1f25w": {
+        "name": "1Person",
+        "columnTitle": "1 Person",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "2",
+        "isCategorical": false
+      },
+      "c_5l4g2liom310mg8kfs9kdm0ey": {
+        "name": "2Persons",
+        "columnTitle": "2 Persons",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "3",
+        "isCategorical": false
+      },
+      "c_mgrxekjwuanddv4w72jrhl7g": {
+        "name": "3Persons",
+        "columnTitle": "3 Persons",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "4",
+        "isCategorical": false
+      },
+      "c_e6h6w8c6bnqxa8yl2lj6klxtf": {
+        "name": "4Persons",
+        "columnTitle": "4 Persons",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "5",
+        "isCategorical": false
+      },
+      "c_5h1rukpg4vatvp1tcxylfp8eh": {
+        "name": "5Persons",
+        "columnTitle": "5 Persons",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "6",
+        "isCategorical": false
+      },
+      "c_bfdjj5f6h11mnj7alsqjfcx1w": {
+        "name": "6Persons",
+        "columnTitle": "6 Persons",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "7",
+        "isCategorical": false
+      },
+      "c_931x08s450qo67x5x5ym97w84": {
+        "name": "7Persons",
+        "columnTitle": "7 Persons",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "8",
+        "isCategorical": false
+      },
+      "c_6xsu6nhflw9aqkqu2ydwdef4v": {
+        "name": "8orMorePersons",
+        "columnTitle": "8 or More Persons",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "9",
+        "isCategorical": false
+      }
+    }
+  }
+}

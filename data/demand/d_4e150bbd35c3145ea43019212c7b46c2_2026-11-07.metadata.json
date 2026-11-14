@@ -1,0 +1,232 @@
+{
+  "datasetId": "d_4e150bbd35c3145ea43019212c7b46c2",
+  "createdAt": "2026-07-07T23:00:56+08:00",
+  "name": "Resident Households by Planning Area of Residence and Monthly Household Income from Work (Census of Population 2020)",
+  "collectionIds": [],
+  "description": "Source: SINGAPORE DEPARTMENT OF STATISTICS\r\n\r\nSurvey period: Census of Population 2020\r\n\r\nFootnotes: Notes: Planning areas refer to areas demarcated in the Urban Redevelopment Authority’s Master Plan 2019.Household income from work includes employer CPF contributions.Data on income from work have been updated to include Additional MediSave Contributions from employers with the release of the Key Household Income Trends 2025 report in February 2026. For more information, you may refer to the Technical Note on Household Income (https://go.gov.sg/khit2025-tech-note) which explains the concepts and components of our household income coverage.\r\n\r\nAdapted from: https://tablebuilder.singstat.gov.sg/table/CT/17779",
+  "format": "CSV",
+  "lastUpdatedAt": "2026-06-30T00:00:00+08:00",
+  "managedBy": "Singapore Department of Statistics",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 5011,
+  "columnMetadata": {
+    "order": [
+      "c_c9j3tyy6tofjne4gi9vf9ec6x",
+      "c_5yp8zad9qappr4pcdp0d83qhs",
+      "c_ep2i9rm2pb7mpywrwj0yn5pxa",
+      "c_elfu37yvop60sxfur31o1v7zk",
+      "c_9bna0vlzsxx6806juh9thmqo5",
+      "c_8bgx1uaq994yd5jxccs9cubhn",
+      "c_01pzq8bjltlubynerdtbrjxw7",
+      "c_3r2os1yh170b71hyneuxibw46",
+      "c_59eg0q75qr5bsgstyvphb4bqt",
+      "c_ch2phzzd35rsaj7igzp866rff",
+      "c_c81bg9eip5xjm2y3q0454az6a",
+      "c_agrptm7f28r8rq88n6hbi7zr7",
+      "c_5vgjvdc0mpz8f0rarezjlhgkz",
+      "c_8ooxcwd516pwzisbed0023re1",
+      "c_c61t5izpyhbxhd0yrzeyicfiw",
+      "c_2pepm9fsmpjvutc12kamkvrca",
+      "c_buhczpy6dje23c4fwupj399n5",
+      "c_bkqus2m67rywvbjjozxbxhkkq",
+      "c_dam8phwit1i7c9livxb9fuodl",
+      "c_337jz661mfoynz2ayo376hgmj",
+      "c_en4jszgs9a4cm0piqinnjhhen"
+    ],
+    "map": {
+      "c_c9j3tyy6tofjne4gi9vf9ec6x": "Number",
+      "c_5yp8zad9qappr4pcdp0d83qhs": "Total",
+      "c_ep2i9rm2pb7mpywrwj0yn5pxa": "NoEmployedPerson",
+      "c_elfu37yvop60sxfur31o1v7zk": "Below_1_000",
+      "c_9bna0vlzsxx6806juh9thmqo5": "1_000_1_999",
+      "c_8bgx1uaq994yd5jxccs9cubhn": "2_000_2_999",
+      "c_01pzq8bjltlubynerdtbrjxw7": "3_000_3_999",
+      "c_3r2os1yh170b71hyneuxibw46": "4_000_4_999",
+      "c_59eg0q75qr5bsgstyvphb4bqt": "5_000_5_999",
+      "c_ch2phzzd35rsaj7igzp866rff": "6_000_6_999",
+      "c_c81bg9eip5xjm2y3q0454az6a": "7_000_7_999",
+      "c_agrptm7f28r8rq88n6hbi7zr7": "8_000_8_999",
+      "c_5vgjvdc0mpz8f0rarezjlhgkz": "9_000_9_999",
+      "c_8ooxcwd516pwzisbed0023re1": "10_000_10_999",
+      "c_c61t5izpyhbxhd0yrzeyicfiw": "11_000_11_999",
+      "c_2pepm9fsmpjvutc12kamkvrca": "12_000_12_999",
+      "c_buhczpy6dje23c4fwupj399n5": "13_000_13_999",
+      "c_bkqus2m67rywvbjjozxbxhkkq": "14_000_14_999",
+      "c_dam8phwit1i7c9livxb9fuodl": "15_000_17_499",
+      "c_337jz661mfoynz2ayo376hgmj": "17_500_19_999",
+      "c_en4jszgs9a4cm0piqinnjhhen": "20_000andOver"
+    },
+    "metaMapping": {
+      "c_c9j3tyy6tofjne4gi9vf9ec6x": {
+        "name": "Number",
+        "columnTitle": "Number",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "0",
+        "isCategorical": false
+      },
+      "c_5yp8zad9qappr4pcdp0d83qhs": {
+        "name": "Total",
+        "columnTitle": "Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "1",
+        "isCategorical": false
+      },
+      "c_ep2i9rm2pb7mpywrwj0yn5pxa": {
+        "name": "NoEmployedPerson",
+        "columnTitle": "No Employed Person",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "2",
+        "isCategorical": false
+      },
+      "c_elfu37yvop60sxfur31o1v7zk": {
+        "name": "Below_1_000",
+        "columnTitle": "Below $1,000",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "3",
+        "isCategorical": false
+      },
+      "c_9bna0vlzsxx6806juh9thmqo5": {
+        "name": "1_000_1_999",
+        "columnTitle": "$1,000 - $1,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "4",
+        "isCategorical": false
+      },
+      "c_8bgx1uaq994yd5jxccs9cubhn": {
+        "name": "2_000_2_999",
+        "columnTitle": "$2,000 - $2,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "5",
+        "isCategorical": false
+      },
+      "c_01pzq8bjltlubynerdtbrjxw7": {
+        "name": "3_000_3_999",
+        "columnTitle": "$3,000 - $3,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "6",
+        "isCategorical": false
+      },
+      "c_3r2os1yh170b71hyneuxibw46": {
+        "name": "4_000_4_999",
+        "columnTitle": "$4,000 - $4,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "7",
+        "isCategorical": false
+      },
+      "c_59eg0q75qr5bsgstyvphb4bqt": {
+        "name": "5_000_5_999",
+        "columnTitle": "$5,000 - $5,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "8",
+        "isCategorical": false
+      },
+      "c_ch2phzzd35rsaj7igzp866rff": {
+        "name": "6_000_6_999",
+        "columnTitle": "$6,000 - $6,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "9",
+        "isCategorical": false
+      },
+      "c_c81bg9eip5xjm2y3q0454az6a": {
+        "name": "7_000_7_999",
+        "columnTitle": "$7,000 - $7,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "10",
+        "isCategorical": false
+      },
+      "c_agrptm7f28r8rq88n6hbi7zr7": {
+        "name": "8_000_8_999",
+        "columnTitle": "$8,000 - $8,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "11",
+        "isCategorical": false
+      },
+      "c_5vgjvdc0mpz8f0rarezjlhgkz": {
+        "name": "9_000_9_999",
+        "columnTitle": "$9,000 - $9,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "12",
+        "isCategorical": false
+      },
+      "c_8ooxcwd516pwzisbed0023re1": {
+        "name": "10_000_10_999",
+        "columnTitle": "$10,000 - $10,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "13",
+        "isCategorical": false
+      },
+      "c_c61t5izpyhbxhd0yrzeyicfiw": {
+        "name": "11_000_11_999",
+        "columnTitle": "$11,000 - $11,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "14",
+        "isCategorical": false
+      },
+      "c_2pepm9fsmpjvutc12kamkvrca": {
+        "name": "12_000_12_999",
+        "columnTitle": "$12,000 - $12,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "15",
+        "isCategorical": false
+      },
+      "c_buhczpy6dje23c4fwupj399n5": {
+        "name": "13_000_13_999",
+        "columnTitle": "$13,000 - $13,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "16",
+        "isCategorical": false
+      },
+      "c_bkqus2m67rywvbjjozxbxhkkq": {
+        "name": "14_000_14_999",
+        "columnTitle": "$14,000 - $14,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "17",
+        "isCategorical": false
+      },
+      "c_dam8phwit1i7c9livxb9fuodl": {
+        "name": "15_000_17_499",
+        "columnTitle": "$15,000 - $17,499",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "18",
+        "isCategorical": false
+      },
+      "c_337jz661mfoynz2ayo376hgmj": {
+        "name": "17_500_19_999",
+        "columnTitle": "$17,500 - $19,999",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "19",
+        "isCategorical": false
+      },
+      "c_en4jszgs9a4cm0piqinnjhhen": {
+        "name": "20_000andOver",
+        "columnTitle": "$20,000 & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "20",
+        "isCategorical": false
+      }
+    }
+  }
+}

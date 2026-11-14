@@ -1,0 +1,310 @@
+/**
+ * Transit Atlas - Project Portal Interactive Logic
+ * Handles: Auto/Light/Dark Themes, Bilingual i18n, Tabs, Copy-to-clipboard
+ */
+
+(function () {
+  // --- Translations Dictionary ---
+  const I18N = {
+    en: {
+      "nav_overview": "Overview",
+      "nav_framework": "Framework",
+      "nav_demo": "Interactive Demo",
+      "nav_report": "Report & Slides",
+      "nav_deploy": "Deploy Locally",
+      "hero_tag": "NUS AR5958A · AI for Urban Planning · Final Deliverable",
+      "hero_title": "Transit Atlas: An AI Research Agent for Planners to Explore Bus Transit Gaps",
+      "hero_sub": "Bridging spatial transport analytics and LLM research agents on a 400 m grid across Singapore — empowering planners to query equity scenarios, audit data provenance, and recalculate candidate gap areas.",
+      "btn_demo": "Launch Interactive Demo ↗",
+      "btn_report": "View Report & Slides ↓",
+      "btn_deploy": "Local Deployment ↓",
+      "stat_grids": "Study Grids",
+      "stat_grids_desc": "400 m × 400 m populated cells",
+      "stat_indicators": "Indicators",
+      "stat_indicators_desc": "9 Demand vs 11 Supply metrics",
+      "stat_baseline": "Baseline Candidates",
+      "stat_baseline_desc": "9.27% of Singapore study grids",
+      "stat_scenario": "Healthcare Shift",
+      "stat_scenario_desc": "+12 added in older clinic deficits",
+
+      "section_context_kicker": "Context & Motivation",
+      "section_context_title": "Why Bus Transit & Where Are the Gaps?",
+      "section_context_desc": "Buses account for 50.9% of Singapore's daily transit boardings, yet physical station proximity does not guarantee equitable accessibility.",
+      "context_col1_title": "The GIS Baseline Framework",
+      "context_col1_p1": "We established an equal-weight baseline across 1,597 residential 400 m grids. By crossing Demand Level ≥ 3 with Supply Deficit Level ≥ 3, we identified 148 candidate priority areas (approx. 650,000 residents).",
+      "context_col1_li1": "Jurong West: 27 candidate cells",
+      "context_col1_li2": "Yishun: 18 candidate cells",
+      "context_col1_li3": "Woodlands & Pasir Ris: 14 candidate cells each",
+      "context_col2_title": "Critical Planning Insight",
+      "context_col2_p1": "When examining individual deficit indicators, destination access barriers were flagged far more frequently than poor bus stop coverage:",
+      "context_col2_li1": "91 cells flagged for 30-min supermarket access deficits",
+      "context_col2_li2": "81–82 cells flagged for 30 & 60-min CHAS clinic access deficits",
+      "context_col2_li3": "Only 20 cells flagged for bus-stop 400 m coverage deficits",
+      "context_col2_note": "Conclusion: Enhancing transit equity requires looking beyond infrastructure presence toward destination connectivity.",
+
+      "section_agent_kicker": "System Architecture",
+      "section_agent_title": "Human-in-the-Loop 7-Step Workflow",
+      "section_agent_desc": "A static GIS script cannot adapt to diverse and evolving urban planning queries. Transit Atlas couples LLM reasoning with deterministic spatial computing.",
+      "step_01_title": "01 · Ask Question",
+      "step_01_desc": "Planner inputs a policy question, target demographic, or time window.",
+      "step_02_title": "02 · Agent Proposes",
+      "step_02_desc": "Agent reviews literature and catalog, proposing indicators and data pipelines.",
+      "step_03_title": "03 · Planner Audits",
+      "step_03_desc": "Planner checks data provenance, formulas, and halts if key data are missing.",
+      "step_04_title": "04 · Python Ingestion",
+      "step_04_desc": "Acquires data, validates geometries, and normalizes into 400 m study cells.",
+      "step_05_title": "05 · Propose Weights",
+      "step_05_desc": "Agent suggests evidence-backed indicator weights with explicit justifications.",
+      "step_06_title": "06 · Planner Adjusts",
+      "step_06_desc": "Planner modifies or confirms weights before approving full execution.",
+      "step_07_title": "07 · Recalculate & Map",
+      "step_07_desc": "Local GIS re-scores grids, comparing retained, added and exited cells.",
+      "philosophy_quote": "“AI supports research adaptation — planners retain decision control — GIS executes deterministic calculations.”",
+      "philosophy_tag": "Computational consistency ≠ Real-world accuracy",
+
+      "section_demo_kicker": "Interactive Workbench",
+      "section_demo_title": "Experience the Transit Atlas Demo",
+      "section_demo_desc": "Explore our interactive web interface below or open it in fullscreen. Experience both the Healthcare Access scenario (148 → 158) and the Weekend Buses honest data-gap review.",
+      "btn_fullscreen": "Open Fullscreen Demo ↗",
+
+      "section_report_kicker": "Deliverables & Evaluation",
+      "section_report_title": "Final Research Report & Presentation",
+      "section_report_desc": "Review our complete academic report, slide deck, and methodological documentation.",
+      "tab_report": "📄 Final Research Report",
+      "tab_slides": "📊 Presentation Slides (Live Viewer)",
+      "report_status": "🕒 Final Review & Polish in Progress",
+      "report_title": "Singapore Public Transport Supply–Demand Gap Scenario Analysis",
+      "report_sub": "Final Research Report · 400 m Grid Baseline & Research Agent · November 2026",
+      "report_summary": "Abstract: Where should public transport service audits begin? This study evaluates potential transit demand and service weaknesses across 1,597 residential 400-metre grid cells in Singapore. The equal-weighted baseline identifies 148 candidate cells (9.27% of study area). Adjusting older population and 30-minute clinic access weights expands this to 158 cells (+12 added, -2 removed). An AI research agent enables planners to translate natural language questions into auditable indicator proposals.",
+      "report_notice": "The final revised PDF will be embedded here upon submission. You can preview our drafted report or download presentation materials below.",
+      "btn_download_draft": "Download Report Draft (PDF) ↓",
+      "btn_download_slides": "Download Presentation (PDF) ↓",
+
+      "section_deploy_kicker": "Open Source & Reproduction",
+      "section_deploy_title": "Deploy Transit Atlas Locally",
+      "section_deploy_desc": "Full reproducibility. Run the complete GIS pipeline and connect your personal OpenAI Codex account for private, unlimited queries.",
+      "deploy_step1": "1. Clone the repository",
+      "deploy_step2": "2. Double-click to launch (auto-configures Python 3.12 venv & dependencies)",
+      "deploy_step3": "3. Open local workbench in browser (listening at http://127.0.0.1:8764/)",
+      "btn_copy": "Copy",
+      "theme_auto": "🌓 Auto",
+      "theme_light": "☀️ Light",
+      "theme_dark": "🌙 Dark",
+      "btn_copied": "Copied!",
+
+      "footer_course": "AR5958A · Artificial Intelligence for Urban Planning · 2026",
+      "footer_team": "Group 2: Han Yingjie, Mao Mei, Wang Muqing, Xie Ziqian, Yue Jingqiu, Zhou Qianya",
+      "footer_institution": "Department of Architecture / Urban Planning, National University of Singapore"
+    },
+    zh: {
+      "theme_auto": "🌓 自动",
+      "theme_light": "☀️ 浅色",
+      "theme_dark": "🌙 深色",
+      "nav_overview": "项目概览",
+      "nav_framework": "协同机制",
+      "nav_demo": "交互演示",
+      "nav_report": "报告与成果",
+      "nav_deploy": "本地部署",
+      "hero_tag": "NUS AR5958A · 城市规划人工智能 · 期末成果展示",
+      "hero_title": "Transit Atlas：新加坡公共交通供需缺口情景分析 Agent",
+      "hero_sub": "在新加坡 400 米网格上，将空间交通分析与 LLM 研究智能体无缝链接——赋能规划师提出交通公平问题、审核数据来源并精准重算候选缺口区域。",
+      "btn_demo": "在线体验 Demo ↗",
+      "btn_report": "阅读报告与幻灯片 ↓",
+      "btn_deploy": "本地部署指南 ↓",
+      "stat_grids": "研究网格",
+      "stat_grids_desc": "1,597 个 400 米常住人口网格",
+      "stat_indicators": "指标体系",
+      "stat_indicators_desc": "9 项需求 vs 11 项供给指标",
+      "stat_baseline": "基线候选缺口",
+      "stat_baseline_desc": "占新加坡全岛研究网格的 9.27%",
+      "stat_scenario": "就医情景增量",
+      "stat_scenario_desc": "148 → 158 格，新增 12 个就诊薄弱区",
+
+      "section_context_kicker": "研究背景与痛点",
+      "section_context_title": "为什么聚焦巴士？候选缺口落在哪里？",
+      "section_context_desc": "公共巴士占新加坡公共交通日均出行量的 50.9%，但“家门口有车站”并不等同于“享有良好出行可达性”。",
+      "context_col1_title": "GIS 等权基线框架",
+      "context_col1_p1": "我们在 1,597 个 400 米居住网格上建立基线。通过将需求等级 ≥ 3 与供给缺口等级 ≥ 3 交叉，筛选出 148 个优先核查候选网格（覆盖约 65 万居民）。",
+      "context_col1_li1": "裕廊西（Jurong West）：27 个候选网格",
+      "context_col1_li2": "义顺（Yishun）：18 个候选网格",
+      "context_col1_li3": "兀兰（Woodlands）与巴西立（Pasir Ris）：各 14 个网格",
+      "context_col2_title": "核心规划洞察",
+      "context_col2_p1": "在排查单项薄弱指标时，关键生活目的地可达性短板的出现频率显著高于物理车站覆盖：",
+      "context_col2_li1": "91 个网格存在 30 分钟超市可达性薄弱",
+      "context_col2_li2": "81–82 个网格存在 30 及 60 分钟 CHAS 基层诊所可达性薄弱",
+      "context_col2_li3": "仅 20 个网格存在 400 米物理车站覆盖率不足",
+      "context_col2_note": "规划结论：交通公平性的关键在于“目的地连通能力”，而非盲目增设物理站点。",
+
+      "section_agent_kicker": "系统协同架构",
+      "section_agent_title": "7 步人机协同循环（Human-in-the-Loop）",
+      "section_agent_desc": "固定的 GIS 脚本无法穷尽规划师多元的动态提问。Transit Atlas 实现了大语言模型推理与本地确定性空间运算的紧密结合。",
+      "step_01_title": "01 · 提出问题",
+      "step_01_desc": "规划师在对话框输入关心的交通公平问题或特定群体出行。",
+      "step_02_title": "02 · Agent 提案",
+      "step_02_desc": "模型检索文献与指标目录，提出研究思路、所需数据与计算口径。",
+      "step_03_title": "03 · 规划师审数",
+      "step_03_desc": "核验数据来源与局限，确认计算方法。缺失核心数据时主动中止。",
+      "step_04_title": "04 · 本地 GIS 处理",
+      "step_04_desc": "抓取并清洗公开数据，标准化至全岛 1,597 个 400 米网格。",
+      "step_05_title": "05 · Agent 建议权重",
+      "step_05_desc": "依据研究重点与实证文献，提供有依据的指标权重建议。",
+      "step_06_title": "06 · 规划师调权",
+      "step_06_desc": "审核或修改权重数值，最终确认启动本地情景评分。",
+      "step_07_title": "07 · 重算与空间对比",
+      "step_07_desc": "本地程序重算网格分级，输出 148 基线对比地图与逐格 CSV 表格。",
+      "philosophy_quote": "“AI 支持研究适配，规划师把关最终裁量，GIS 执行严谨计算。”",
+      "philosophy_tag": "计算可复现性 ≠ 现实世界的真实准确性",
+
+      "section_demo_kicker": "在线交互演示",
+      "section_demo_title": "体验 Transit Atlas 交互工作台",
+      "section_demo_desc": "在下方直接体验高仿真研究对话，或点击右上角全屏运行。支持体验「老年人就医情景（148→158）」与「周末下午公交（规划边界识别）」。",
+      "btn_fullscreen": "全屏体验 Demo ↗",
+
+      "section_report_kicker": "最终交付成果",
+      "section_report_title": "研究报告与汇报演讲成果",
+      "section_report_desc": "在线翻阅我们的完整学术报告与答辩演讲幻灯片。",
+      "tab_report": "📄 最终研究报告 (Final Report)",
+      "tab_slides": "📊 汇报演讲幻灯片 (Presentation Slides)",
+      "report_status": "🕒 最终排版与核校进行中 (Finalizing)",
+      "report_title": "《新加坡公共交通供需缺口情景分析》最终研究报告",
+      "report_sub": "400 米网格基线与研究 Agent · 2026 年 11 月",
+      "report_summary": "摘要：公共交通服务调查应优先从哪些居住区开始？本研究在新加坡 1,597 个估计有常住人口的 400 米网格中，分别评估居民的潜在公共交通需求与当地服务的相对薄弱程度。等权基线筛出 148 个候选网格。将老年人口与 30 分钟诊所可达性权重从 1 调至 2，得到 158 个就医情景候选网格（146 保留，12 新增，2 退出）。项目还实现了一个研究 Agent：模型把自然语言转化为可审核指标提案，规划师确认数据与权重，本地 GIS 负责运算。",
+      "report_notice": "本卡片为最终报告预留展示位，最终定稿 PDF 将无缝嵌入此处供在线翻阅与下载。您可在相邻标签先查看我们的完整汇报幻灯片。",
+      "btn_download_draft": "下载当前报告初稿 (PDF) ↓",
+      "btn_download_slides": "下载汇报演讲幻灯片 (PDF) ↓",
+
+      "section_deploy_kicker": "开源与本地复现",
+      "section_deploy_title": "本地部署完整版工作台",
+      "section_deploy_desc": "纯本地严谨复现。内置完整 Python GIS 引擎，可直接连接您本机的 OpenAI Codex 账号，支持任意自由提问与私密数据计算。",
+      "deploy_step1": "1. 克隆代码仓库到本地",
+      "deploy_step2": "2. 双击运行启动脚本（自动完成 Python 3.12 虚拟环境与 GIS 科学计算依赖安装）",
+      "deploy_step3": "3. 本地浏览器自动开启交互工作台（监听 http://127.0.0.1:8764/）",
+      "btn_copy": "复制命令",
+      "btn_copied": "已复制！",
+
+      "footer_course": "NUS AR5958A · 城市规划人工智能 · 2026",
+      "footer_team": "Group 2: Han Yingjie, Mao Mei, Wang Muqing, Xie Ziqian, Yue Jingqiu, Zhou Qianya",
+      "footer_institution": "新加坡国立大学 · 设计与工程学院 · 建筑与城市规划系"
+    }
+  };
+
+  // --- Theme Controller (Dark default, Light, Auto) ---
+  const themeButtons = document.querySelectorAll('[data-theme-btn]');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function getStoredTheme() {
+    try {
+      return localStorage.getItem('transit-atlas-theme') || 'dark';
+    } catch {
+      return 'dark';
+    }
+  }
+
+  function applyTheme(theme) {
+    let effective = theme;
+    if (theme === 'auto') {
+      effective = systemPrefersDark.matches ? 'dark' : 'light';
+    }
+    document.documentElement.dataset.theme = effective;
+    themeButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.themeBtn === theme);
+      btn.setAttribute('aria-pressed', String(btn.dataset.themeBtn === theme));
+    });
+  }
+
+  function setTheme(theme) {
+    try {
+      localStorage.setItem('transit-atlas-theme', theme);
+    } catch {}
+    applyTheme(theme);
+  }
+
+  themeButtons.forEach(btn => {
+    btn.addEventListener('click', () => setTheme(btn.dataset.themeBtn));
+  });
+
+  systemPrefersDark.addEventListener('change', () => {
+    if (getStoredTheme() === 'auto') {
+      applyTheme('auto');
+    }
+  });
+
+  // Apply initial theme
+  applyTheme(getStoredTheme());
+
+  // --- Language Controller (EN default / 中文) ---
+  const langButtons = document.querySelectorAll('[data-lang-btn]');
+
+  function getStoredLang() {
+    try {
+      return localStorage.getItem('transit-atlas-lang') || 'en';
+    } catch {
+      return 'en';
+    }
+  }
+
+  function applyLanguage(lang) {
+    const dict = I18N[lang] || I18N.zh;
+    document.querySelectorAll('[data-i18n-key]').forEach(el => {
+      const key = el.dataset.i18nKey;
+      if (dict[key]) {
+        el.textContent = dict[key];
+      }
+    });
+    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    langButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.langBtn === lang);
+      btn.setAttribute('aria-pressed', String(btn.dataset.langBtn === lang));
+    });
+  }
+
+  function setLanguage(lang) {
+    try {
+      localStorage.setItem('transit-atlas-lang', lang);
+    } catch {}
+    applyLanguage(lang);
+  }
+
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => setLanguage(btn.dataset.langBtn));
+  });
+
+  // Apply initial language
+  applyLanguage(getStoredLang());
+
+  // --- Deliverables Tab Switcher (Report vs Slides) ---
+  const deliverableTabs = document.querySelectorAll('[data-deliverable-tab]');
+  const deliverablePanels = document.querySelectorAll('[data-deliverable-panel]');
+
+  deliverableTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.deliverableTab;
+      deliverableTabs.forEach(t => {
+        t.classList.toggle('active', t === tab);
+        t.setAttribute('aria-pressed', String(t === tab));
+      });
+      deliverablePanels.forEach(panel => {
+        panel.hidden = panel.dataset.deliverablePanel !== target;
+      });
+    });
+  });
+
+  // --- Copy Code Snippets ---
+  const copyButtons = document.querySelectorAll('.copy-btn');
+  copyButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.dataset.copyTarget;
+      const targetEl = document.getElementById(targetId);
+      if (!targetEl) return;
+      const textToCopy = targetEl.innerText.replace(/^#.*$/gm, '').trim();
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const lang = getStoredLang();
+        const originalText = btn.textContent;
+        btn.textContent = I18N[lang].btn_copied;
+        setTimeout(() => {
+          btn.textContent = originalText;
+        }, 1800);
+      });
+    });
+  });
+})();

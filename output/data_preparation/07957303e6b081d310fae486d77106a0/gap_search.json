@@ -1,0 +1,32 @@
+{
+  "0": {
+    "key": "0",
+    "status": "limited",
+    "finding": "可下载SingStat 2020次区年龄人口；65+为六个年龄组之和，可作老年潜在需求代理。它不能直接给1,597格实测人口。",
+    "alternative": "可先比较2020年次区分配后的65+潜在需求，不解释为网格实测人口。",
+    "sources": [
+      {
+        "title": "2020次区年龄人口",
+        "url": "https://data.gov.sg/datasets/d_9e035622439b5d25a63d7ea0699c9451/view"
+      },
+      {
+        "title": "2019总体规划次区边界",
+        "url": "https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view"
+      }
+    ],
+    "file": null
+  },
+  "1": {
+    "key": "1",
+    "status": "limited",
+    "finding": "可下载data.gov.sg的CHAS诊所点位，按工作日09:00公交45分钟测每格可达诊所，供就医供给初筛。它是2024名录，未反映接诊能力。 当前下载方案未通过核对：请输入 data.gov.sg 数据集详情链接或 d_ 开头的数据集 ID",
+    "alternative": "可先用45分钟可达CHAS诊所数，筛查老年潜在需求较高而就医目的地较少的网格。",
+    "sources": [
+      {
+        "title": "CHAS诊所点位",
+        "url": "https://data.gov.sg/datasets/d_548c33ea2d99e29ec63a7cc9edcccedc/view"
+      }
+    ],
+    "file": null
+  }
+}

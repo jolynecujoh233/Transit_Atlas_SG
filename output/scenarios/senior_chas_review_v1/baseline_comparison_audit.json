@@ -1,0 +1,14 @@
+{
+  "grid_count": 1597,
+  "baseline_candidates": 148,
+  "scenario_candidates": 158,
+  "retained": 146,
+  "entered": 12,
+  "exited": 2,
+  "neither": 1437,
+  "demand_level_changed": 14,
+  "supply_level_changed": 24,
+  "entered_demand_level_changed": 0,
+  "entered_supply_level_changed": 12,
+  "note": "Weighted and unweighted score scales differ; compare classes and candidate membership, not raw score differences."
+}

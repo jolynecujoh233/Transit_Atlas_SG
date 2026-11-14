@@ -1,0 +1,122 @@
+{
+  "datasetId": "d_8594ae9ff96d0c708bc2af633048edfb",
+  "createdAt": "2019-12-23T00:00:00+08:00",
+  "name": "Master Plan 2019 Subzone Boundary (No Sea) (GEOJSON)",
+  "collectionIds": [
+    "1749"
+  ],
+  "description": "Indicative polygon of subzone boundary. \r\n\r\nTo facilitate urban planning, the Urban Redevelopment Authority (URA) divides Singapore into regions, planning areas and subzones. \r\n\r\nThe Planning Regions are divided into smaller Planning Areas. Each Planning Area is further divided into smaller subzones which are usually centred around a focal point such as neighbourhood centre or activity node. \r\n\r\nThe Master Plan is a forward looking guiding plan for Singapore's development in the medium term over the next 10 to 15 years and the planning boundaries may not coincide with existing developments for some areas.",
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2025-12-03T10:07:59+08:00",
+  "managedBy": "Urban Redevelopment Authority",
+  "coverageStart": "2021-09-10T00:00:00+08:00",
+  "datasetSize": 3180569,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "OBJECTID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SUBZONE_NO",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "SUBZONE_N",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "SUBZONE_C",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "CA_IND",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "PLN_AREA_N",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "PLN_AREA_C",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "REGION_N",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "REGION_C",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "INC_CRC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "FMEL_UPD_D",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SHAPE.AREA",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "SHAPE.LEN",
+        "description": ""
+      }
+    ]
+  }
+}

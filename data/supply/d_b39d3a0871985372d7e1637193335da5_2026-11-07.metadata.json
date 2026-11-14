@@ -1,0 +1,61 @@
+{
+  "datasetId": "d_b39d3a0871985372d7e1637193335da5",
+  "createdAt": "2019-07-08T00:00:00+08:00",
+  "name": "LTA MRT Station Exit (GEOJSON)",
+  "collectionIds": [
+    "367"
+  ],
+  "description": "The layer contains the locations of MRT station exits.",
+  "format": "GEOJSON",
+  "lastUpdatedAt": "2026-10-18T10:06:43+08:00",
+  "managedBy": "Land Transport Authority",
+  "coverageStart": "2025-08-18T00:00:00+08:00",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 213480,
+  "geoJsonMetadata": {
+    "properties": [
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "OBJECTID",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "STATION_NA",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "EXIT_CODE",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Text",
+          "value": "TEXT"
+        },
+        "attribute": "INC_CRC",
+        "description": ""
+      },
+      {
+        "dataType": {
+          "label": "Numeric",
+          "value": "NUMERIC"
+        },
+        "attribute": "FMEL_UPD_D",
+        "description": ""
+      }
+    ]
+  }
+}

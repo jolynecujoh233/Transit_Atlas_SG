@@ -1,0 +1,662 @@
+{
+  "datasetId": "d_21d8b67788ed8ef5705aa4bd5ec66b4b",
+  "createdAt": "2024-10-22T13:48:54+08:00",
+  "name": "Resident Population Aged 5 Years and Over by Planning Area of Residence, Level of Difficulty in Performing Basic Activity in Specific Domain and Age Group (Census of Population 2020)",
+  "collectionIds": [],
+  "description": "Source: SINGAPORE DEPARTMENT OF STATISTICS\r\n\r\nSurvey period: Census of Population 2020\r\n\r\nFootnotes: Note: Planning areas refer to areas demarcated in the Urban Redevelopment Authority’s Master Plan 2019.\r\n\r\nAdapted from: https://tablebuilder.singstat.gov.sg/table/CT/17617",
+  "format": "CSV",
+  "lastUpdatedAt": "2021-06-18T00:00:00+08:00",
+  "managedBy": "Singapore Department of Statistics",
+  "contactEmails": [
+    "feedback@data.gov.sg"
+  ],
+  "datasetSize": 19660,
+  "columnMetadata": {
+    "order": [
+      "c_f3vew1nclysc8t0r19fg7oeew",
+      "c_8gfr388y8d8xuzmwf932cqezp",
+      "c_cit2s5xo4rf6x2ng4ts6nwavp",
+      "c_adwm67bbd0l4ucd5sjwua9nqu",
+      "c_e73gexu5dk8vdpz8097hng80d",
+      "c_8c32d95f08mynnd4tx4w1iulr",
+      "c_17pe5ptcfjfbhqmc0rweyc5ee",
+      "c_dr9yegd34rcjktvicn7hdrvu5",
+      "c_7qyet2qxk1jtbn55km4mwieaz",
+      "c_99fwipjzlfphm01sb7xa8w64w",
+      "c_79s03xq25n2sces0pusoyi7cp",
+      "c_64fkqlbwdrn3p1geufdl27psq",
+      "c_ekt3nwr9bdx8zj8suegdtr28y",
+      "c_f1ptj7g7uuum8fzfnxl49w7r5",
+      "c_1hkq9q145bt5agfx18pij59we",
+      "c_1dh0h1w7iv4yaxr5f1lebnyp8",
+      "c_2pqdsyg7yxyi26e8eendvoogs",
+      "c_7l3zbhcarlkhe1bexptk8ay62",
+      "c_e37n0yd5miyp7z72b99czrjef",
+      "c_bp1vzluuez9q68lsv5p69lo3x",
+      "c_826fqwoy158fmky5i3gpnbh71",
+      "c_c7lfg99wtb7d1caqidgluwyep",
+      "c_26xsjvc3q33kix8xoonq9lcm7",
+      "c_7ltx9yncdpjzyz01xwrqlkhcv",
+      "c_zi8irbcl4buuhfc5i58y4o5m",
+      "c_75mq9pg0vchk5tinf7qn47pm5",
+      "c_cw5tgt5mrsegka6uru6p9zrtp",
+      "c_bw3ri98l6812nipbzvuiaxv8u",
+      "c_bzldhyhm4tykq9uzskgfrdyeu",
+      "c_dezbebd4d9tgf1itpyq4y59hs",
+      "c_euaou0fm9dhljt1zr3xe6lb3u",
+      "c_328lmt8xt123jzey0vqs29etj",
+      "c_eki4axl8z3mmmt9zndc62ctsy",
+      "c_949mlevf7uvspmwokegyx8khw",
+      "c_56qacfjg8utm2k1a53de3eq6w",
+      "c_2fdq3q8e3scxx751jcbudxeo5",
+      "c_8c9jxlx4qzinpzinso95yc9az",
+      "c_4gmigrn7ajygxa3kev8w6f3bc",
+      "c_9wtc8xbb9n8ftvhnd9b9k0eq4",
+      "c_erhitzqco0dp6awpmtsbedyw5",
+      "c_6j23ogegsvftors6u8mcf66xa",
+      "c_7sig5dp4tur57xwxafbtfoftq",
+      "c_3r6idzmqc4zwmgbx5ecari16y",
+      "c_hpdty71le4pf5wklaacgjkwr",
+      "c_2iyq72ajc43ocqplkyrqm4zcn",
+      "c_b643hkc3zzjxd2mfa2lh3ab8t",
+      "c_cmffl4xr2nu116qyj8uk5jsag",
+      "c_4vlbreo9pn0se8qzo5ncnxu9m",
+      "c_d25imlnazfrnym8mbp3vf67sm",
+      "c_42nmlwqpbayj0sk14mtphatuk",
+      "c_9j7mj60h9gczi4bi6lpt6wu3b",
+      "c_shojxxmz837z280c8w6p8bqo",
+      "c_6lf2elhibirxoan4apgp7hf5l",
+      "c_68z8ux3xvf0j7z5v0yszc7boj",
+      "c_aajiwlisroh4b3l7j56gaxume",
+      "c_b109xnd2epmpm2zqkfdiqyar7",
+      "c_6sr52xsrvwzsp02pqusywobrl",
+      "c_duh154sm7eyy5k4kudg4i4n14",
+      "c_da2n6bsln3f4dakbt3abr5zpx",
+      "c_1ox63masitzd7dgz08l9a1u93",
+      "c_8x7lmypkfdu7cnjq1jnplj4z4",
+      "c_3qywgts73skikbo36byb5pjq6",
+      "c_1kmxw4cc3kkj3s5mk6pu5izsp",
+      "c_73b0x5h8mekv4f2o3sodac9lg"
+    ],
+    "map": {
+      "c_f3vew1nclysc8t0r19fg7oeew": "Number",
+      "c_8gfr388y8d8xuzmwf932cqezp": "NoDifficultyinPerformingAnyBasicActivity1_Total",
+      "c_cit2s5xo4rf6x2ng4ts6nwavp": "NoDifficultyinPerformingAnyBasicActivity1_Below65Years",
+      "c_adwm67bbd0l4ucd5sjwua9nqu": "NoDifficultyinPerformingAnyBasicActivity1_65YearsandOver",
+      "c_e73gexu5dk8vdpz8097hng80d": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Seeing_Total",
+      "c_8c32d95f08mynnd4tx4w1iulr": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Seeing_Below65Years",
+      "c_17pe5ptcfjfbhqmc0rweyc5ee": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Seeing_65YearsandOver",
+      "c_dr9yegd34rcjktvicn7hdrvu5": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_Total",
+      "c_7qyet2qxk1jtbn55km4mwieaz": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_Below65Years",
+      "c_99fwipjzlfphm01sb7xa8w64w": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_65YearsandOver",
+      "c_79s03xq25n2sces0pusoyi7cp": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_Total",
+      "c_64fkqlbwdrn3p1geufdl27psq": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_Below65Years",
+      "c_ekt3nwr9bdx8zj8suegdtr28y": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_65YearsandOver",
+      "c_f1ptj7g7uuum8fzfnxl49w7r5": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_Total",
+      "c_1hkq9q145bt5agfx18pij59we": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_Below65Years",
+      "c_1dh0h1w7iv4yaxr5f1lebnyp8": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_65YearsandOver",
+      "c_2pqdsyg7yxyi26e8eendvoogs": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_Total",
+      "c_7l3zbhcarlkhe1bexptk8ay62": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_Below65Years",
+      "c_e37n0yd5miyp7z72b99czrjef": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_65YearsandOver",
+      "c_bp1vzluuez9q68lsv5p69lo3x": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_Total",
+      "c_826fqwoy158fmky5i3gpnbh71": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_Below65Years",
+      "c_c7lfg99wtb7d1caqidgluwyep": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_65YearsandOver",
+      "c_26xsjvc3q33kix8xoonq9lcm7": "SomeDifficultyinPerformingAtLeastOneBasicActivity1_Total",
+      "c_7ltx9yncdpjzyz01xwrqlkhcv": "SomeDifficultyinPerformingAtLeastOneBasicActivity1_Below65Years",
+      "c_zi8irbcl4buuhfc5i58y4o5m": "SomeDifficultyinPerformingAtLeastOneBasicActivity1_65YearsandOver",
+      "c_75mq9pg0vchk5tinf7qn47pm5": "SomeDifficultyinPerformingBasicActivity_bySpecificDomainSeeing_Total",
+      "c_cw5tgt5mrsegka6uru6p9zrtp": "SomeDifficultyinPerformingBasicActivity_bySpecificDomainSeeing_Below65Years",
+      "c_bw3ri98l6812nipbzvuiaxv8u": "SomeDifficultyinPerformingBasicActivity_bySpecificDomainSeeing_65YearsandOver",
+      "c_bzldhyhm4tykq9uzskgfrdyeu": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_Total",
+      "c_dezbebd4d9tgf1itpyq4y59hs": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_Below65Years",
+      "c_euaou0fm9dhljt1zr3xe6lb3u": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_65YearsandOver",
+      "c_328lmt8xt123jzey0vqs29etj": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_Total",
+      "c_eki4axl8z3mmmt9zndc62ctsy": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_Below65Years",
+      "c_949mlevf7uvspmwokegyx8khw": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_65YearsandOver",
+      "c_56qacfjg8utm2k1a53de3eq6w": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_Total",
+      "c_2fdq3q8e3scxx751jcbudxeo5": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_Below65Years",
+      "c_8c9jxlx4qzinpzinso95yc9az": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_65YearsandOver",
+      "c_4gmigrn7ajygxa3kev8w6f3bc": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_Total",
+      "c_9wtc8xbb9n8ftvhnd9b9k0eq4": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_Below65Years",
+      "c_erhitzqco0dp6awpmtsbedyw5": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_65YearsandOver",
+      "c_6j23ogegsvftors6u8mcf66xa": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_Total",
+      "c_7sig5dp4tur57xwxafbtfoftq": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_Below65Years",
+      "c_3r6idzmqc4zwmgbx5ecari16y": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_65YearsandOver",
+      "c_hpdty71le4pf5wklaacgjkwr": "UnabletoPerform_withALotofDifficultyinAtLeastOneBasicActivity1_Total",
+      "c_2iyq72ajc43ocqplkyrqm4zcn": "UnabletoPerform_withALotofDifficultyinAtLeastOneBasicActivity1_Below65Years",
+      "c_b643hkc3zzjxd2mfa2lh3ab8t": "UnabletoPerform_withALotofDifficultyinAtLeastOneBasicActivity1_65YearsandOver",
+      "c_cmffl4xr2nu116qyj8uk5jsag": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Seeing_Total",
+      "c_4vlbreo9pn0se8qzo5ncnxu9m": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Seeing_Below65Years",
+      "c_d25imlnazfrnym8mbp3vf67sm": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Seeing_65YearsandOver",
+      "c_42nmlwqpbayj0sk14mtphatuk": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Hearing_Total",
+      "c_9j7mj60h9gczi4bi6lpt6wu3b": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Hearing_Below65Years",
+      "c_shojxxmz837z280c8w6p8bqo": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Hearing_65YearsandOver",
+      "c_6lf2elhibirxoan4apgp7hf5l": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Mobility_Total",
+      "c_68z8ux3xvf0j7z5v0yszc7boj": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Mobility_Below65Years",
+      "c_aajiwlisroh4b3l7j56gaxume": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Mobility_65YearsandOver",
+      "c_b109xnd2epmpm2zqkfdiqyar7": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Remembering_Total",
+      "c_6sr52xsrvwzsp02pqusywobrl": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Remembering_Below65Years",
+      "c_duh154sm7eyy5k4kudg4i4n14": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Remembering_65YearsandOver",
+      "c_da2n6bsln3f4dakbt3abr5zpx": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Self_Care_Total",
+      "c_1ox63masitzd7dgz08l9a1u93": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Self_Care_Below65Years",
+      "c_8x7lmypkfdu7cnjq1jnplj4z4": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Self_Care_65YearsandOver",
+      "c_3qywgts73skikbo36byb5pjq6": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Communicating_Total",
+      "c_1kmxw4cc3kkj3s5mk6pu5izsp": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Communicating_Below65Years",
+      "c_73b0x5h8mekv4f2o3sodac9lg": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Communicating_65YearsandOver"
+    },
+    "metaMapping": {
+      "c_f3vew1nclysc8t0r19fg7oeew": {
+        "name": "Number",
+        "columnTitle": "Number",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "0",
+        "isCategorical": false
+      },
+      "c_8gfr388y8d8xuzmwf932cqezp": {
+        "name": "NoDifficultyinPerformingAnyBasicActivity1_Total",
+        "columnTitle": "(No Difficulty in Performing Any Basic Activity1/) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "1",
+        "isCategorical": false
+      },
+      "c_cit2s5xo4rf6x2ng4ts6nwavp": {
+        "name": "NoDifficultyinPerformingAnyBasicActivity1_Below65Years",
+        "columnTitle": "(No Difficulty in Performing Any Basic Activity1/) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "2",
+        "isCategorical": false
+      },
+      "c_adwm67bbd0l4ucd5sjwua9nqu": {
+        "name": "NoDifficultyinPerformingAnyBasicActivity1_65YearsandOver",
+        "columnTitle": "(No Difficulty in Performing Any Basic Activity1/) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "3",
+        "isCategorical": false
+      },
+      "c_e73gexu5dk8vdpz8097hng80d": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Seeing_Total",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Seeing) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "4",
+        "isCategorical": false
+      },
+      "c_8c32d95f08mynnd4tx4w1iulr": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Seeing_Below65Years",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Seeing) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "5",
+        "isCategorical": false
+      },
+      "c_17pe5ptcfjfbhqmc0rweyc5ee": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Seeing_65YearsandOver",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Seeing) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "6",
+        "isCategorical": false
+      },
+      "c_dr9yegd34rcjktvicn7hdrvu5": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_Total",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Hearing) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "7",
+        "isCategorical": false
+      },
+      "c_7qyet2qxk1jtbn55km4mwieaz": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_Below65Years",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Hearing) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "8",
+        "isCategorical": false
+      },
+      "c_99fwipjzlfphm01sb7xa8w64w": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_65YearsandOver",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Hearing) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "9",
+        "isCategorical": false
+      },
+      "c_79s03xq25n2sces0pusoyi7cp": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_Total",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Mobility) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "10",
+        "isCategorical": false
+      },
+      "c_64fkqlbwdrn3p1geufdl27psq": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_Below65Years",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Mobility) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "11",
+        "isCategorical": false
+      },
+      "c_ekt3nwr9bdx8zj8suegdtr28y": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_65YearsandOver",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Mobility) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "12",
+        "isCategorical": false
+      },
+      "c_f1ptj7g7uuum8fzfnxl49w7r5": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_Total",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Remembering) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "13",
+        "isCategorical": false
+      },
+      "c_1hkq9q145bt5agfx18pij59we": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_Below65Years",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Remembering) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "14",
+        "isCategorical": false
+      },
+      "c_1dh0h1w7iv4yaxr5f1lebnyp8": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_65YearsandOver",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Remembering) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "15",
+        "isCategorical": false
+      },
+      "c_2pqdsyg7yxyi26e8eendvoogs": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_Total",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Self-Care) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "16",
+        "isCategorical": false
+      },
+      "c_7l3zbhcarlkhe1bexptk8ay62": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_Below65Years",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Self-Care) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "17",
+        "isCategorical": false
+      },
+      "c_e37n0yd5miyp7z72b99czrjef": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_65YearsandOver",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Self-Care) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "18",
+        "isCategorical": false
+      },
+      "c_bp1vzluuez9q68lsv5p69lo3x": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_Total",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Communicating) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "19",
+        "isCategorical": false
+      },
+      "c_826fqwoy158fmky5i3gpnbh71": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_Below65Years",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Communicating) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "20",
+        "isCategorical": false
+      },
+      "c_c7lfg99wtb7d1caqidgluwyep": {
+        "name": "NoDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_65YearsandOver",
+        "columnTitle": "(No Difficulty in Performing Basic Activity, by Specific Domain - Communicating) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "21",
+        "isCategorical": false
+      },
+      "c_26xsjvc3q33kix8xoonq9lcm7": {
+        "name": "SomeDifficultyinPerformingAtLeastOneBasicActivity1_Total",
+        "columnTitle": "(Some Difficulty in Performing At Least One Basic Activity1/) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "22",
+        "isCategorical": false
+      },
+      "c_7ltx9yncdpjzyz01xwrqlkhcv": {
+        "name": "SomeDifficultyinPerformingAtLeastOneBasicActivity1_Below65Years",
+        "columnTitle": "(Some Difficulty in Performing At Least One Basic Activity1/) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "23",
+        "isCategorical": false
+      },
+      "c_zi8irbcl4buuhfc5i58y4o5m": {
+        "name": "SomeDifficultyinPerformingAtLeastOneBasicActivity1_65YearsandOver",
+        "columnTitle": "(Some Difficulty in Performing At Least One Basic Activity1/) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "24",
+        "isCategorical": false
+      },
+      "c_75mq9pg0vchk5tinf7qn47pm5": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomainSeeing_Total",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific DomainSeeing) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "25",
+        "isCategorical": false
+      },
+      "c_cw5tgt5mrsegka6uru6p9zrtp": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomainSeeing_Below65Years",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific DomainSeeing) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "26",
+        "isCategorical": false
+      },
+      "c_bw3ri98l6812nipbzvuiaxv8u": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomainSeeing_65YearsandOver",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific DomainSeeing) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "27",
+        "isCategorical": false
+      },
+      "c_bzldhyhm4tykq9uzskgfrdyeu": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_Total",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Hearing) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "28",
+        "isCategorical": false
+      },
+      "c_dezbebd4d9tgf1itpyq4y59hs": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_Below65Years",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Hearing) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "29",
+        "isCategorical": false
+      },
+      "c_euaou0fm9dhljt1zr3xe6lb3u": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Hearing_65YearsandOver",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Hearing) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "30",
+        "isCategorical": false
+      },
+      "c_328lmt8xt123jzey0vqs29etj": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_Total",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Mobility) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "31",
+        "isCategorical": false
+      },
+      "c_eki4axl8z3mmmt9zndc62ctsy": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_Below65Years",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Mobility) Below 65 Years",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "32",
+        "isCategorical": false
+      },
+      "c_949mlevf7uvspmwokegyx8khw": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Mobility_65YearsandOver",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Mobility) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "33",
+        "isCategorical": false
+      },
+      "c_56qacfjg8utm2k1a53de3eq6w": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_Total",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Remembering) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "34",
+        "isCategorical": false
+      },
+      "c_2fdq3q8e3scxx751jcbudxeo5": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_Below65Years",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Remembering) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "35",
+        "isCategorical": false
+      },
+      "c_8c9jxlx4qzinpzinso95yc9az": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Remembering_65YearsandOver",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Remembering) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "36",
+        "isCategorical": false
+      },
+      "c_4gmigrn7ajygxa3kev8w6f3bc": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_Total",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Self-Care) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "37",
+        "isCategorical": false
+      },
+      "c_9wtc8xbb9n8ftvhnd9b9k0eq4": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_Below65Years",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Self-Care) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "38",
+        "isCategorical": false
+      },
+      "c_erhitzqco0dp6awpmtsbedyw5": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Self_Care_65YearsandOver",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Self-Care) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "39",
+        "isCategorical": false
+      },
+      "c_6j23ogegsvftors6u8mcf66xa": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_Total",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Communicating) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "40",
+        "isCategorical": false
+      },
+      "c_7sig5dp4tur57xwxafbtfoftq": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_Below65Years",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Communicating) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "41",
+        "isCategorical": false
+      },
+      "c_3r6idzmqc4zwmgbx5ecari16y": {
+        "name": "SomeDifficultyinPerformingBasicActivity_bySpecificDomain_Communicating_65YearsandOver",
+        "columnTitle": "(Some Difficulty in Performing Basic Activity, by Specific Domain - Communicating) 65 Years & Over",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "42",
+        "isCategorical": false
+      },
+      "c_hpdty71le4pf5wklaacgjkwr": {
+        "name": "UnabletoPerform_withALotofDifficultyinAtLeastOneBasicActivity1_Total",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in At Least One Basic Activity1/) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "43",
+        "isCategorical": false
+      },
+      "c_2iyq72ajc43ocqplkyrqm4zcn": {
+        "name": "UnabletoPerform_withALotofDifficultyinAtLeastOneBasicActivity1_Below65Years",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in At Least One Basic Activity1/) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "44",
+        "isCategorical": false
+      },
+      "c_b643hkc3zzjxd2mfa2lh3ab8t": {
+        "name": "UnabletoPerform_withALotofDifficultyinAtLeastOneBasicActivity1_65YearsandOver",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in At Least One Basic Activity1/) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "45",
+        "isCategorical": false
+      },
+      "c_cmffl4xr2nu116qyj8uk5jsag": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Seeing_Total",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Seeing) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "46",
+        "isCategorical": false
+      },
+      "c_4vlbreo9pn0se8qzo5ncnxu9m": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Seeing_Below65Years",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Seeing) Below 65 Years",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "47",
+        "isCategorical": false
+      },
+      "c_d25imlnazfrnym8mbp3vf67sm": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Seeing_65YearsandOver",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Seeing) 65 Years & Over",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "48",
+        "isCategorical": false
+      },
+      "c_42nmlwqpbayj0sk14mtphatuk": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Hearing_Total",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Hearing) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "49",
+        "isCategorical": false
+      },
+      "c_9j7mj60h9gczi4bi6lpt6wu3b": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Hearing_Below65Years",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Hearing) Below 65 Years",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "50",
+        "isCategorical": false
+      },
+      "c_shojxxmz837z280c8w6p8bqo": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Hearing_65YearsandOver",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Hearing) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "51",
+        "isCategorical": false
+      },
+      "c_6lf2elhibirxoan4apgp7hf5l": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Mobility_Total",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Mobility) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "52",
+        "isCategorical": false
+      },
+      "c_68z8ux3xvf0j7z5v0yszc7boj": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Mobility_Below65Years",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Mobility) Below 65 Years",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "53",
+        "isCategorical": false
+      },
+      "c_aajiwlisroh4b3l7j56gaxume": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Mobility_65YearsandOver",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Mobility) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "54",
+        "isCategorical": false
+      },
+      "c_b109xnd2epmpm2zqkfdiqyar7": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Remembering_Total",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Remembering) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "55",
+        "isCategorical": false
+      },
+      "c_6sr52xsrvwzsp02pqusywobrl": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Remembering_Below65Years",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Remembering) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "56",
+        "isCategorical": false
+      },
+      "c_duh154sm7eyy5k4kudg4i4n14": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Remembering_65YearsandOver",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Remembering) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "57",
+        "isCategorical": false
+      },
+      "c_da2n6bsln3f4dakbt3abr5zpx": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Self_Care_Total",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Self-Care) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "58",
+        "isCategorical": false
+      },
+      "c_1ox63masitzd7dgz08l9a1u93": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Self_Care_Below65Years",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Self-Care) Below 65 Years",
+        "dataType": "Text",
+        "unitOfMeasure": "Number",
+        "index": "59",
+        "isCategorical": false
+      },
+      "c_8x7lmypkfdu7cnjq1jnplj4z4": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Self_Care_65YearsandOver",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Self-Care) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "60",
+        "isCategorical": false
+      },
+      "c_3qywgts73skikbo36byb5pjq6": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Communicating_Total",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Communicating) Total",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "61",
+        "isCategorical": false
+      },
+      "c_1kmxw4cc3kkj3s5mk6pu5izsp": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Communicating_Below65Years",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Communicating) Below 65 Years",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "62",
+        "isCategorical": false
+      },
+      "c_73b0x5h8mekv4f2o3sodac9lg": {
+        "name": "UnabletoPerform_withALotofDifficultyinBasicActivity_bySpecificDomain_Communicating_65YearsandOver",
+        "columnTitle": "(Unable to Perform/ with A Lot of Difficulty in Basic Activity, by Specific Domain - Communicating) 65 Years & Over",
+        "dataType": "Numeric",
+        "unitOfMeasure": "Number",
+        "index": "63",
+        "isCategorical": false
+      }
+    }
+  }
+}
