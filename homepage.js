@@ -64,7 +64,7 @@
 
       "section_demo_kicker": "Interactive Workbench",
       "section_demo_title": "Experience the Transit Atlas Demo",
-      "section_demo_desc": "Explore our interactive web interface below or open it in fullscreen. Experience both the Healthcare Access scenario (148 → 158) and the Weekend Buses honest data-gap review.",
+      "section_demo_desc": "Explore our interactive web interface below or open it in fullscreen. Supports exploring two research scenarios: 'Elderly Healthcare Access' and 'Weekend Bus Capacity Matching'.",
       "btn_fullscreen": "Open Fullscreen Demo ↗",
 
       "section_report_kicker": "Deliverables & Evaluation",
@@ -176,7 +176,7 @@
 
       "section_demo_kicker": "在线交互演示",
       "section_demo_title": "体验 Transit Atlas 交互工作台",
-      "section_demo_desc": "在下方直接体验高仿真研究对话，或点击右上角全屏运行。支持体验「老年人就医情景（148→158）」与「周末下午公交（规划边界识别）」。",
+      "section_demo_desc": "在下方直接体验高仿真研究对话，或点击右上角全屏运行。支持体验「老年人就医情景」与「周末下午公交运力匹配」两个研究情景。",
       "btn_fullscreen": "全屏体验 Demo ↗",
 
       "section_report_kicker": "最终交付成果",
