@@ -21,17 +21,17 @@
 
 - 🕹️ **Interactive Workbench Demo / 在线交互演示工作台**:  
   👉 **[https://jolynecujoh233.github.io/Transit_Atlas_SG/demo-site/](https://jolynecujoh233.github.io/Transit_Atlas_SG/demo-site/)**  
-  *Experience the high-fidelity research dialogue simulator. Test the "Healthcare Access for Seniors (148 → 158 cells)" scenario and the "Weekend Afternoon Bus Service" honest data-gap review.*  
-  *（体验高仿真研究对话工作台。支持模拟测试「老年人就医情景（148 → 158 格）」与「周末下午公交服务（规划边界与数据缺失核验）」两个典型案例。）*
+  *Experience the high-fidelity research dialogue simulator. Test the "Healthcare Access for Seniors" scenario and the "Weekend Afternoon Bus Service" honest data-gap review.*  
+  *（体验高仿真研究对话工作台。支持模拟测试「老年人就医情景」与「周末下午公交服务（规划边界与数据缺失核验）」两个典型案例。）*
 
 - 📊 **Presentation Slides (PDF) / 汇报演讲幻灯片**:    
-  *The full 21-slide deck covering urban mobility challenges, the 400 m GIS baseline, the 7-step Human-in-the-Loop agent architecture, scenario results, and critical limitations.*  
-  *（完整 21 页答辩幻灯片，涵盖交通出行痛点、400 米网格基线、7 步人机协同架构、情景对比结果与反思局限。）*
+  *The slide deck covering urban mobility challenges, the 400 m GIS baseline, the 7-step Human-in-the-Loop agent architecture, scenario results, and critical limitations.*  
+  *（答辩幻灯片，涵盖交通出行痛点、400 米网格基线、7 步人机协同架构、情景对比结果与反思局限。）*
 
-- 📄 **Final Research Report / 最终学术研究报告**:  
+- 📄 **Final Research Report / 最终研究报告**:  
   👉 **[`assets/report_draft.pdf`](assets/report_draft.pdf)** *(Draft available; final revised version will be embedded upon final review / 初稿已就绪，定稿核校完成后无缝替换)*  
   *Full academic report: "Singapore Public Transport Supply–Demand Gap Scenario Analysis: 400 m Grid Baseline & Research Agent".*  
-  *（完整学术论文：《新加坡公共交通供需缺口情景分析：400 米网格基线与研究 Agent》。）*
+  *（完整报告：《新加坡公共交通供需缺口情景分析：400 米网格基线与研究 Agent》。）*
 
 
 
