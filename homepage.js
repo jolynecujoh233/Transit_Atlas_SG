@@ -76,9 +76,10 @@
       "report_title": "Singapore Public Transport Supply–Demand Gap Scenario Analysis",
       "report_sub": "Final Research Report · 400 m Grid Baseline & Research Agent · November 2026",
       "report_summary": "Abstract: Where should public transport service audits begin? This study evaluates potential transit demand and service weaknesses across 1,597 residential 400-metre grid cells in Singapore. The equal-weighted baseline identifies 148 candidate cells (9.27% of study area). Adjusting older population and 30-minute clinic access weights expands this to 158 cells (+12 added, -2 removed). An AI research agent enables planners to translate natural language questions into auditable indicator proposals.",
-      "report_notice": "The final revised PDF will be embedded here upon submission. You can preview our drafted report or download presentation materials below.",
+      "report_notice": "The final revised report will be embedded here upon submission. You can preview our drafted report or browse the presentation slides online.",
       "btn_download_draft": "Download Report Draft (PDF) ↓",
-      "btn_download_slides": "Download Presentation (PDF) ↓",
+      "btn_view_slides_preview": "Preview Presentation Slides ↗",
+      "slides_badge_preview_only": "🔒 Live Preview Only · Download Restricted",
 
       "section_deploy_kicker": "Open Source & Reproduction",
       "section_deploy_title": "Deploy Transit Atlas Locally",
@@ -187,9 +188,10 @@
       "report_title": "《新加坡公共交通供需缺口情景分析》最终研究报告",
       "report_sub": "400 米网格基线与研究 Agent · 2026 年 11 月",
       "report_summary": "摘要：公共交通服务调查应优先从哪些居住区开始？本研究在新加坡 1,597 个估计有常住人口的 400 米网格中，分别评估居民的潜在公共交通需求与当地服务的相对薄弱程度。等权基线筛出 148 个候选网格。将老年人口与 30 分钟诊所可达性权重从 1 调至 2，得到 158 个就医情景候选网格（146 保留，12 新增，2 退出）。项目还实现了一个研究 Agent：模型把自然语言转化为可审核指标提案，规划师确认数据与权重，本地 GIS 负责运算。",
-      "report_notice": "本卡片为最终报告预留展示位，最终定稿 PDF 将无缝嵌入此处供在线翻阅与下载。您可在相邻标签先查看我们的完整汇报幻灯片。",
+      "report_notice": "本卡片为最终报告预留展示位，最终定稿 PDF 将无缝嵌入此处。您可先查阅当前报告初稿，或点击下方按钮直接在线翻阅完整答辩幻灯片。",
       "btn_download_draft": "下载当前报告初稿 (PDF) ↓",
-      "btn_download_slides": "下载汇报演讲幻灯片 (PDF) ↓",
+      "btn_view_slides_preview": "在线翻阅汇报幻灯片 ↗",
+      "slides_badge_preview_only": "🔒 在线预览模式 · 限制下载",
 
       "section_deploy_kicker": "开源与本地复现",
       "section_deploy_title": "本地部署完整版工作台",
@@ -341,5 +343,68 @@
         }, 1800);
       });
     });
+  });
+
+  // --- Jump to Presentation Slides Tab ---
+  const jumpBtn = document.getElementById('btn-jump-to-slides');
+  if (jumpBtn) {
+    jumpBtn.addEventListener('click', () => {
+      const slidesTabBtn = document.querySelector('[data-deliverable-tab="slides"]');
+      if (slidesTabBtn) {
+        slidesTabBtn.click();
+        const deliverablesEl = document.getElementById('deliverables');
+        if (deliverablesEl) {
+          deliverablesEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  }
+
+  // --- Ambient Mouse Glow Follower ---
+  const ambientGlow = document.getElementById('ambient-glow');
+  if (ambientGlow && window.matchMedia('(pointer: fine)').matches) {
+    let targetX = -1000, targetY = -1000;
+    let currentX = -1000, currentY = -1000;
+    let isMoving = false;
+
+    function renderGlow() {
+      // Smooth lerp interpolation for silky motion
+      currentX += (targetX - currentX) * 0.16;
+      currentY += (targetY - currentY) * 0.16;
+      ambientGlow.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
+      if (Math.abs(targetX - currentX) > 0.4 || Math.abs(targetY - currentY) > 0.4) {
+        requestAnimationFrame(renderGlow);
+      } else {
+        isMoving = false;
+      }
+    }
+
+    window.addEventListener('pointermove', (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+      ambientGlow.style.opacity = '1';
+      if (!isMoving) {
+        isMoving = true;
+        requestAnimationFrame(renderGlow);
+      }
+    }, { passive: true });
+
+    document.addEventListener('mouseleave', () => {
+      ambientGlow.style.opacity = '0';
+    });
+  }
+
+  // --- Card Mouse Hover Spotlight Effect ---
+  const spotlightCards = document.querySelectorAll(
+    '.stat-card, .feature-card, .workflow-card, .report-placeholder-card, .deploy-card'
+  );
+  spotlightCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    }, { passive: true });
   });
 })();

@@ -9,6 +9,8 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%237C3AED'/><text x='50%' y='55%' font-size='56' font-family='sans-serif' font-weight='bold' fill='white' dominant-baseline='middle' text-anchor='middle'>TA</text></svg>">
 </head>
 <body>
+  <!-- Interactive Ambient Mouse Glow Follower -->
+  <div id="ambient-glow" class="ambient-glow-cursor" aria-hidden="true"></div>
 
   <!-- Sticky Navigation Header -->
   <header class="site-header">
@@ -56,6 +58,7 @@
   <main>
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
+      <div class="hero-glow-aura" aria-hidden="true"></div>
       <div class="container">
         <div class="hero-pill" data-i18n-key="hero_tag">
           NUS AR5958A · 城市规划人工智能 · 期末成果展示
@@ -272,7 +275,7 @@
 
               <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
                 <a class="btn-primary" href="assets/report_draft.pdf" download="TransitAtlas_Report_Draft.pdf" data-i18n-key="btn_download_draft">下载当前报告初稿 (PDF) ↓</a>
-                <a class="btn-secondary" href="assets/presentation.pdf" download="TransitAtlas_Presentation_Slides.pdf" data-i18n-key="btn_download_slides">下载汇报演讲幻灯片 (PDF) ↓</a>
+                <button type="button" class="btn-secondary" id="btn-jump-to-slides" data-i18n-key="btn_view_slides_preview">在线翻阅汇报幻灯片 ↗</button>
               </div>
             </div>
           </div>
@@ -284,7 +287,7 @@
                 <strong style="color:var(--text-main);">GROUP2_FinalPresentation.pdf</strong>
                 <span style="font-size:0.82rem; color:var(--text-muted); margin-left:8px;" data-i18n-key="slides_filename_desc">(21 presentation slides · Research background, methodology, and demo screen walkthroughs)</span>
               </div>
-              <a class="btn-secondary" style="padding:6px 14px; font-size:0.82rem;" href="assets/presentation.pdf" download="TransitAtlas_Presentation_Slides.pdf" data-i18n-key="btn_download_full_slides">Download Presentation (6.6 MB) ↓</a>
+              <span class="preview-badge" data-i18n-key="slides_badge_preview_only">🔒 在线预览模式 · 限制下载</span>
             </div>
             <iframe class="pdf-viewer-frame" src="assets/presentation.pdf#view=FitH" title="Presentation Slides Live Viewer"></iframe>
           </div>
