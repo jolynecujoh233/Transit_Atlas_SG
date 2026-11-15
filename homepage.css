@@ -566,15 +566,18 @@ a:hover {
 
 .demo-url-bar {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   padding: 4px 16px;
   border-radius: 20px;
-  max-width: 420px;
+  max-width: 480px;
   width: 100%;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .demo-iframe-container {
