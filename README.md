@@ -14,7 +14,7 @@
 
 ## 🧭 Quick Links & Deliverables / 快速链接与成果入口
 
-- 🌐 **Project Portal (Live Website) / 在线项目总主页**:  
+- 🌐 **Project Portal (Live Website) / 在线项目主页**:  
   👉 **[https://jolynecujoh233.github.io/Transit_Atlas_SG/](https://jolynecujoh233.github.io/Transit_Atlas_SG/)**  
   *Explore the comprehensive project landing page, switch between Light and Dark themes, toggle English/Chinese, inspect baseline spatial maps, and review embedded deliverables.*  
   *（访问项目完整总主页，支持浅色/深色主题切换、中英双语切换、查看 148 基线空间地图与全量交付物展示。）*
@@ -24,8 +24,7 @@
   *Experience the high-fidelity research dialogue simulator. Test the "Healthcare Access for Seniors (148 → 158 cells)" scenario and the "Weekend Afternoon Bus Service" honest data-gap review.*  
   *（体验高仿真研究对话工作台。支持模拟测试「老年人就医情景（148 → 158 格）」与「周末下午公交服务（规划边界与数据缺失核验）」两个典型案例。）*
 
-- 📊 **Presentation Slides (PDF) / 汇报演讲幻灯片**:  
-  👉 **[https://jolynecujoh233.github.io/Transit_Atlas_SG/assets/presentation.pdf](https://jolynecujoh233.github.io/Transit_Atlas_SG/assets/presentation.pdf)**  
+- 📊 **Presentation Slides (PDF) / 汇报演讲幻灯片**:    
   *The full 21-slide deck covering urban mobility challenges, the 400 m GIS baseline, the 7-step Human-in-the-Loop agent architecture, scenario results, and critical limitations.*  
   *（完整 21 页答辩幻灯片，涵盖交通出行痛点、400 米网格基线、7 步人机协同架构、情景对比结果与反思局限。）*
 
@@ -34,8 +33,7 @@
   *Full academic report: "Singapore Public Transport Supply–Demand Gap Scenario Analysis: 400 m Grid Baseline & Research Agent".*  
   *（完整学术论文：《新加坡公共交通供需缺口情景分析：400 米网格基线与研究 Agent》。）*
 
-- 💻 **GitHub Source Repository / 源码仓库**:  
-  👉 **[https://github.com/jolynecujoh233/Transit_Atlas_SG](https://github.com/jolynecujoh233/Transit_Atlas_SG)**
+
 
 ---
 
