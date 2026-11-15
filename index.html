@@ -287,7 +287,7 @@
                 <strong style="color:var(--text-main);">GROUP2_FinalPresentation.pdf</strong>
                 <span style="font-size:0.82rem; color:var(--text-muted); margin-left:8px;" data-i18n-key="slides_filename_desc">(21 presentation slides · Research background, methodology, and demo screen walkthroughs)</span>
               </div>
-              <span class="preview-badge" data-i18n-key="slides_badge_preview_only">🔒 在线预览模式 · 限制下载</span>
+              <span class="preview-badge" data-i18n-key="slides_badge_preview_only">在线预览</span>
             </div>
             <iframe class="pdf-viewer-frame" src="assets/presentation.pdf#view=FitH" title="Presentation Slides Live Viewer"></iframe>
           </div>
@@ -306,7 +306,15 @@
 
         <div style="max-width:880px; margin:0 auto;">
           <div class="deploy-card">
-            <button type="button" class="copy-btn" data-copy-target="deploy-snippet" data-i18n-key="btn_copy">Copy</button>
+            <div class="deploy-card-header">
+              <div class="mac-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="deploy-card-title">bash · quickstart</span>
+              <button type="button" class="copy-btn" data-copy-target="deploy-snippet" data-i18n-key="btn_copy">Copy</button>
+            </div>
             <pre id="deploy-snippet"><code><span class="deploy-comment"># 1. Clone the repository</span>
 <span class="deploy-cmd">git clone https://github.com/jolynecujoh233/Transit_Atlas_SG.git</span>
 <span class="deploy-cmd">cd Transit_Atlas_SG</span>

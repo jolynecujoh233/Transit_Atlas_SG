@@ -468,6 +468,7 @@ a:hover {
 .section {
   padding: 70px 0;
   border-top: 1px solid var(--border-color);
+  scroll-margin-top: 70px;
 }
 
 .section-head {
@@ -752,13 +753,58 @@ a:hover {
 .deploy-card {
   background: var(--code-bg);
   color: var(--code-text);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 24px;
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
   margin: 18px 0;
   position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.deploy-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 3;
+}
+
+.deploy-card-header .mac-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.deploy-card-header .mac-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.deploy-card-header .mac-dots span:nth-child(1) { background: #FF5F56; }
+.deploy-card-header .mac-dots span:nth-child(2) { background: #FFBD2E; }
+.deploy-card-header .mac-dots span:nth-child(3) { background: #27C93F; }
+
+.deploy-card-title {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: #94A3B8;
+  letter-spacing: 0.5px;
+}
+
+.deploy-card pre {
+  padding: 20px 24px 24px;
+  margin: 0;
   overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  position: relative;
+  z-index: 2;
 }
 
 .deploy-step {
@@ -778,20 +824,24 @@ a:hover {
 }
 
 .copy-btn {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
-  padding: 4px 10px;
-  border-radius: 4px;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
   font-size: 0.75rem;
+  font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
+
 .copy-btn:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Footer */

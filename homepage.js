@@ -79,7 +79,7 @@
       "report_notice": "The final revised report will be embedded here upon submission. You can preview our drafted report or browse the presentation slides online.",
       "btn_download_draft": "Download Report Draft (PDF) ↓",
       "btn_view_slides_preview": "Preview Presentation Slides ↗",
-      "slides_badge_preview_only": "🔒 Live Preview Only · Download Restricted",
+      "slides_badge_preview_only": "Live Preview",
 
       "section_deploy_kicker": "Open Source & Reproduction",
       "section_deploy_title": "Deploy Transit Atlas Locally",
@@ -191,7 +191,7 @@
       "report_notice": "本卡片为最终报告预留展示位，最终定稿 PDF 将无缝嵌入此处。您可先查阅当前报告初稿，或点击下方按钮直接在线翻阅完整答辩幻灯片。",
       "btn_download_draft": "下载当前报告初稿 (PDF) ↓",
       "btn_view_slides_preview": "在线翻阅汇报幻灯片 ↗",
-      "slides_badge_preview_only": "🔒 在线预览模式 · 限制下载",
+      "slides_badge_preview_only": "在线预览",
 
       "section_deploy_kicker": "开源与本地复现",
       "section_deploy_title": "本地部署完整版工作台",
