@@ -68,8 +68,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/jolynecujoh233/transit-atlas.git
-cd transit-atlas
+git clone https://github.com/jolynecujoh233/Transit_Atlas_SG.git
+cd Transit_Atlas_SG
 ```
 
 #### Windows 用户（推荐一键启动）：

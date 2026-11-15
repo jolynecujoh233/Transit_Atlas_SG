@@ -27,8 +27,8 @@ echo Remote origin:
 echo.
 
 echo Instructions:
-echo 1. Ensure you have created the empty repository on GitHub:
-echo    https://github.com/new -^> Name: transit-atlas (Public)
+echo 1. Ensure you have created the repository on GitHub:
+echo    https://github.com/jolynecujoh233/Transit_Atlas_SG
 echo 2. When prompted for credentials by GitHub:
 echo    - Username: jolynecujoh233
 echo    - Password: Your GitHub Personal Access Token (with repo permission)
@@ -43,18 +43,18 @@ if %ERRORLEVEL% equ 0 (
     echo  [SUCCESS] Code successfully pushed to GitHub!
     echo.
     echo  Next steps to enable your public URL:
-    echo  1. Go to: https://github.com/jolynecujoh233/transit-atlas/settings/pages
+    echo  1. Go to: https://github.com/jolynecujoh233/Transit_Atlas_SG/settings/pages
     echo  2. Under 'Build and deployment' -^> 'Branch':
     echo     Select 'main' and '/ (root)', then click Save.
     echo.
     echo  Within 1-2 minutes, your deliverables will be live at:
-    echo  Project Homepage: https://jolynecujoh233.github.io/transit-atlas/
-    echo  Interactive Demo: https://jolynecujoh233.github.io/transit-atlas/demo-site/
+    echo  Project Homepage: https://jolynecujoh233.github.io/Transit_Atlas_SG/
+    echo  Interactive Demo: https://jolynecujoh233.github.io/Transit_Atlas_SG/demo-site/
     echo =======================================================
 ) else (
     echo.
     echo [ERROR] Push failed.
-    echo Please make sure https://github.com/jolynecujoh233/transit-atlas exists and you entered a valid GitHub token.
+    echo Please make sure https://github.com/jolynecujoh233/Transit_Atlas_SG exists and you entered a valid GitHub token.
 )
 echo.
 pause

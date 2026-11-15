@@ -44,7 +44,7 @@
         </div>
 
         <!-- GitHub Link -->
-        <a class="btn-github" href="https://github.com/jolynecujoh233/transit-atlas" target="_blank" rel="noopener">
+        <a class="btn-github" href="https://github.com/jolynecujoh233/Transit_Atlas_SG" target="_blank" rel="noopener">
           <svg height="15" width="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
           <span>GitHub</span>
         </a>
@@ -120,7 +120,7 @@
             </ul>
             <div style="margin-top:20px;">
               <img class="map-preview-img" src="assets/baseline_148.png" alt="148 Baseline Candidate Areas Map" loading="lazy">
-              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; text-align:center;">全岛 148 个等权基线候选优先核查网格空间分布</div>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; text-align:center;" data-i18n-key="map_caption_baseline">全岛 148 个等权基线候选优先核查网格空间分布</div>
             </div>
           </div>
 
@@ -135,7 +135,7 @@
             </ul>
             <div style="margin-top:20px;">
               <img class="map-preview-img" src="assets/changes_map.png" alt="Scenario Map Changes" loading="lazy">
-              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; text-align:center;">就医情景重算对比（绿色：保留 146 格；洋红：新增 12 格；青灰：移出 2 格）</div>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; text-align:center;" data-i18n-key="map_caption_changes">就医情景重算对比（绿色：保留 146 格；洋红：新增 12 格；青灰：移出 2 格）</div>
             </div>
             <div style="margin-top:16px; padding:12px; background:var(--bg-elevated); border-radius:var(--radius-sm); font-size:0.85rem; font-style:italic;" data-i18n-key="context_col2_note">
               规划结论：交通公平性的关键在于“目的地连通能力”，而非盲目增设物理站点。
@@ -282,9 +282,9 @@
             <div style="margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
               <div>
                 <strong style="color:var(--text-main);">GROUP2_FinalPresentation.pdf</strong>
-                <span style="font-size:0.82rem; color:var(--text-muted); margin-left:8px;">(21 幻灯页 · 包含研究背景、方法论与 Demo 录屏演示)</span>
+                <span style="font-size:0.82rem; color:var(--text-muted); margin-left:8px;" data-i18n-key="slides_filename_desc">(21 presentation slides · Research background, methodology, and demo screen walkthroughs)</span>
               </div>
-              <a class="btn-secondary" style="padding:6px 14px; font-size:0.82rem;" href="assets/presentation.pdf" download="TransitAtlas_Presentation_Slides.pdf">下载完整幻灯片 (6.6 MB) ↓</a>
+              <a class="btn-secondary" style="padding:6px 14px; font-size:0.82rem;" href="assets/presentation.pdf" download="TransitAtlas_Presentation_Slides.pdf" data-i18n-key="btn_download_full_slides">Download Presentation (6.6 MB) ↓</a>
             </div>
             <iframe class="pdf-viewer-frame" src="assets/presentation.pdf#view=FitH" title="Presentation Slides Live Viewer"></iframe>
           </div>
@@ -305,8 +305,8 @@
           <div class="deploy-card">
             <button type="button" class="copy-btn" data-copy-target="deploy-snippet" data-i18n-key="btn_copy">Copy</button>
             <pre id="deploy-snippet"><code><span class="deploy-comment"># 1. Clone the repository</span>
-<span class="deploy-cmd">git clone https://github.com/jolynecujoh233/transit-atlas.git</span>
-<span class="deploy-cmd">cd transit-atlas</span>
+<span class="deploy-cmd">git clone https://github.com/jolynecujoh233/Transit_Atlas_SG.git</span>
+<span class="deploy-cmd">cd Transit_Atlas_SG</span>
 
 <span class="deploy-comment"># 2. Launch workbench (Windows: double-click Start-Workbench.cmd)</span>
 <span class="deploy-cmd">.\Start-Workbench.cmd</span>
@@ -319,16 +319,16 @@
 
           <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:16px; margin-top:20px;">
             <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:18px;">
-              <h5 style="margin-bottom:6px; color:var(--text-main);">Zero Dependency Hassle</h5>
-              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0;">`start.py` auto-checks Python 3.12, creates an isolated `.venv`, decompresses GIS layers, and installs all wheels.</p>
+              <h5 style="margin-bottom:6px; color:var(--text-main);" data-i18n-key="deploy_card1_title">Zero Dependency Hassle</h5>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0;" data-i18n-key="deploy_card1_desc">start.py auto-checks Python 3.12, creates an isolated .venv, decompresses GIS layers, and installs all wheels.</p>
             </div>
             <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:18px;">
-              <h5 style="margin-bottom:6px; color:var(--text-main);">Codex Agent Connection</h5>
-              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0;">Reuses your personal `codex login` session from the command line for free, unlimited research dialogue.</p>
+              <h5 style="margin-bottom:6px; color:var(--text-main);" data-i18n-key="deploy_card2_title">Codex Agent Connection</h5>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0;" data-i18n-key="deploy_card2_desc">Reuses your personal 'codex login' session from the command line for free, unlimited research dialogue.</p>
             </div>
             <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:18px;">
-              <h5 style="margin-bottom:6px; color:var(--text-main);">Complete Data Sovereignty</h5>
-              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0;">All spatial data, indicator weight revisions, and CSV exports run deterministically on your local machine.</p>
+              <h5 style="margin-bottom:6px; color:var(--text-main);" data-i18n-key="deploy_card3_title">Complete Data Sovereignty</h5>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0;" data-i18n-key="deploy_card3_desc">All spatial data, indicator weight revisions, and CSV exports run deterministically on your local machine.</p>
             </div>
           </div>
         </div>
@@ -345,9 +345,8 @@
             <div class="brand-logo" style="width:26px; height:26px; font-size:12px;">TA</div>
             <strong style="color:var(--text-main); font-size:1.1rem;">Transit Atlas</strong>
           </div>
-          <p style="font-size:0.85rem; line-height:1.6; margin-bottom:12px;">
-            Singapore Public Transport Supply-Demand Gap Scenario Analysis Agent.<br>
-            Bridging 400 m grid spatial analytics with LLM research reasoning.
+          <p style="font-size:0.85rem; line-height:1.6; margin-bottom:12px;" data-i18n-key="footer_desc">
+            Singapore Public Transport Supply-Demand Gap Scenario Analysis Agent. Bridging 400 m grid spatial analytics with LLM research reasoning.
           </p>
           <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-purple);" data-i18n-key="footer_course">
             NUS AR5958A · Artificial Intelligence for Urban Planning · 2026
@@ -355,18 +354,18 @@
         </div>
 
         <div class="footer-col">
-          <h5>Quick Navigation</h5>
+          <h5 data-i18n-key="footer_quick_nav">Quick Navigation</h5>
           <ul>
-            <li><a href="#overview">Overview & Baseline</a></li>
-            <li><a href="#framework">7-Step Architecture</a></li>
-            <li><a href="#demo">Interactive Demo</a></li>
-            <li><a href="#deliverables">Report & Slides</a></li>
-            <li><a href="#deploy">Local Deployment</a></li>
+            <li><a href="#overview" data-i18n-key="footer_link_overview">Overview & Baseline</a></li>
+            <li><a href="#framework" data-i18n-key="footer_link_framework">7-Step Architecture</a></li>
+            <li><a href="#demo" data-i18n-key="footer_link_demo">Interactive Demo</a></li>
+            <li><a href="#deliverables" data-i18n-key="footer_link_report">Report & Slides</a></li>
+            <li><a href="#deploy" data-i18n-key="footer_link_deploy">Local Deployment</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h5>Data Sources & Acknowledgements</h5>
+          <h5 data-i18n-key="footer_sources_title">Data Sources & Acknowledgements</h5>
           <ul>
             <li><a href="https://datamall.lta.gov.sg/" target="_blank" rel="noopener">LTA DataMall</a></li>
             <li><a href="https://www.singstat.gov.sg/" target="_blank" rel="noopener">Singapore SingStat</a></li>

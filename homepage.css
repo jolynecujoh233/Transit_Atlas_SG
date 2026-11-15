@@ -128,56 +128,62 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
+  flex-wrap: nowrap;
 }
 
 .brand-group {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .brand-logo {
   display: grid;
   place-content: center;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   background: var(--accent-purple);
   border-radius: 6px;
   color: #fff;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 15px;
   box-shadow: 0 2px 8px rgba(124, 58, 237, 0.35);
 }
 
 .brand-name {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--text-main);
   letter-spacing: -0.03em;
+  white-space: nowrap;
 }
 
 .course-badge {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  padding: 3px 8px;
+  font-size: 0.7rem;
+  padding: 2px 7px;
   background: var(--bg-elevated);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.1rem;
   list-style: none;
+  flex-shrink: 0;
 }
 
 .nav-links a {
   color: var(--text-muted);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -188,7 +194,8 @@ a:hover {
 .header-controls {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 /* Control Pills: Theme & Language */
@@ -744,6 +751,9 @@ a:hover {
 }
 
 /* Responsive */
+@media (max-width: 1060px) {
+  .course-badge { display: none; }
+}
 @media (max-width: 860px) {
   .nav-links { display: none; }
   .grid-2col { grid-template-columns: 1fr; }
