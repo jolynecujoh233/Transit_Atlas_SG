@@ -29,7 +29,7 @@
   *（答辩幻灯片，涵盖交通出行痛点、400 米网格基线、7 步人机协同架构、情景对比结果与反思局限。）*
 
 - 📄 **Final Research Report / 最终研究报告**:  
-  👉 **[`assets/report_draft.pdf`](assets/report_draft.pdf)** *(Draft available; final revised version will be embedded upon final review / 初稿已就绪，定稿核校完成后无缝替换)*  
+  👉 **[`assets/Transit_Atlas_Final_Report.pdf`](assets/Transit_Atlas_Final_Report.pdf)** *(17 pages · Full Academic Research Report / 17 页完整学术研究报告定稿)*  
   *Full academic report: "Singapore Public Transport Supply–Demand Gap Scenario Analysis: 400 m Grid Baseline & Research Agent".*  
   *（完整报告：《新加坡公共交通供需缺口情景分析：400 米网格基线与研究 Agent》。）*
 
@@ -164,7 +164,7 @@ Transit_Atlas_SG/
 │   └── manifest.json          # Catalog manifest & field data dictionary (数据源字典与元数据)
 ├── assets/                    # Media & Final Deliverable Documents (多媒体与交付文档)
 │   ├── presentation.pdf       # 21-slide presentation deck (21 页汇报演讲文稿与演示幻灯片)
-│   ├── report_draft.pdf       # Academic research report draft (最终研究报告初稿)
+│   ├── Transit_Atlas_Final_Report.pdf  # Final academic research report (17 pages / 最终研究报告定稿)
 │   ├── baseline_148.png       # 148 Baseline Candidate Areas Map (148 基线网格分布图)
 │   └── changes_map.png        # Healthcare Scenario Map Changes (就医情景增减对比图)
 ├── start.py                   # Python environment bootstrap script (含自动解压与依赖管理)

@@ -256,28 +256,26 @@
             <button type="button" class="deliverable-tab" data-deliverable-tab="slides" aria-pressed="false" role="tab" data-i18n-key="tab_slides">📊 汇报演讲幻灯片 (Presentation Slides)</button>
           </div>
 
-          <!-- Panel 1: Final Report Slot -->
+          <!-- Panel 1: Final Research Report Live PDF Viewer -->
           <div class="deliverable-panel" data-deliverable-panel="report" role="tabpanel">
-            <div class="report-placeholder-card">
-              <div class="status-tag" data-i18n-key="report_status">🕒 最终排版与核校进行中 (Finalizing)</div>
-              <h3 style="font-size:1.45rem; margin-bottom:8px;" data-i18n-key="report_title">《新加坡公共交通供需缺口情景分析》最终研究报告</h3>
-              <p style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;" data-i18n-key="report_sub">400 米网格基线与研究 Agent · 2026 年 11 月</p>
-              
-              <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:24px; text-align:left; max-width:820px; margin:0 auto 24px; font-size:0.92rem; line-height:1.75; color:var(--text-body);">
-                <p style="margin-bottom:0;" data-i18n-key="report_summary">
-                  <strong>摘要：</strong>公共交通服务调查应优先从哪些居住区开始？本研究在新加坡 1,597 个估计有常住人口的 400 米网格中，分别评估居民的潜在公共交通需求与当地服务的相对薄弱程度。等权基线筛出 148 个候选网格。将老年人口与 30 分钟诊所可达性权重从 1 调至 2，得到 158 个就医情景候选网格（146 保留，12 新增，2 退出）。项目还实现了一个研究 Agent：模型把自然语言转化为可审核指标提案，规划师确认数据与权重，本地 GIS 负责运算。
-                </p>
+            <div style="margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+              <div>
+                <strong style="color:var(--text-main);">Transit_Atlas_Final_Report.pdf</strong>
+                <span style="font-size:0.82rem; color:var(--text-muted); margin-left:8px;" data-i18n-key="report_filename_desc">(17 pages · Full Academic Research Report · 400 m Baseline & AI Agent)</span>
               </div>
-
-              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:24px;" data-i18n-key="report_notice">
-                本卡片为最终报告预留展示位，最终定稿 PDF 将无缝嵌入此处供在线翻阅与下载。您可在相邻标签先查看我们的完整汇报幻灯片。
-              </p>
-
-              <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
-                <a class="btn-primary" href="assets/report_draft.pdf" download="TransitAtlas_Report_Draft.pdf" data-i18n-key="btn_download_draft">下载当前报告初稿 (PDF) ↓</a>
-                <button type="button" class="btn-secondary" id="btn-jump-to-slides" data-i18n-key="btn_view_slides_preview">在线翻阅汇报幻灯片 ↗</button>
+              <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+                <a class="btn-primary" style="padding:6px 14px; font-size:0.82rem;" href="assets/Transit_Atlas_Final_Report.pdf" download="Transit_Atlas_Final_Report.pdf" data-i18n-key="btn_download_final_report">Download Full Report (1.3 MB) ↓</a>
+                <a class="btn-control" style="padding:6px 12px; font-size:0.82rem; border:1px solid var(--border-color); border-radius:var(--radius-sm); text-decoration:none;" href="assets/Transit_Atlas_Final_Report.pdf" target="_blank" rel="noopener" data-i18n-key="btn_open_report_tab">Open in New Tab ↗</a>
               </div>
             </div>
+
+            <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:18px 22px; margin-bottom:18px; font-size:0.88rem; line-height:1.75; color:var(--text-body);">
+              <p style="margin-bottom:0;" data-i18n-key="report_summary">
+                <strong>摘要：</strong>公共交通服务调查应优先从哪些居住区开始？本研究在新加坡 1,597 个估计有常住人口的 400 米网格中，分别评估居民的潜在公共交通需求与当地服务的相对薄弱程度。等权基线筛出 148 个候选网格。将老年人口与 30 分钟诊所可达性权重从 1 调至 2，得到 158 个就医情景候选网格（146 保留，12 新增，2 退出）。项目还实现了一个研究 Agent：模型把自然语言转化为可审核指标提案，规划师确认数据与权重，本地 GIS 负责运算。
+              </p>
+            </div>
+
+            <iframe class="pdf-viewer-frame" src="assets/Transit_Atlas_Final_Report.pdf#view=FitH" title="Transit Atlas Final Research Report Live Viewer"></iframe>
           </div>
 
           <!-- Panel 2: Presentation Slides Live PDF Viewer -->
