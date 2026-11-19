@@ -75,7 +75,6 @@
       "report_status": "✅ Final Deliverable Completed",
       "report_title": "Singapore Public Transport Supply–Demand Gap Scenario Analysis",
       "report_sub": "Final Research Report · 400 m Grid Baseline & Research Agent · November 2026",
-      "report_filename_desc": "(17 pages · Full Academic Research Report · 400 m Baseline & AI Agent)",
       "report_summary": "Abstract: Where should public transport service audits begin? This study evaluates potential transit demand and service weaknesses across 1,597 residential 400-metre grid cells in Singapore. The equal-weighted baseline identifies 148 candidate cells (9.27% of study area). Adjusting older population and 30-minute clinic access weights expands this to 158 cells (+12 added, -2 removed). An AI research agent enables planners to translate natural language questions into auditable indicator proposals.",
       "report_notice": "The final revised report is embedded below for online reading and download.",
       "btn_download_draft": "Download Report Draft (PDF) ↓",
@@ -190,7 +189,6 @@
       "report_status": "✅ 最终交付成果已定稿",
       "report_title": "《新加坡公共交通供需缺口情景分析》最终研究报告",
       "report_sub": "400 米网格基线与研究 Agent · 2026 年 11 月",
-      "report_filename_desc": "(17 页 · 完整学术研究报告 · 400 米网格基线与 AI 协同 Agent)",
       "report_summary": "摘要：公共交通服务调查应优先从哪些居住区开始？本研究在新加坡 1,597 个估计有常住人口的 400 米网格中，分别评估居民的潜在公共交通需求与当地服务的相对薄弱程度。等权基线筛出 148 个候选网格。将老年人口与 30 分钟诊所可达性权重从 1 调至 2，得到 158 个就医情景候选网格（146 保留，12 新增，2 退出）。项目还实现了一个研究 Agent：模型把自然语言转化为可审核指标提案，规划师确认数据与权重，本地 GIS 负责运算。",
       "report_notice": "最终定稿报告已嵌入下方供在线翻阅与下载。",
       "btn_download_draft": "下载当前报告初稿 (PDF) ↓",
@@ -275,35 +273,41 @@
   // Apply initial theme
   applyTheme(getStoredTheme());
 
-  // --- Language Controller (EN default / 中文) ---
+  // --- Language Controller (English is ALWAYS prioritized on open) ---
   const langButtons = document.querySelectorAll('[data-lang-btn]');
+
+  // Purge any persistent localStorage that might have pinned 'zh' on open
+  try {
+    localStorage.removeItem('transit-atlas-lang');
+  } catch {}
 
   function getStoredLang() {
     try {
-      return localStorage.getItem('transit-atlas-lang') || 'en';
+      return sessionStorage.getItem('transit-atlas-lang') || 'en';
     } catch {
       return 'en';
     }
   }
 
   function applyLanguage(lang) {
-    const dict = I18N[lang] || I18N.zh;
+    const targetLang = (lang === 'zh') ? 'zh' : 'en';
+    const dict = I18N[targetLang];
     document.querySelectorAll('[data-i18n-key]').forEach(el => {
       const key = el.dataset.i18nKey;
       if (dict[key]) {
         el.textContent = dict[key];
       }
     });
-    document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+    document.documentElement.lang = targetLang === 'en' ? 'en' : 'zh-CN';
     langButtons.forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.langBtn === lang);
-      btn.setAttribute('aria-pressed', String(btn.dataset.langBtn === lang));
+      btn.classList.toggle('active', btn.dataset.langBtn === targetLang);
+      btn.setAttribute('aria-pressed', String(btn.dataset.langBtn === targetLang));
     });
   }
 
   function setLanguage(lang) {
     try {
-      localStorage.setItem('transit-atlas-lang', lang);
+      sessionStorage.setItem('transit-atlas-lang', lang);
     } catch {}
     applyLanguage(lang);
   }
@@ -312,7 +316,7 @@
     btn.addEventListener('click', () => setLanguage(btn.dataset.langBtn));
   });
 
-  // Apply initial language
+  // Apply initial language (strictly English prioritized)
   applyLanguage(getStoredLang());
 
   // --- Deliverables Tab Switcher (Report vs Slides) ---

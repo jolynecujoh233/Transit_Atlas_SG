@@ -61,42 +61,42 @@
       <div class="hero-glow-aura" aria-hidden="true"></div>
       <div class="container">
         <div class="hero-pill" data-i18n-key="hero_tag">
-          NUS AR5958A · 城市规划人工智能 · 期末成果展示
+          NUS AR5958A · AI for Urban Planning · Final Deliverable
         </div>
         <h1 class="hero-title" data-i18n-key="hero_title">
-          Transit Atlas：新加坡公共交通供需缺口情景分析 Agent
+          Transit Atlas: An AI Research Agent for Planners to Explore Bus Transit Gaps
         </h1>
         <p class="hero-subtitle" data-i18n-key="hero_sub">
-          在新加坡 400 米网格上，将空间交通分析与 LLM 研究智能体无缝链接——赋能规划师提出交通公平问题、审核数据来源并精准重算候选缺口区域。
+          Bridging spatial transport analytics and LLM research agents on a 400 m grid across Singapore — empowering planners to query equity scenarios, audit data provenance, and recalculate candidate gap areas.
         </p>
 
         <div class="hero-actions">
-          <a class="btn-primary" href="#demo" data-i18n-key="btn_demo">在线体验 Demo ↗</a>
-          <a class="btn-secondary" href="#deliverables" data-i18n-key="btn_report">阅读报告与幻灯片 ↓</a>
-          <a class="btn-secondary" href="#deploy" data-i18n-key="btn_deploy">本地部署指南 ↓</a>
+          <a class="btn-primary" href="#demo" data-i18n-key="btn_demo">Launch Interactive Demo ↗</a>
+          <a class="btn-secondary" href="#deliverables" data-i18n-key="btn_report">View Report & Slides ↓</a>
+          <a class="btn-secondary" href="#deploy" data-i18n-key="btn_deploy">Local Deployment ↓</a>
         </div>
 
         <!-- Metric Cards Strip -->
         <div class="stats-strip">
           <div class="stat-card">
             <div class="stat-value">1,597</div>
-            <div class="stat-label" data-i18n-key="stat_grids">研究网格</div>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;" data-i18n-key="stat_grids_desc">1,597 个 400 米常住人口网格</div>
+            <div class="stat-label" data-i18n-key="stat_grids">Study Grids</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;" data-i18n-key="stat_grids_desc">400 m × 400 m populated cells</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">9 vs 11</div>
-            <div class="stat-label" data-i18n-key="stat_indicators">指标体系</div>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;" data-i18n-key="stat_indicators_desc">9 项需求 vs 11 项供给指标</div>
+            <div class="stat-label" data-i18n-key="stat_indicators">Indicators</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;" data-i18n-key="stat_indicators_desc">9 Demand vs 11 Supply metrics</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">148 <span style="font-size:1.1rem; color:var(--accent-purple);">(9.27%)</span></div>
-            <div class="stat-label" data-i18n-key="stat_baseline">基线候选缺口</div>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;" data-i18n-key="stat_baseline_desc">占新加坡全岛研究网格的 9.27%</div>
+            <div class="stat-label" data-i18n-key="stat_baseline">Baseline Candidates</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;" data-i18n-key="stat_baseline_desc">9.27% of Singapore study grids</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">158 <span style="font-size:1.1rem; color:var(--accent-teal);">(+12/-2)</span></div>
-            <div class="stat-label" data-i18n-key="stat_scenario">就医情景增量</div>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;" data-i18n-key="stat_scenario_desc">148 → 158 格，新增 12 个就诊薄弱区</div>
+            <div class="stat-label" data-i18n-key="stat_scenario">Healthcare Shift</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;" data-i18n-key="stat_scenario_desc">+12 added in older clinic deficits</div>
           </div>
         </div>
       </div>
@@ -106,42 +106,42 @@
     <section class="section" id="overview">
       <div class="container">
         <div class="section-head">
-          <div class="section-kicker" data-i18n-key="section_context_kicker">研究背景与痛点</div>
-          <h2 class="section-title" data-i18n-key="section_context_title">为什么聚焦巴士？候选缺口落在哪里？</h2>
-          <p class="section-desc" data-i18n-key="section_context_desc">公共巴士占新加坡公共交通日均出行量的 50.9%，但“家门口有车站”并不等同于“享有良好出行可达性”。</p>
+          <div class="section-kicker" data-i18n-key="section_context_kicker">Context & Motivation</div>
+          <h2 class="section-title" data-i18n-key="section_context_title">Why Bus Transit & Where Are the Gaps?</h2>
+          <p class="section-desc" data-i18n-key="section_context_desc">Buses account for 50.9% of Singapore's daily transit boardings, yet physical station proximity does not guarantee equitable accessibility.</p>
         </div>
 
         <div class="grid-2col">
           <!-- Col 1: Baseline -->
           <div class="feature-card">
-            <h3 data-i18n-key="context_col1_title">GIS 等权基线框架</h3>
-            <p data-i18n-key="context_col1_p1">我们在 1,597 个 400 米居住网格上建立基线。通过将需求等级 ≥ 3 与供给缺口等级 ≥ 3 交叉，筛选出 148 个优先核查候选网格（覆盖约 65 万居民）。</p>
+            <h3 data-i18n-key="context_col1_title">The GIS Baseline Framework</h3>
+            <p data-i18n-key="context_col1_p1">We established an equal-weight baseline across 1,597 residential 400 m grids. By crossing Demand Level ≥ 3 with Supply Deficit Level ≥ 3, we identified 148 candidate priority areas (approx. 650,000 residents).</p>
             <ul class="feature-list">
-              <li data-i18n-key="context_col1_li1">裕廊西（Jurong West）：27 个候选网格</li>
-              <li data-i18n-key="context_col1_li2">义顺（Yishun）：18 个候选网格</li>
-              <li data-i18n-key="context_col1_li3">兀兰（Woodlands）与巴西立（Pasir Ris）：各 14 个网格</li>
+              <li data-i18n-key="context_col1_li1">Jurong West: 27 candidate cells</li>
+              <li data-i18n-key="context_col1_li2">Yishun: 18 candidate cells</li>
+              <li data-i18n-key="context_col1_li3">Woodlands & Pasir Ris: 14 candidate cells each</li>
             </ul>
             <div style="margin-top:20px;">
               <img class="map-preview-img" src="assets/baseline_148.png" alt="148 Baseline Candidate Areas Map" loading="lazy">
-              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; text-align:center;" data-i18n-key="map_caption_baseline">全岛 148 个等权基线候选优先核查网格空间分布</div>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; text-align:center;" data-i18n-key="map_caption_baseline">Spatial distribution of 148 equal-weighted baseline candidate audit grids across Singapore</div>
             </div>
           </div>
 
           <!-- Col 2: Insights -->
           <div class="feature-card">
-            <h3 data-i18n-key="context_col2_title">核心规划洞察</h3>
-            <p data-i18n-key="context_col2_p1">在排查单项薄弱指标时，关键生活目的地可达性短板的出现频率显著高于物理车站覆盖：</p>
+            <h3 data-i18n-key="context_col2_title">Critical Planning Insight</h3>
+            <p data-i18n-key="context_col2_p1">When examining individual deficit indicators, destination access barriers were flagged far more frequently than poor bus stop coverage:</p>
             <ul class="feature-list">
-              <li data-i18n-key="context_col2_li1">91 个网格存在 30 分钟超市可达性薄弱</li>
-              <li data-i18n-key="context_col2_li2">81–82 个网格存在 30 及 60 分钟 CHAS 基层诊所可达性薄弱</li>
-              <li data-i18n-key="context_col2_li3">仅 20 个网格存在 400 米物理车站覆盖率不足</li>
+              <li data-i18n-key="context_col2_li1">91 cells flagged for 30-min supermarket access deficits</li>
+              <li data-i18n-key="context_col2_li2">81–82 cells flagged for 30 & 60-min CHAS clinic access deficits</li>
+              <li data-i18n-key="context_col2_li3">Only 20 cells flagged for bus-stop 400 m coverage deficits</li>
             </ul>
             <div style="margin-top:20px;">
               <img class="map-preview-img" src="assets/changes_map.png" alt="Scenario Map Changes" loading="lazy">
-              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; text-align:center;" data-i18n-key="map_caption_changes">就医情景重算对比（绿色：保留 146 格；洋红：新增 12 格；青灰：移出 2 格）</div>
+              <div style="font-size:0.78rem; color:var(--text-muted); margin-top:8px; text-align:center;" data-i18n-key="map_caption_changes">Healthcare scenario recalculation (Green: 146 retained; Magenta: 12 added; Slate: 2 exited)</div>
             </div>
             <div style="margin-top:16px; padding:12px; background:var(--bg-elevated); border-radius:var(--radius-sm); font-size:0.85rem; font-style:italic;" data-i18n-key="context_col2_note">
-              规划结论：交通公平性的关键在于“目的地连通能力”，而非盲目增设物理站点。
+              Conclusion: Enhancing transit equity requires looking beyond infrastructure presence toward destination connectivity.
             </div>
           </div>
         </div>
@@ -152,65 +152,65 @@
     <section class="section" id="framework">
       <div class="container">
         <div class="section-head">
-          <div class="section-kicker" data-i18n-key="section_agent_kicker">系统协同架构</div>
-          <h2 class="section-title" data-i18n-key="section_agent_title">7 步人机协同循环（Human-in-the-Loop）</h2>
-          <p class="section-desc" data-i18n-key="section_agent_desc">固定的 GIS 脚本无法穷尽规划师多元的动态提问。Transit Atlas 实现了大语言模型推理与本地确定性空间运算的紧密结合。</p>
+          <div class="section-kicker" data-i18n-key="section_agent_kicker">System Architecture</div>
+          <h2 class="section-title" data-i18n-key="section_agent_title">Human-in-the-Loop 7-Step Workflow</h2>
+          <p class="section-desc" data-i18n-key="section_agent_desc">A static GIS script cannot adapt to diverse and evolving urban planning queries. Transit Atlas couples LLM reasoning with deterministic spatial computing.</p>
         </div>
 
         <div class="workflow-grid">
           <!-- Step 1 -->
           <div class="workflow-card">
             <span class="step-badge">STEP 01</span> <span class="actor-pill actor-human">Planner</span>
-            <h4 data-i18n-key="step_01_title">01 · 提出问题</h4>
-            <p data-i18n-key="step_01_desc">规划师在对话框输入关心的交通公平问题或特定群体出行。</p>
+            <h4 data-i18n-key="step_01_title">01 · Ask Question</h4>
+            <p data-i18n-key="step_01_desc">Planner inputs a policy question, target demographic, or time window.</p>
           </div>
 
           <!-- Step 2 -->
           <div class="workflow-card">
             <span class="step-badge">STEP 02</span> <span class="actor-pill actor-agent">Agent</span>
-            <h4 data-i18n-key="step_02_title">02 · Agent 提案</h4>
-            <p data-i18n-key="step_02_desc">模型检索文献与指标目录，提出研究思路、所需数据与计算口径。</p>
+            <h4 data-i18n-key="step_02_title">02 · Agent Proposes</h4>
+            <p data-i18n-key="step_02_desc">Agent reviews literature and catalog, proposing indicators and data pipelines.</p>
           </div>
 
           <!-- Step 3 -->
           <div class="workflow-card">
             <span class="step-badge">STEP 03</span> <span class="actor-pill actor-human">Planner Audit</span>
-            <h4 data-i18n-key="step_03_title">03 · 规划师审数</h4>
-            <p data-i18n-key="step_03_desc">核验数据来源与局限，确认计算方法。缺失核心数据时主动中止。</p>
+            <h4 data-i18n-key="step_03_title">03 · Planner Audits</h4>
+            <p data-i18n-key="step_03_desc">Planner checks data provenance, formulas, and halts if key data are missing.</p>
           </div>
 
           <!-- Step 4 -->
           <div class="workflow-card">
             <span class="step-badge">STEP 04</span> <span class="actor-pill actor-gis">Local GIS</span>
-            <h4 data-i18n-key="step_04_title">04 · 本地 GIS 处理</h4>
-            <p data-i18n-key="step_04_desc">抓取并清洗公开数据，标准化至全岛 1,597 个 400 米网格。</p>
+            <h4 data-i18n-key="step_04_title">04 · Python Ingestion</h4>
+            <p data-i18n-key="step_04_desc">Acquires data, validates geometries, and normalizes into 400 m study cells.</p>
           </div>
 
           <!-- Step 5 -->
           <div class="workflow-card">
             <span class="step-badge">STEP 05</span> <span class="actor-pill actor-agent">Agent</span>
-            <h4 data-i18n-key="step_05_title">05 · Agent 建议权重</h4>
-            <p data-i18n-key="step_05_desc">依据研究重点与实证文献，提供有依据的指标权重建议。</p>
+            <h4 data-i18n-key="step_05_title">05 · Propose Weights</h4>
+            <p data-i18n-key="step_05_desc">Agent suggests evidence-backed indicator weights with explicit justifications.</p>
           </div>
 
           <!-- Step 6 -->
           <div class="workflow-card">
             <span class="step-badge">STEP 06</span> <span class="actor-pill actor-human">Planner Audit</span>
-            <h4 data-i18n-key="step_06_title">06 · 规划师调权</h4>
-            <p data-i18n-key="step_06_desc">审核或修改权重数值，最终确认启动本地情景评分。</p>
+            <h4 data-i18n-key="step_06_title">06 · Planner Adjusts</h4>
+            <p data-i18n-key="step_06_desc">Planner modifies or confirms weights before approving full execution.</p>
           </div>
 
           <!-- Step 7 -->
           <div class="workflow-card">
             <span class="step-badge">STEP 07</span> <span class="actor-pill actor-gis">Local GIS</span>
-            <h4 data-i18n-key="step_07_title">07 · 重算与空间对比</h4>
-            <p data-i18n-key="step_07_desc">本地程序重算网格分级，输出 148 基线对比地图与逐格 CSV 表格。</p>
+            <h4 data-i18n-key="step_07_title">07 · Recalculate & Map</h4>
+            <p data-i18n-key="step_07_desc">Local GIS re-scores grids, comparing retained, added and exited cells.</p>
           </div>
         </div>
 
         <div class="philosophy-banner">
-          <blockquote data-i18n-key="philosophy_quote">“AI 支持研究适配，规划师把关最终裁量，GIS 执行严谨计算。”</blockquote>
-          <span class="course-badge" data-i18n-key="philosophy_tag">计算可复现性 ≠ 现实世界的真实准确性</span>
+          <blockquote data-i18n-key="philosophy_quote">“AI supports research adaptation — planners retain decision control — GIS executes deterministic calculations.”</blockquote>
+          <span class="course-badge" data-i18n-key="philosophy_tag">Computational consistency ≠ Real-world accuracy</span>
         </div>
       </div>
     </section>
@@ -219,9 +219,9 @@
     <section class="section" id="demo">
       <div class="container">
         <div class="section-head">
-          <div class="section-kicker" data-i18n-key="section_demo_kicker">在线交互演示</div>
-          <h2 class="section-title" data-i18n-key="section_demo_title">体验 Transit Atlas 交互工作台</h2>
-          <p class="section-desc" data-i18n-key="section_demo_desc">在下方直接体验高仿真研究对话，或点击右上角全屏运行。支持体验「老年人就医情景」与「周末下午公交运力匹配」两个研究情景。</p>
+          <div class="section-kicker" data-i18n-key="section_demo_kicker">Interactive Workbench</div>
+          <h2 class="section-title" data-i18n-key="section_demo_title">Experience the Transit Atlas Demo</h2>
+          <p class="section-desc" data-i18n-key="section_demo_desc">Explore our interactive web interface below or open it in fullscreen. Supports exploring two research scenarios: 'Elderly Healthcare Access' and 'Weekend Bus Capacity Matching'.</p>
         </div>
 
         <div class="demo-window">
@@ -232,7 +232,7 @@
               <span></span>
             </div>
             <div class="demo-url-bar">https://jolynecujoh233.github.io/Transit_Atlas_SG/demo-site/</div>
-            <a class="demo-fullscreen-btn" href="./demo-site/index.html" target="_blank" rel="noopener" data-i18n-key="btn_fullscreen">全屏体验 Demo ↗</a>
+            <a class="demo-fullscreen-btn" href="./demo-site/index.html" target="_blank" rel="noopener" data-i18n-key="btn_fullscreen">Open Fullscreen Demo ↗</a>
           </div>
           <div class="demo-iframe-container">
             <iframe src="./demo-site/index.html" title="Transit Atlas Interactive Demo" loading="lazy"></iframe>
@@ -245,15 +245,15 @@
     <section class="section" id="deliverables">
       <div class="container">
         <div class="section-head">
-          <div class="section-kicker" data-i18n-key="section_report_kicker">最终交付成果</div>
-          <h2 class="section-title" data-i18n-key="section_report_title">研究报告与汇报演讲成果</h2>
-          <p class="section-desc" data-i18n-key="section_report_desc">在线翻阅我们的完整学术报告与答辩演讲幻灯片。</p>
+          <div class="section-kicker" data-i18n-key="section_report_kicker">Deliverables & Evaluation</div>
+          <h2 class="section-title" data-i18n-key="section_report_title">Final Research Report & Presentation</h2>
+          <p class="section-desc" data-i18n-key="section_report_desc">Review our complete academic report, slide deck, and methodological documentation.</p>
         </div>
 
         <div class="deliverables-container">
           <div class="deliverable-tabs" role="tablist">
-            <button type="button" class="deliverable-tab active" data-deliverable-tab="report" aria-pressed="true" role="tab" data-i18n-key="tab_report">📄 最终研究报告 (Final Report)</button>
-            <button type="button" class="deliverable-tab" data-deliverable-tab="slides" aria-pressed="false" role="tab" data-i18n-key="tab_slides">📊 汇报演讲幻灯片 (Presentation Slides)</button>
+            <button type="button" class="deliverable-tab active" data-deliverable-tab="report" aria-pressed="true" role="tab" data-i18n-key="tab_report">📄 Final Research Report</button>
+            <button type="button" class="deliverable-tab" data-deliverable-tab="slides" aria-pressed="false" role="tab" data-i18n-key="tab_slides">📊 Presentation Slides (Live Viewer)</button>
           </div>
 
           <!-- Panel 1: Final Research Report Live PDF Viewer -->
@@ -261,7 +261,6 @@
             <div style="margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
               <div>
                 <strong style="color:var(--text-main);">Transit_Atlas_Final_Report.pdf</strong>
-                <span style="font-size:0.82rem; color:var(--text-muted); margin-left:8px;" data-i18n-key="report_filename_desc">(17 pages · Full Academic Research Report · 400 m Baseline & AI Agent)</span>
               </div>
               <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
                 <a class="btn-primary" style="padding:6px 14px; font-size:0.82rem;" href="assets/Transit_Atlas_Final_Report.pdf" download="Transit_Atlas_Final_Report.pdf" data-i18n-key="btn_download_final_report">Download Full Report (1.3 MB) ↓</a>
@@ -271,7 +270,7 @@
 
             <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:18px 22px; margin-bottom:18px; font-size:0.88rem; line-height:1.75; color:var(--text-body);">
               <p style="margin-bottom:0;" data-i18n-key="report_summary">
-                <strong>摘要：</strong>公共交通服务调查应优先从哪些居住区开始？本研究在新加坡 1,597 个估计有常住人口的 400 米网格中，分别评估居民的潜在公共交通需求与当地服务的相对薄弱程度。等权基线筛出 148 个候选网格。将老年人口与 30 分钟诊所可达性权重从 1 调至 2，得到 158 个就医情景候选网格（146 保留，12 新增，2 退出）。项目还实现了一个研究 Agent：模型把自然语言转化为可审核指标提案，规划师确认数据与权重，本地 GIS 负责运算。
+                Abstract: Where should public transport service audits begin? This study evaluates potential transit demand and service weaknesses across 1,597 residential 400-metre grid cells in Singapore. The equal-weighted baseline identifies 148 candidate cells (9.27% of study area). Adjusting older population and 30-minute clinic access weights expands this to 158 cells (+12 added, -2 removed). An AI research agent enables planners to translate natural language questions into auditable indicator proposals.
               </p>
             </div>
 
@@ -285,7 +284,7 @@
                 <strong style="color:var(--text-main);">GROUP2_FinalPresentation.pdf</strong>
                 <span style="font-size:0.82rem; color:var(--text-muted); margin-left:8px;" data-i18n-key="slides_filename_desc">(21 presentation slides · Research background, methodology, and demo screen walkthroughs)</span>
               </div>
-              <span class="preview-badge" data-i18n-key="slides_badge_preview_only">在线预览</span>
+              <span class="preview-badge" data-i18n-key="slides_badge_preview_only">Live Preview</span>
             </div>
             <iframe class="pdf-viewer-frame" src="assets/presentation.pdf#view=FitH" title="Presentation Slides Live Viewer"></iframe>
           </div>
@@ -297,9 +296,9 @@
     <section class="section" id="deploy">
       <div class="container">
         <div class="section-head">
-          <div class="section-kicker" data-i18n-key="section_deploy_kicker">开源与本地复现</div>
-          <h2 class="section-title" data-i18n-key="section_deploy_title">本地部署完整版工作台</h2>
-          <p class="section-desc" data-i18n-key="section_deploy_desc">纯本地严谨复现。内置完整 Python GIS 引擎，可直接连接您本机的 OpenAI Codex 账号，支持任意自由提问与私密数据计算。</p>
+          <div class="section-kicker" data-i18n-key="section_deploy_kicker">Open Source & Reproduction</div>
+          <h2 class="section-title" data-i18n-key="section_deploy_title">Deploy Transit Atlas Locally</h2>
+          <p class="section-desc" data-i18n-key="section_deploy_desc">Full reproducibility. Run the complete GIS pipeline and connect your personal OpenAI Codex account for private, unlimited queries.</p>
         </div>
 
         <div style="max-width:880px; margin:0 auto;">
