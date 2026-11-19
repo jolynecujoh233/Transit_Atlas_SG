@@ -115,7 +115,7 @@
       "footer_link_deploy": "Local Deployment",
       "footer_sources_title": "Data Sources & Acknowledgements",
       "footer_course": "AR5958A · Artificial Intelligence for Urban Planning · 2026",
-      "footer_team": "Group 2: Han Yingjie, Mao Mei, Wang Muqing, Xie Ziqian, Yue Jingqiu, Zhou Qianya",
+      "footer_team": "Group 2 (Alphabetical Order): Han Yingjie, Mao Mei, Wang Muqing, Xie Ziqian, Yue Jingqiu, Zhou Qianya",
       "footer_institution": "Department of Architecture / Urban Planning, National University of Singapore"
     },
     zh: {
@@ -226,7 +226,7 @@
       "footer_link_deploy": "GitHub 本地部署",
       "footer_sources_title": "数据源与致谢",
       "footer_course": "NUS AR5958A · 城市规划人工智能 · 2026",
-      "footer_team": "Group 2: Han Yingjie, Mao Mei, Wang Muqing, Xie Ziqian, Yue Jingqiu, Zhou Qianya",
+      "footer_team": "Group 2：韩颖洁、毛美、王沐晴、谢茈芊、岳婧秋、周千雅（按首字母排序）",
       "footer_institution": "新加坡国立大学 · 设计与工程学院 · 建筑与城市规划系"
     }
   };

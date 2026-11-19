@@ -3,7 +3,7 @@
 
 > **National University of Singapore (NUS) · AR5958A Artificial Intelligence for Urban Planning**  
 > **Final Project Deliverable · Group 2 (2026)**  
-> **Team Members (Alphabetical Order)**: Han Yingjie, Mao Mei, Wang Muqing, Xie Ziqian, Yue Jingqiu, Zhou Qianya  
+> **Team Members (Alphabetical Order)**: Han Yingjie (韩颖洁), Mao Mei (毛美), Wang Muqing (王沐晴), Xie Ziqian (谢茈芊), Yue Jingqiu (岳婧秋), Zhou Qianya (周千雅)  
 
 [![Live Portal](https://img.shields.io/badge/Live%20Portal-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://jolynecujoh233.github.io/Transit_Atlas_SG/)
 [![Interactive Demo](https://img.shields.io/badge/Interactive%20Demo-Online-purple?style=for-the-badge)](https://jolynecujoh233.github.io/Transit_Atlas_SG/demo-site/)
@@ -203,10 +203,11 @@ All spatial datasets are obtained from official Singapore Government open data p
 
 **Group 2 · National University of Singapore (NUS)**  
 *Department of Architecture / Urban Planning · AR5958A Artificial Intelligence for Urban Planning (2026)*  
+*(Alphabetical Order / 按首字母排序)*  
 
-- **Han Yingjie**
-- **Mao Mei**
-- **Wang Muqing**
-- **Xie Ziqian**
-- **Yue Jingqiu**
-- **Zhou Qianya**
+- **Han Yingjie** (韩颖洁)
+- **Mao Mei** (毛美)
+- **Wang Muqing** (王沐晴)
+- **Xie Ziqian** (谢茈芊)
+- **Yue Jingqiu** (岳婧秋)
+- **Zhou Qianya** (周千雅)
