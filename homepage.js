@@ -231,9 +231,24 @@
     }
   };
 
+  // --- Segmented Control Glider Animator ---
+  function updateGliders() {
+    document.querySelectorAll('.btn-control-group').forEach(group => {
+      const glider = group.querySelector('.control-glider');
+      if (!glider) return;
+      const activeBtn = group.querySelector('.btn-control.active');
+      if (activeBtn) {
+        glider.style.width = `${activeBtn.offsetWidth}px`;
+        glider.style.transform = `translateX(${activeBtn.offsetLeft}px)`;
+        glider.style.opacity = '1';
+      }
+    });
+  }
+
   // --- Theme Controller (Dark default, Light, Auto) ---
   const themeButtons = document.querySelectorAll('[data-theme-btn]');
   const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+  let themeTransitionTimer = null;
 
   function getStoredTheme() {
     try {
@@ -243,23 +258,35 @@
     }
   }
 
-  function applyTheme(theme) {
+  function applyTheme(theme, smooth = false) {
     let effective = theme;
     if (theme === 'auto') {
       effective = systemPrefersDark.matches ? 'dark' : 'light';
     }
+
+    if (smooth) {
+      document.documentElement.classList.add('theme-transitioning');
+      clearTimeout(themeTransitionTimer);
+      themeTransitionTimer = setTimeout(() => {
+        document.documentElement.classList.remove('theme-transitioning');
+      }, 420);
+    }
+
     document.documentElement.dataset.theme = effective;
     themeButtons.forEach(btn => {
       btn.classList.toggle('active', btn.dataset.themeBtn === theme);
       btn.setAttribute('aria-pressed', String(btn.dataset.themeBtn === theme));
     });
+
+    // Update sliding indicator position
+    requestAnimationFrame(updateGliders);
   }
 
   function setTheme(theme) {
     try {
       localStorage.setItem('transit-atlas-theme', theme);
     } catch {}
-    applyTheme(theme);
+    applyTheme(theme, true);
   }
 
   themeButtons.forEach(btn => {
@@ -268,12 +295,12 @@
 
   systemPrefersDark.addEventListener('change', () => {
     if (getStoredTheme() === 'auto') {
-      applyTheme('auto');
+      applyTheme('auto', true);
     }
   });
 
   // Apply initial theme
-  applyTheme(getStoredTheme());
+  applyTheme(getStoredTheme(), false);
 
   // --- Language Controller (English is ALWAYS prioritized on open) ---
   const langButtons = document.querySelectorAll('[data-lang-btn]');
@@ -291,27 +318,64 @@
     }
   }
 
-  function applyLanguage(lang) {
+  function applyLanguage(lang, smooth = false) {
     const targetLang = (lang === 'zh') ? 'zh' : 'en';
     const dict = I18N[targetLang];
-    document.querySelectorAll('[data-i18n-key]').forEach(el => {
-      const key = el.dataset.i18nKey;
-      if (dict[key]) {
-        el.textContent = dict[key];
-      }
-    });
-    document.documentElement.lang = targetLang === 'en' ? 'en' : 'zh-CN';
-    langButtons.forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.langBtn === targetLang);
-      btn.setAttribute('aria-pressed', String(btn.dataset.langBtn === targetLang));
-    });
+    const elements = document.querySelectorAll('[data-i18n-key]');
+
+    if (smooth) {
+      // Gentle text fade-out before switching content
+      elements.forEach(el => {
+        el.style.transition = 'opacity 0.14s ease, transform 0.14s ease';
+        el.style.opacity = '0.35';
+        el.style.transform = 'translateY(1px)';
+      });
+
+      setTimeout(() => {
+        elements.forEach(el => {
+          const key = el.dataset.i18nKey;
+          if (dict[key]) {
+            el.textContent = dict[key];
+          }
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        });
+        document.documentElement.lang = targetLang === 'en' ? 'en' : 'zh-CN';
+        langButtons.forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.langBtn === targetLang);
+          btn.setAttribute('aria-pressed', String(btn.dataset.langBtn === targetLang));
+        });
+        requestAnimationFrame(updateGliders);
+
+        // Reset transition styles after animation completes
+        setTimeout(() => {
+          elements.forEach(el => {
+            el.style.transition = '';
+            el.style.transform = '';
+          });
+        }, 200);
+      }, 120);
+    } else {
+      elements.forEach(el => {
+        const key = el.dataset.i18nKey;
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+      document.documentElement.lang = targetLang === 'en' ? 'en' : 'zh-CN';
+      langButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.langBtn === targetLang);
+        btn.setAttribute('aria-pressed', String(btn.dataset.langBtn === targetLang));
+      });
+      requestAnimationFrame(updateGliders);
+    }
   }
 
   function setLanguage(lang) {
     try {
       sessionStorage.setItem('transit-atlas-lang', lang);
     } catch {}
-    applyLanguage(lang);
+    applyLanguage(lang, true);
   }
 
   langButtons.forEach(btn => {
@@ -319,7 +383,12 @@
   });
 
   // Apply initial language (strictly English prioritized)
-  applyLanguage(getStoredLang());
+  applyLanguage(getStoredLang(), false);
+
+  // Re-align gliders on window resize or load
+  window.addEventListener('resize', updateGliders, { passive: true });
+  window.addEventListener('load', updateGliders, { passive: true });
+  setTimeout(updateGliders, 50);
 
   // --- Deliverables Tab Switcher (Report vs Slides) ---
   const deliverableTabs = document.querySelectorAll('[data-deliverable-tab]');
@@ -419,4 +488,54 @@
       card.style.setProperty('--mouse-y', `${y}px`);
     }, { passive: true });
   });
+
+  // --- Back to Top Floating Button ---
+  const backToTopBtn = document.getElementById('back-to-top');
+  if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 380) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // --- Scroll-Driven Kinetic Reveal for Headings, Cards & Containers ---
+  const revealTargets = document.querySelectorAll(
+    '.section-kicker, .section-title, .section-desc, .feature-card, .workflow-card, .demo-window, .deliverables-container, .deploy-card, .philosophy-banner'
+  );
+
+  revealTargets.forEach(el => {
+    el.classList.add('scroll-reveal');
+  });
+
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+        } else {
+          // When scrolling completely out of screen bounds (above or below),
+          // reset so scrolling back up/down re-triggers the fluid entrance animation!
+          const rect = entry.boundingClientRect;
+          if (rect.top > window.innerHeight || rect.bottom < 0) {
+            entry.target.classList.remove('is-revealed');
+          }
+        }
+      });
+    }, {
+      root: null,
+      threshold: [0, 0.12],
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealTargets.forEach(el => revealObserver.observe(el));
+  } else {
+    revealTargets.forEach(el => el.classList.add('is-revealed'));
+  }
 })();

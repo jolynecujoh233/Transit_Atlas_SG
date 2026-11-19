@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transit Atlas · Public Transport Supply-Demand Gap Analysis Agent | NUS AR5958A</title>
   <meta name="description" content="Transit Atlas: An AI Research Agent for Planners to Explore Bus Transit Gaps on a 400m Grid Across Singapore. National University of Singapore AR5958A Final Deliverable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="homepage.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%237C3AED'/><text x='50%' y='55%' font-size='56' font-family='sans-serif' font-weight='bold' fill='white' dominant-baseline='middle' text-anchor='middle'>TA</text></svg>">
 </head>
@@ -34,12 +37,14 @@
       <div class="header-controls">
         <!-- Language Switcher -->
         <div class="btn-control-group" role="group" aria-label="Language selection">
+          <span class="control-glider" aria-hidden="true"></span>
           <button type="button" class="btn-control" data-lang-btn="zh" aria-pressed="false">中文</button>
           <button type="button" class="btn-control active" data-lang-btn="en" aria-pressed="true">EN</button>
         </div>
 
         <!-- Theme Switcher (Dark default, Light, Auto) -->
         <div class="btn-control-group" role="group" aria-label="Theme selection">
+          <span class="control-glider" aria-hidden="true"></span>
           <button type="button" class="btn-control" data-theme-btn="light" aria-pressed="false" title="Light Theme" data-i18n-key="theme_light">☀️ Light</button>
           <button type="button" class="btn-control active" data-theme-btn="dark" aria-pressed="true" title="Dark Theme" data-i18n-key="theme_dark">🌙 Dark</button>
           <button type="button" class="btn-control" data-theme-btn="auto" aria-pressed="false" title="Auto (System Preference)" data-i18n-key="theme_auto">🌓 Auto</button>
@@ -396,6 +401,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top" class="back-to-top-btn" type="button" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 
   <script src="homepage.js"></script>
 </body>
